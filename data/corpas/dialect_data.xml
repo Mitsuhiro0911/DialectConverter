@@ -21,7 +21,7 @@
         <standard>あそこ</standard>
         <enshu>あっこ</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -212,7 +212,7 @@
         <standard>げろ</standard>
         <enshu>げぇ</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -241,7 +241,7 @@
         <standard>補助輪</standard>
         <enshu>コロ</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -271,7 +271,7 @@
         <standard>お爺ちゃん</standard>
         <enshu>じーじ</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -300,7 +300,7 @@
         <standard>よく喋る</standard>
         <enshu>しゃんべぇ</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -328,7 +328,7 @@
         <standard>定規</standard>
         <enshu>線引き</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -449,7 +449,7 @@
         <standard>最下位</standard>
         <enshu>どべ</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -508,7 +508,7 @@
         <standard>歯茎</standard>
         <enshu>ねち</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -599,7 +599,7 @@
         <standard>仲間はずれ</standard>
         <enshu>はぶせ</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -677,7 +677,7 @@
         <standard>出っ張り</standard>
         <enshu>ぼっちょ</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
