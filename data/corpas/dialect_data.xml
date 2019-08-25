@@ -3,7 +3,7 @@
     <word>
         <standard>間</standard>
         <enshu>あいさ</enshu>
-        <importance></importance>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -17,6 +17,7 @@
     <word>
         <standard>あいつら</standard>
         <enshu>あいら</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -30,6 +31,7 @@
     <word>
         <standard>暴れる</standard>
         <enshu>あたける</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -44,6 +46,7 @@
         <standard>散髪する</standard>
         <standard>髪の毛を切る</standard>
         <enshu>頭切る</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -58,6 +61,7 @@
         <standard>赤ちゃん</standard>
         <standard>赤ん坊</standard>
         <enshu>あっかー</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -71,6 +75,7 @@
     <word>
         <standard>あそこ</standard>
         <enshu>あっこ</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -86,6 +91,7 @@
         <standard>開放</standard>
         <standard>何も無い</standard>
         <enshu>あっぱかさー</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -99,6 +105,7 @@
     <word>
         <standard>あわてん坊</standard>
         <enshu>あわっくらい</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -112,6 +119,7 @@
     <word>
         <standard>割に合わない</standard>
         <enshu>合わん</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -127,6 +135,7 @@
         <standard>兄さん</standard>
         <standard>兄</standard>
         <enshu>あんにー</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -142,6 +151,7 @@
         <standard>姉さん</standard>
         <standard>姉</standard>
         <enshu>あんねー</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -156,6 +166,7 @@
         <standard>いいかげん</standard>
         <standard>適当</standard>
         <enshu>いーからべー</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -170,6 +181,7 @@
         <standard>蒸し暑い</standard>
         <standard>暑い</standard>
         <enshu>いきれる</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -183,6 +195,7 @@
     <word>
         <standard>行こう</standard>
         <enshu>いじゃ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -196,6 +209,7 @@
     <word>
         <standard>居づらい</standard>
         <enshu>いずようんない</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -210,6 +224,7 @@
         <standard>いじる</standard>
         <standard>弄くる</standard>
         <enshu>いぜる</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -222,7 +237,9 @@
     </word>
     <word>
         <standard>す</standard>
+        <standard>した</standard>
         <enshu>いた</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -236,6 +253,7 @@
     <word>
         <standard>しちゃう</standard>
         <enshu>いちゃう</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -250,6 +268,7 @@
         <standard>一緒に</standard>
         <standard>一遍に</standard>
         <enshu>いっしょくた</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -263,6 +282,7 @@
     <word>
         <standard>動く</standard>
         <enshu>いのく</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -277,6 +297,7 @@
         <standard>ひび</standard>
         <standard>ひび割れ</standard>
         <enshu>いみり</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -291,6 +312,7 @@
         <standard>不愉快</standard>
         <standard>いやだ</standard>
         <enshu>いやったい</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -305,6 +327,7 @@
         <standard>余計な</standard>
         <standard>いらない</standard>
         <enshu>いらん</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -319,6 +342,7 @@
         <standard>不可能</standard>
         <standard>無理</standard>
         <enshu>いん</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -332,6 +356,7 @@
     <word>
         <standard>捨てる</standard>
         <enshu>うっちゃる</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -346,6 +371,7 @@
         <standard>曲がる</standard>
         <standard>歪む</standard>
         <enshu>えがむ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -360,6 +386,7 @@
         <standard>いいかげん</standard>
         <standard>雑</standard>
         <enshu>えーかげん</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -374,6 +401,7 @@
         <standard>多い</standard>
         <standard>たくさん</standard>
         <enshu>えーかん</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -388,6 +416,7 @@
         <standard>ジグザグ</standard>
         <standard>ぐにゃぐにゃ</standard>
         <enshu>えごえご</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -401,6 +430,7 @@
     <word>
         <standard>威張る</standard>
         <enshu>えばる</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -416,6 +446,7 @@
         <standard>悪い</standard>
         <standard>最悪</standard>
         <enshu>おえん</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -429,6 +460,7 @@
     <word>
         <standard>むかつく、頭にくる</standard>
         <enshu>おこれる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -442,6 +474,7 @@
     <word>
         <standard>教わる</standard>
         <enshu>おしわる、おしょわる</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -455,6 +488,7 @@
     <word>
         <standard>やり切れない、終わらない</standard>
         <enshu>～おせん</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -468,6 +502,7 @@
     <word>
         <standard>馬鹿、冗談</standard>
         <enshu>おた</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -481,6 +516,7 @@
     <word>
         <standard>お金持ち、上流階級、資産家</standard>
         <enshu>おだいさま</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -494,6 +530,7 @@
     <word>
         <standard>お母さん、嫁</standard>
         <enshu>おっかさ</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -507,6 +544,7 @@
     <word>
         <standard>怖い、恐ろしい</standard>
         <enshu>おっかない</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -520,6 +558,7 @@
     <word>
         <standard>和尚様、お坊さん</standard>
         <enshu>おっさま</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -533,6 +572,7 @@
     <word>
         <standard>味噌汁</standard>
         <enshu>おっしい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -546,6 +586,7 @@
     <word>
         <standard>驚く、びっくりする</standard>
         <enshu>おどける</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -558,7 +599,8 @@
     </word>
     <word>
         <standard>お父さん</standard>
-        <enshu>おとっさ、おっとさ</enshu>
+        <enshu>おとっさ</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -572,6 +614,7 @@
     <word>
         <standard>気の毒な、辛い</standard>
         <enshu>おとましい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -585,6 +628,7 @@
     <word>
         <standard>はれている様子、痛重い</standard>
         <enshu>おーぼったい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -598,6 +642,7 @@
     <word>
         <standard>奢る（おごる）</standard>
         <enshu>おもる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -611,6 +656,7 @@
     <word>
         <standard>壊す、悪くする、ケアレスミスをおかす</standard>
         <enshu>おやす</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -624,6 +670,7 @@
     <word>
         <standard>お前、てめえ（怒り）</standard>
         <enshu>おんし、おんしゃ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -637,6 +684,7 @@
     <word>
         <standard>転ぶ、倒れる、かえる</standard>
         <enshu>かぁる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -650,6 +698,7 @@
     <word>
         <standard>だるい、疲れる</standard>
         <enshu>かいだるい、かんだるい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -663,6 +712,7 @@
     <word>
         <standard>鍵（かぎ）をかける</standard>
         <enshu>かう</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -676,6 +726,7 @@
     <word>
         <standard>着替え</standard>
         <enshu>かえち</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -689,6 +740,7 @@
     <word>
         <standard>ジュース、ビールの炭酸が抜ける、気が抜ける</standard>
         <enshu>かが抜ける</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -702,6 +754,7 @@
     <word>
         <standard>引っ掻く、爪で掻く</standard>
         <enshu>かじる、かじくる　（標）</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -713,8 +766,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>仲間に入れる、片づける</standard>
+        <standard>片づける</standard>
         <enshu>かたす</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -728,6 +782,7 @@
     <word>
         <standard>ものすごい、とても</standard>
         <enshu>がとう（がとうももない）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -741,6 +796,7 @@
     <word>
         <standard>いじめる</standard>
         <enshu>かまう　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -754,6 +810,7 @@
     <word>
         <standard>乾燥してパリパリになる様</standard>
         <enshu>かわばる、かーばる</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -767,6 +824,7 @@
     <word>
         <standard>ものすごい、とても</standard>
         <enshu>がんこ</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -780,6 +838,7 @@
     <word>
         <standard>空豆</standard>
         <enshu>がん豆</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -793,6 +852,7 @@
     <word>
         <standard>黄色、黄色い</standard>
         <enshu>きいない</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -806,6 +866,7 @@
     <word>
         <standard>忙しくて急いでいる様、せわしない、気忙しない</standard>
         <enshu>きぜわしない</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -819,6 +880,7 @@
     <word>
         <standard>昨日</standard>
         <enshu>きんのう、きのうら</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -832,6 +894,7 @@
     <word>
         <standard>刺さる、刺す</standard>
         <enshu>くすがる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -845,6 +908,7 @@
     <word>
         <standard>ぐちゃぐちゃ</standard>
         <enshu>くたんくたん</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -858,6 +922,7 @@
     <word>
         <standard>薄暗い様</standard>
         <enshu>くらぼったい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -871,6 +936,7 @@
     <word>
         <standard>頂戴、くれ（要求）</standard>
         <enshu>くりょ、くんりょー</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -884,6 +950,7 @@
     <word>
         <standard>はしゃぐ、暴れる</standard>
         <enshu>くるう　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -897,6 +964,7 @@
     <word>
         <standard>あげる</standard>
         <enshu>くれる、くれてやる</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -910,6 +978,7 @@
     <word>
         <standard>すみ、端</standard>
         <enshu>くろ</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -923,6 +992,7 @@
     <word>
         <standard>文法、用法ページ参照</standard>
         <enshu>～け、～け？</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -936,6 +1006,7 @@
     <word>
         <standard>～だけれども</standard>
         <enshu>～けぇが</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -949,6 +1020,7 @@
     <word>
         <standard>嘔吐、げろ</standard>
         <enshu>げ、げぇ、げぼ</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -962,6 +1034,7 @@
     <word>
         <standard>帰る</standard>
         <enshu>けぇる</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -975,6 +1048,7 @@
     <word>
         <standard>蹴り倒す、蹴り飛ばす</standard>
         <enshu>けたおす</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -988,6 +1062,7 @@
     <word>
         <standard>蹴る、そのへんに置いておく</standard>
         <enshu>けっくらかす</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1001,6 +1076,7 @@
     <word>
         <standard>綺麗、よい</standard>
         <enshu>けっこい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1012,8 +1088,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>自転車（けったくりマシーン）</standard>
-        <enshu>けった、けったー</enshu>
+        <standard>自転車</standard>
+        <enshu>けった</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1027,6 +1104,7 @@
     <word>
         <standard>羨ましい</standard>
         <enshu>けなるい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1040,6 +1118,7 @@
     <word>
         <standard>喧嘩、揉めている様</standard>
         <enshu>けんかもんか</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1053,6 +1132,7 @@
     <word>
         <standard>濃い</standard>
         <enshu>濃いー　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1066,6 +1146,7 @@
     <word>
         <standard>漬け物</standard>
         <enshu>こうこう（おこうこ）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1079,6 +1160,7 @@
     <word>
         <standard>すごく汚い（アクセント　こ）</standard>
         <enshu>こ汚い　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1092,6 +1174,7 @@
     <word>
         <standard>言う（怒り）</standard>
         <enshu>こく</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1105,6 +1188,7 @@
     <word>
         <standard>（野菜、草などを）抜く</standard>
         <enshu>こぐ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1118,6 +1202,7 @@
     <word>
         <standard>だらしのない様</standard>
         <enshu>こぐさらぼったい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1130,7 +1215,8 @@
     </word>
     <word>
         <standard>作る</standard>
-        <enshu>こさえる、こしゃう</enshu>
+        <enshu>こさえる</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1143,7 +1229,8 @@
     </word>
     <word>
         <standard>子供、小僧</standard>
-        <enshu>こぞう、こんぞう</enshu>
+        <enshu>こんぞう</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1157,6 +1244,7 @@
     <word>
         <standard>沈殿する</standard>
         <enshu>こぞむ（こどむ）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1170,6 +1258,7 @@
     <word>
         <standard>ご馳走</standard>
         <enshu>ごっっおう</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1181,8 +1270,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>自転車補助輪</standard>
+        <standard>補助輪</standard>
         <enshu>コロ</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1196,6 +1286,7 @@
     <word>
         <standard>固い（食べ物）、強い</standard>
         <enshu>こわい　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1209,6 +1300,7 @@
     <word>
         <standard>事（こと）</standard>
         <enshu>こん</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1222,6 +1314,7 @@
     <word>
         <standard>苦しい、疲れた状態</standard>
         <enshu>こんきい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1235,6 +1328,7 @@
     <word>
         <standard>粉、ベビーパウダー等</standard>
         <enshu>こんこ</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1248,6 +1342,7 @@
     <word>
         <standard>今度（は）</standard>
         <enshu>こんだ（あ）</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1261,6 +1356,7 @@
     <word>
         <standard>ゴミ</standard>
         <enshu>ごんどー　（福田近辺）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1274,6 +1370,7 @@
     <word>
         <standard>子供（生き物によく使う）</standard>
         <enshu>こんぼう（子ん坊）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1287,6 +1384,7 @@
     <word>
         <standard>ゴボウ</standard>
         <enshu>ごんぼう</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1300,6 +1398,7 @@
         <word>
         <standard>さん</standard>
         <enshu>さ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1313,6 +1412,7 @@
     <word>
         <standard>動きまわる様、移動すること</standard>
         <enshu>さあたりまわる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1326,6 +1426,7 @@
     <word>
         <standard>～しようぜ、やろう</standard>
         <enshu>～ざぁ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1339,6 +1440,7 @@
     <word>
         <standard>実家、故郷</standard>
         <enshu>在所、おざいしょ　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1352,6 +1454,7 @@
     <word>
         <standard>持ち上げる</standard>
         <enshu>さげる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1365,6 +1468,7 @@
     <word>
         <standard>押しつける</standard>
         <enshu>さっつける</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1378,6 +1482,7 @@
     <word>
         <standard>～ごと（まるごと）</standard>
         <enshu>～さら（まるさら）</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1390,7 +1495,8 @@
     </word>
     <word>
         <standard>祖父、お爺ちゃん</standard>
-        <enshu>じーじ（類　ばーば）</enshu>
+        <enshu>じーじ</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1404,6 +1510,7 @@
     <word>
         <standard>軽く湿っている状態</standard>
         <enshu>しめぼったい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1417,6 +1524,7 @@
     <word>
         <standard>弟</standard>
         <enshu>しゃってー、舎弟　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1430,6 +1538,7 @@
     <word>
         <standard>粘度が低い、ゆるい</standard>
         <enshu>しゃびしゃび</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1443,6 +1552,7 @@
     <word>
         <standard>でしょう</standard>
         <enshu>じゃん、じゃんか</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1456,6 +1566,7 @@
     <word>
         <standard>おしゃべりな人</standard>
         <enshu>しゃんべぇ</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1469,6 +1580,7 @@
     <word>
         <standard>人たち</standard>
         <enshu>衆（しゅう）、衆ら　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1482,6 +1594,7 @@
     <word>
         <standard>ぬかるんでいる</standard>
         <enshu>じゅるい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1495,6 +1608,7 @@
     <word>
         <standard>古くて脆い様</standard>
         <enshu>しょうがない</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1508,6 +1622,7 @@
     <word>
         <standard>ぐずぐず、へらへら</standard>
         <enshu>しょろしょろ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1521,6 +1636,7 @@
     <word>
         <standard>仕方がない</standard>
         <enshu>しょんない</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1534,6 +1650,7 @@
     <word>
         <standard>しょっぱい、塩辛い</standard>
         <enshu>しょんばい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1547,6 +1664,7 @@
     <word>
         <standard>つゆ、だし、スープ</standard>
         <enshu>汁（しる）　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1560,6 +1678,7 @@
     <word>
         <standard>～させる、せる</standard>
         <enshu>～す</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1573,6 +1692,7 @@
     <word>
         <standard>しない、やる訳がない</standard>
         <enshu>～すか、すけ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1585,7 +1705,8 @@
     </word>
     <word>
         <standard>ずるい、卑怯</standard>
-        <enshu>ずっこい、ずっけぇ</enshu>
+        <enshu>ずっこい</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1599,6 +1720,7 @@
     <word>
         <standard>すみっこ</standard>
         <enshu>すみっちょ</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1612,6 +1734,7 @@
     <word>
         <standard>馬鹿、程度が低い</standard>
         <enshu>すやい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1625,6 +1748,7 @@
     <word>
         <standard>どうしようもない、これ以上できない</standard>
         <enshu>せずようんない</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1638,6 +1762,7 @@
     <word>
         <standard>触れる、触る</standard>
         <enshu>せせる、せせくる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1651,6 +1776,7 @@
     <word>
         <standard>狭い</standard>
         <enshu>せばい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1664,6 +1790,7 @@
     <word>
         <standard>しない（否定）</standard>
         <enshu>～せん（へん）</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1677,6 +1804,7 @@
     <word>
         <standard>定規</standard>
         <enshu>せんひき（線引き）</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1690,6 +1818,7 @@
     <word>
         <standard>知らんぷりをする</standard>
         <enshu>そらつかう</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1703,6 +1832,7 @@
     <word>
         <standard>出しておく</standard>
         <enshu>だいとく</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1716,6 +1846,7 @@
     <word>
         <standard>水（液体）が大量な様</standard>
         <enshu>だーだー</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1729,6 +1860,7 @@
     <word>
         <standard>閉める</standard>
         <enshu>たつ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1742,6 +1874,7 @@
     <word>
         <standard>たくさん</standard>
         <enshu>たっくー　（若）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1755,6 +1888,7 @@
     <word>
         <standard>～た（過去）</standard>
         <enshu>～たった</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1768,6 +1902,7 @@
     <word>
         <standard>だから（それだから）</standard>
         <enshu>だで（ほんだで）</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1781,6 +1916,7 @@
     <word>
         <standard>文法、用法ページ参照</standard>
         <enshu>～だに</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1794,6 +1930,7 @@
     <word>
         <standard>だから</standard>
         <enshu>だもんで（え）</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1807,6 +1944,7 @@
     <word>
         <standard>文法、用法ページ参照</standard>
         <enshu>～だら（ら）</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1820,6 +1958,7 @@
     <word>
         <standard>度（たび）、都度</standard>
         <enshu>たんび</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1833,6 +1972,7 @@
     <word>
         <standard>内出血（青あざ）ができた</standard>
         <enshu>血が死んだ　（標）</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1846,6 +1986,7 @@
     <word>
         <standard>少しは、ちょっとは</standard>
         <enshu>ちったー</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1859,6 +2000,7 @@
     <word>
         <standard>ちょっと</standard>
         <enshu>ちーっと</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1872,6 +2014,7 @@
     <word>
         <standard>抓る</standard>
         <enshu>ちみくる</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1885,6 +2028,7 @@
     <word>
         <standard>すぐに、急いで</standard>
         <enshu>ちゃっちゃと</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1898,6 +2042,7 @@
     <word>
         <standard>ふざける</standard>
         <enshu>ちょーける</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1911,6 +2056,7 @@
     <word>
         <standard>ちょっかいをだす。落ち着きがない</standard>
         <enshu>ちょびちょびする</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1924,6 +2070,7 @@
     <word>
         <standard>縮れ（ちぢれ）毛</standard>
         <enshu>ちんじゅう</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1937,6 +2084,7 @@
     <word>
         <standard>お湯が熱い</standard>
         <enshu>ちんちん　（標）</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1950,6 +2098,7 @@
     <word>
         <standard>ふてくされる、すねる、怒る</standard>
         <enshu>ちんぷりかく</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1963,6 +2112,7 @@
     <word>
         <standard>つかむ、捕まえる</standard>
         <enshu>つかます</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1976,6 +2126,7 @@
     <word>
         <standard>友人、仲間</standard>
         <enshu>つれ（連れ）　（標）</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1989,6 +2140,7 @@
     <word>
         <standard>～よ　～だよ</standard>
         <enshu>～でぇー</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2002,6 +2154,7 @@
     <word>
         <standard>量が多い</standard>
         <enshu>でがある</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2015,6 +2168,7 @@
     <word>
         <standard>馬鹿なこと</standard>
         <enshu>でほ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2028,6 +2182,7 @@
     <word>
         <standard>ひっくりかえる</standard>
         <enshu>でんぐりがぁる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2041,6 +2196,7 @@
     <word>
         <standard>手伝う</standard>
         <enshu>てんだう</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2054,6 +2210,7 @@
     <word>
         <standard>てっぺん、頂上</standard>
         <enshu>てんこちょ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2067,6 +2224,7 @@
     <word>
         <standard>非常に、とても</standard>
         <enshu>ど</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2080,6 +2238,7 @@
     <word>
         <standard>知らん顔</standard>
         <enshu>どしらん顔</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2093,6 +2252,7 @@
     <word>
         <standard>慌てる様、落ち着かない様</standard>
         <enshu>とちとちする</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2106,6 +2266,7 @@
     <word>
         <standard>つかまえる（強調）</standard>
         <enshu>とっつかます（同　つかます）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2119,6 +2280,7 @@
     <word>
         <standard>走る、急ぐ</standard>
         <enshu>とぶ　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2132,6 +2294,7 @@
     <word>
         <standard>ビリ、最下位</standard>
         <enshu>どべ</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2145,6 +2308,7 @@
     <word>
         <standard>ばか、あほ、のろま</standard>
         <enshu>とろい、とろくさい　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2158,6 +2322,7 @@
     <word>
         <standard>構わない、気にしない</standard>
         <enshu>とんじゃかない</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2171,6 +2336,7 @@
     <word>
         <standard>捕まえる</standard>
         <enshu>とんます（とんまえる）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2184,6 +2350,7 @@
     <word>
         <standard>捕まる</standard>
         <enshu>とんまさる（上記受身形）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2197,6 +2364,7 @@
     <word>
         <standard>しなさい</standard>
         <enshu>ない</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2210,6 +2378,7 @@
     <word>
         <standard>しないで</standard>
         <enshu>なし</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2223,6 +2392,7 @@
     <word>
         <standard>怠け者、ぐうたら、半人前</standard>
         <enshu>なまかー</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2236,6 +2406,7 @@
     <word>
         <standard>緩い、ぬるい</standard>
         <enshu>なるい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2249,6 +2420,7 @@
     <word>
         <standard>なんにせよ、とにかく</standard>
         <enshu>なんしょ（＋かんしょ）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2262,6 +2434,7 @@
     <word>
         <standard>文法、用法ページ参照</standard>
         <enshu>～に</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2275,6 +2448,7 @@
     <word>
         <standard>しなくては</standard>
         <enshu>にゃ</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2288,6 +2462,7 @@
     <word>
         <standard>暖かい</standard>
         <enshu>ぬくとい</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2301,6 +2476,7 @@
     <word>
         <standard>腐る</standard>
         <enshu>ねがる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2314,6 +2490,7 @@
     <word>
         <standard>丁寧、念入りに</standard>
         <enshu>ねき</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2327,6 +2504,7 @@
     <word>
         <standard>腐る、根、元から腐る</standard>
         <enshu>ねぐさる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2340,6 +2518,7 @@
     <word>
         <standard>歯茎</standard>
         <enshu>ねち</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2353,6 +2532,7 @@
     <word>
         <standard>寝ている。寝入っている。</standard>
         <enshu>ねーってる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2366,6 +2546,7 @@
     <word>
         <standard>おでき、できもの</standard>
         <enshu>ねぶつ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2379,6 +2560,7 @@
     <word>
         <standard>だからね、ね</standard>
         <enshu>～の</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2392,6 +2574,7 @@
     <word>
         <standard>～ねぇ</standard>
         <enshu>～のぇ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2405,6 +2588,7 @@
     <word>
         <standard>のろい、遅い</standard>
         <enshu>のそい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2418,6 +2602,7 @@
     <word>
         <standard>もう入らない、お腹が一杯</standard>
         <enshu>のんばめる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2431,6 +2616,7 @@
     <word>
         <standard>もう</standard>
         <enshu>はぁ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2443,7 +2629,8 @@
     </word>
     <word>
         <standard>祖母、お婆ちゃん</standard>
-        <enshu>ばあば（類　じいじ）</enshu>
+        <enshu>ばあば</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2457,6 +2644,7 @@
     <word>
         <standard>とっても～、すごく</standard>
         <enshu>ばか～　（標）</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2470,6 +2658,7 @@
     <word>
         <standard>～ばかり、位</standard>
         <enshu>～ばか</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2483,6 +2672,7 @@
     <word>
         <standard>少しだけ</standard>
         <enshu>～ぱか</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2496,6 +2686,7 @@
     <word>
         <standard>馬鹿野郎、ばかもの、馬鹿面</standard>
         <enshu>馬鹿っつら</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2509,6 +2700,7 @@
     <word>
         <standard>壊れる、使えなくなる</standard>
         <enshu>ばかになる</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2522,6 +2714,7 @@
     <word>
         <standard>挟まる</standard>
         <enshu>はさがる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2535,6 +2728,7 @@
     <word>
         <standard>爆発する、破裂する</standard>
         <enshu>はざす、はぜる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2548,6 +2742,7 @@
     <word>
         <standard>挟む</standard>
         <enshu>はさげる</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2561,6 +2756,7 @@
     <word>
         <standard>走りまわる</standard>
         <enshu>はしくりまわる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2574,6 +2770,7 @@
     <word>
         <standard>はきはき</standard>
         <enshu>はしはし</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2587,6 +2784,7 @@
     <word>
         <standard>すねる、膨れっ面をする</standard>
         <enshu>はすとんがらす</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2600,6 +2798,7 @@
     <word>
         <standard>裸、裸ん坊</standard>
         <enshu>はだかっぽ</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2613,6 +2812,7 @@
     <word>
         <standard>わざと</standard>
         <enshu>はだって</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2626,6 +2826,7 @@
     <word>
         <standard>初子の祝い（浜松まつり）</standard>
         <enshu>初（はつ）　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2639,6 +2840,7 @@
     <word>
         <standard>きれい好き、しっかりもの</standard>
         <enshu>はつめい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2652,6 +2854,7 @@
     <word>
         <standard>離す</standard>
         <enshu>はならかす</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2665,6 +2868,7 @@
     <word>
         <standard>仲間はずれ</standard>
         <enshu>はぶせ</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2678,6 +2882,7 @@
     <word>
         <standard>はやる、流行る</standard>
         <enshu>はよる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2691,6 +2896,7 @@
     <word>
         <standard>眩しい</standard>
         <enshu>ひずるしい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2704,6 +2910,7 @@
     <word>
         <standard>放っておく、放置する</standard>
         <enshu>ひっぽかす</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2717,6 +2924,7 @@
     <word>
         <standard>きゃーきゃー、ぎゃーぎゃー（言う）</standard>
         <enshu>ひゃーひゃー</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2730,6 +2938,7 @@
     <word>
         <standard>すごく、極端な</standard>
         <enshu>ひょんきん</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2743,6 +2952,7 @@
     <word>
         <standard>ぶん殴る、殴り壊す、（拉致する）</standard>
         <enshu>ぶっさらう（ぴっさらう）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2756,6 +2966,7 @@
     <word>
         <standard>だらしない、無精</standard>
         <enshu>ぶしょったい</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2769,6 +2980,7 @@
     <word>
         <standard>～分、～前</standard>
         <enshu>～ぶり</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2782,6 +2994,7 @@
     <word>
         <standard>年取った、年輩の</standard>
         <enshu>古い　（標）</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2795,6 +3008,7 @@
     <word>
         <standard>ぶらさがる</standard>
         <enshu>ぶるさがる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2808,6 +3022,7 @@
     <word>
         <standard>足がずぶずぶ潜る</standard>
         <enshu>ふんごむ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2821,6 +3036,7 @@
     <word>
         <standard>踏んづける</standard>
         <enshu>ふんずかす、ふんずばす</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2834,6 +3050,7 @@
     <word>
         <standard>ガンガン、どんどん、大量に、勇ましく</standard>
         <enshu>ぶんぶん</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2847,6 +3064,7 @@
     <word>
         <standard>歪む、曲がる</standard>
         <enshu>へちがむ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2860,6 +3078,7 @@
     <word>
         <standard>へぼい、駄目な様、へぼ、しょぼい</standard>
         <enshu>へちょい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2873,6 +3092,7 @@
     <word>
         <standard>そうかい、そうか</standard>
         <enshu>ほうけぇ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2886,6 +3106,7 @@
     <word>
         <standard>追う、追いかける</standard>
         <enshu>ぼう</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2899,6 +3120,7 @@
     <word>
         <standard>吐き出す</standard>
         <enshu>ほきだす</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2912,6 +3134,7 @@
     <word>
         <standard>（縄など）解く、ほどく</standard>
         <enshu>ほじく</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2925,6 +3148,7 @@
     <word>
         <standard>掘る、穴をあける</standard>
         <enshu>ほじくる</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2938,6 +3162,7 @@
     <word>
         <standard>追い回す、追いかけ回す</standard>
         <enshu>ぼっからかす</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2951,6 +3176,7 @@
     <word>
         <standard>刺さる</standard>
         <enshu>ほっくすがる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2964,6 +3190,7 @@
     <word>
         <standard>粗悪なもの、粗悪な様、おんぼろ、へぼ</standard>
         <enshu>ぼっこ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2977,6 +3204,7 @@
     <word>
         <standard>へそくり、お小遣い</standard>
         <enshu>ほったー</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2990,6 +3218,7 @@
     <word>
         <standard>スイッチ、ボタン（出っ張り）</standard>
         <enshu>ぼっちょ</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3003,6 +3232,7 @@
     <word>
         <standard></standard>
         <enshu>ぼっつける</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3016,6 +3246,7 @@
     <word>
         <standard>放っておく、放置する</standard>
         <enshu>ほっぽかす</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3029,6 +3260,7 @@
     <word>
         <standard>そうだけど、それなら</standard>
         <enshu>ほんだん</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3042,6 +3274,7 @@
     <word>
         <standard>オートバイ、自動二輪、原付、バイク</standard>
         <enshu>ポンポン</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3055,6 +3288,7 @@
     <word>
         <standard>しよう</standard>
         <enshu>～まい（～めー）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3068,6 +3302,7 @@
     <word>
         <standard>任せておけ</standard>
         <enshu>まかしょう</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3081,6 +3316,7 @@
     <word>
         <standard>仲間にいれる</standard>
         <enshu>まぜる　（標）</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3094,6 +3330,7 @@
     <word>
         <standard>細かい、まめ、よく働く</standard>
         <enshu>まめったい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3107,6 +3344,7 @@
     <word>
         <standard>～まみれ（埃まみれ等）</standard>
         <enshu>～まるけ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3120,6 +3358,7 @@
     <word>
         <standard>しっかりした</standard>
         <enshu>みがましい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3133,6 +3372,7 @@
     <word>
         <standard>覚えがいい（ひいき）気に入られること</standard>
         <enshu>みこがいい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3146,6 +3386,7 @@
     <word>
         <standard>～ごらん、見たことか</standard>
         <enshu>～みっせー</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3159,6 +3400,7 @@
     <word>
         <standard>見栄え、見た目、様</standard>
         <enshu>みてくれ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3172,6 +3414,7 @@
     <word>
         <standard>見栄え、見た目、様</standard>
         <enshu>みば</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3185,6 +3428,7 @@
     <word>
         <standard>未熟な、熟れてない</standard>
         <enshu>みるい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3198,6 +3442,7 @@
     <word>
         <standard>娘</standard>
         <enshu>むっすー（類　こぞう）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3211,6 +3456,7 @@
     <word>
         <standard>目分量、だいたい</standard>
         <enshu>めっそう</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3224,6 +3470,7 @@
     <word>
         <standard>虫（子供向け）</standard>
         <enshu>めーめ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3237,6 +3484,7 @@
     <word>
         <standard>見える</standard>
         <enshu>めーる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3250,6 +3498,7 @@
     <word>
         <standard>眼、目玉、眼球</standard>
         <enshu>めんくりだま</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3263,6 +3512,7 @@
     <word>
         <standard>面倒くさい</standard>
         <enshu>めんどい、めんどっちー</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3276,6 +3526,7 @@
     <word>
         <standard>ものすごく、非常に</standard>
         <enshu>も～</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3289,6 +3540,7 @@
     <word>
         <standard>漏れる</standard>
         <enshu>もおる、もる　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3302,6 +3554,7 @@
     <word>
         <standard>たくさん、大量に</standard>
         <enshu>もくしゃ　（福田近辺）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3315,6 +3568,7 @@
     <word>
         <standard>盗む</standard>
         <enshu>もさる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3328,6 +3582,7 @@
     <word>
         <standard>絡まる</standard>
         <enshu>もじかる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3341,6 +3596,7 @@
     <word>
         <standard>持たずに、持たなし</standard>
         <enshu>持ちなし</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3354,6 +3610,7 @@
     <word>
         <standard>取りに行く</standard>
         <enshu>持ちに行く</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3367,6 +3624,7 @@
     <word>
         <standard>子供のおもり</standard>
         <enshu>もんりい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3380,6 +3638,7 @@
     <word>
         <standard>～だねぇ、ねぇ</standard>
         <enshu>～やぁ</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3393,6 +3652,7 @@
     <word>
         <standard>おい、おーい（怒っていなくても）</standard>
         <enshu>やい、やー</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3406,6 +3666,7 @@
     <word>
         <standard>まいったなー、あーあ</standard>
         <enshu>やいやい</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3419,6 +3680,7 @@
     <word>
         <standard>くだらない</standard>
         <enshu>やくたいもない</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3432,6 +3694,7 @@
     <word>
         <standard>やわらかい、弱々しい様</standard>
         <enshu>やごい</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3445,6 +3708,7 @@
     <word>
         <standard>頭にくる、やんなっちゃう</standard>
         <enshu>やっきりする</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3458,6 +3722,7 @@
     <word>
         <standard>長い間、時間</standard>
         <enshu>やーっと、やあっと</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3471,6 +3736,7 @@
     <word>
         <standard>やりましょうか？</standard>
         <enshu>やらっか</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3483,7 +3749,8 @@
     </word>
     <word>
         <standard>やりやすい</standard>
-        <enshu>やりいい（やりよい）</enshu>
+        <enshu>やりいい</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3497,6 +3764,7 @@
     <word>
         <standard>せわしない、忙しい、落ち着かない様</standard>
         <enshu>ゆるせかない</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3510,6 +3778,7 @@
     <word>
         <standard>昨夜、ゆうべ</standard>
         <enshu>ゆんべ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3523,6 +3792,7 @@
     <word>
         <standard>～くらい、前後、以上</standard>
         <enshu>（～の）よー</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3536,6 +3806,7 @@
     <word>
         <standard>ようやく</standard>
         <enshu>よーやっと</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3549,6 +3820,7 @@
     <word>
         <standard>よさそう、上手くいきそう</standard>
         <enshu>よかりそう</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3562,6 +3834,7 @@
     <word>
         <standard>寄りかかる</standard>
         <enshu>よさりかかる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3575,6 +3848,7 @@
     <word>
         <standard>洗濯物、布団をとりこむ</standard>
         <enshu>よせる　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3588,6 +3862,7 @@
     <word>
         <standard>どかす、動かす</standard>
         <enshu>よっこする</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3601,6 +3876,7 @@
     <word>
         <standard>使い古した、ふらふらした、おんぼろの、程度の低い</standard>
         <enshu>酔ったような　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3614,6 +3890,7 @@
     <word>
         <standard>よだれ</standard>
         <enshu>よど</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3627,6 +3904,7 @@
     <word>
         <standard>文法、用法ページ参照</standard>
         <enshu>～ら</enshu>
+        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3640,6 +3918,7 @@
     <word>
         <standard>猥雑、煩雑な様子、無茶苦茶な様</standard>
         <enshu>らんごかない</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3653,6 +3932,7 @@
     <word>
         <standard>調理する、料理する</standard>
         <enshu>りょうる</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3666,6 +3946,7 @@
     <word>
         <standard>～してごらん</standard>
         <enshu>～りん（西の方限定）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3679,6 +3960,7 @@
     <word>
         <standard>笑わせること</standard>
         <enshu>わらかす　（標）</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3692,6 +3974,7 @@
     <word>
         <standard>～しない？</standard>
         <enshu>～ん？</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3705,6 +3988,7 @@
     <word>
         <standard>～のところ、場所</standard>
         <enshu>～んさ</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3718,6 +4002,7 @@
     <word>
         <standard>それだけど、そんなこと</standard>
         <enshu>んだけど</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
