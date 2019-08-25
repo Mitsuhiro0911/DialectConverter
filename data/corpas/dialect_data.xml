@@ -1,67 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dialect>
     <word>
-        <standard>間</standard>
-        <enshu>あいさ</enshu>
-        <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>あいつら</standard>
-        <enshu>あいら</enshu>
-        <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>暴れる</standard>
-        <enshu>あたける</enshu>
-        <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>散髪する</standard>
         <standard>髪の毛を切る</standard>
         <enshu>頭切る</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>赤ちゃん</standard>
-        <standard>赤ん坊</standard>
-        <enshu>あっかー</enshu>
-        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -87,11 +30,756 @@
         </conjugational>
     </word>
     <word>
-        <standard>開けっぴろげ</standard>
-        <standard>開放</standard>
-        <standard>何も無い</standard>
-        <enshu>あっぱかさー</enshu>
-        <importance>1</importance>
+        <standard>す</standard>
+        <standard>した</standard>
+        <enshu>いた</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>しちゃう</standard>
+        <enshu>いちゃう</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>一緒に</standard>
+        <standard>一遍に</standard>
+        <enshu>いっしょくた</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>不愉快</standard>
+        <standard>いやだ</standard>
+        <enshu>いやったい</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>余計な</standard>
+        <standard>いらない</standard>
+        <enshu>いらん</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>捨てる</standard>
+        <enshu>うっちゃる</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>怖い、恐ろしい</standard>
+        <enshu>おっかない</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>鍵（かぎ）をかける</standard>
+        <enshu>かう</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>ジュース、ビールの炭酸が抜ける、気が抜ける</standard>
+        <enshu>かが抜ける</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>片づける</standard>
+        <enshu>かたす</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>乾燥してパリパリになる様</standard>
+        <enshu>かわばる、かーばる</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>忙しくて急いでいる様、せわしない、気忙しない</standard>
+        <enshu>きぜわしない</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>あげる</standard>
+        <enshu>くれる、くれてやる</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>嘔吐、げろ</standard>
+        <enshu>げ、げぇ、げぼ</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>蹴り倒す、蹴り飛ばす</standard>
+        <enshu>けたおす</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>補助輪</standard>
+        <enshu>コロ</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>～ごと（まるごと）</standard>
+        <enshu>～さら（まるさら）</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>祖父、お爺ちゃん</standard>
+        <enshu>じーじ</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>粘度が低い、ゆるい</standard>
+        <enshu>しゃびしゃび</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>でしょう</standard>
+        <enshu>じゃん、じゃんか</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>おしゃべりな人</standard>
+        <enshu>しゃんべぇ</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>仕方がない</standard>
+        <enshu>しょんない</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>定規</standard>
+        <enshu>せんひき（線引き）</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>だから（それだから）</standard>
+        <enshu>だで（ほんだで）</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>文法、用法ページ参照</standard>
+        <enshu>～だに</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>だから</standard>
+        <enshu>だもんで（え）</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>文法、用法ページ参照</standard>
+        <enshu>～だら（ら）</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>内出血（青あざ）ができた</standard>
+        <enshu>血が死んだ　（標）</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>抓る</standard>
+        <enshu>ちみくる</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>すぐに、急いで</standard>
+        <enshu>ちゃっちゃと</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>お湯が熱い</standard>
+        <enshu>ちんちん　（標）</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>友人、仲間</standard>
+        <enshu>つれ（連れ）　（標）</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>非常に、とても</standard>
+        <enshu>ど</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>ビリ、最下位</standard>
+        <enshu>どべ</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>しないで</standard>
+        <enshu>なし</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>文法、用法ページ参照</standard>
+        <enshu>～に</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>しなくては</standard>
+        <enshu>にゃ</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>歯茎</standard>
+        <enshu>ねち</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>とっても～、すごく</standard>
+        <enshu>ばか～　（標）</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>少しだけ</standard>
+        <enshu>～ぱか</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>壊れる、使えなくなる</standard>
+        <enshu>ばかになる</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>挟む</standard>
+        <enshu>はさげる</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>離す</standard>
+        <enshu>はならかす</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>仲間はずれ</standard>
+        <enshu>はぶせ</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>すごく、極端な</standard>
+        <enshu>ひょんきん</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>だらしない、無精</standard>
+        <enshu>ぶしょったい</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>年取った、年輩の</standard>
+        <enshu>古い　（標）</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>掘る、穴をあける</standard>
+        <enshu>ほじくる</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>スイッチ、ボタン（出っ張り）</standard>
+        <enshu>ぼっちょ</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>放っておく、放置する</standard>
+        <enshu>ほっぽかす</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>仲間にいれる</standard>
+        <enshu>まぜる　（標）</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>～だねぇ、ねぇ</standard>
+        <enshu>～やぁ</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>文法、用法ページ参照</standard>
+        <enshu>～ら</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>赤ちゃん</standard>
+        <standard>赤ん坊</standard>
+        <enshu>あっかー</enshu>
+        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -163,39 +851,10 @@
         </conjugational>
     </word>
     <word>
-        <standard>いいかげん</standard>
-        <standard>適当</standard>
-        <enshu>いーからべー</enshu>
-        <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>蒸し暑い</standard>
         <standard>暑い</standard>
         <enshu>いきれる</enshu>
         <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>行こう</standard>
-        <enshu>いじゃ</enshu>
-        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -236,187 +895,10 @@
         </conjugational>
     </word>
     <word>
-        <standard>す</standard>
-        <standard>した</standard>
-        <enshu>いた</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>しちゃう</standard>
-        <enshu>いちゃう</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>一緒に</standard>
-        <standard>一遍に</standard>
-        <enshu>いっしょくた</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>動く</standard>
-        <enshu>いのく</enshu>
-        <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>ひび</standard>
-        <standard>ひび割れ</standard>
-        <enshu>いみり</enshu>
-        <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>不愉快</standard>
-        <standard>いやだ</standard>
-        <enshu>いやったい</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>余計な</standard>
-        <standard>いらない</standard>
-        <enshu>いらん</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>不可能</standard>
-        <standard>無理</standard>
-        <enshu>いん</enshu>
-        <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>捨てる</standard>
-        <enshu>うっちゃる</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>曲がる</standard>
-        <standard>歪む</standard>
-        <enshu>えがむ</enshu>
-        <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>いいかげん</standard>
         <standard>雑</standard>
         <enshu>えーかげん</enshu>
         <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>多い</standard>
-        <standard>たくさん</standard>
-        <enshu>えーかん</enshu>
-        <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>ジグザグ</standard>
-        <standard>ぐにゃぐにゃ</standard>
-        <enshu>えごえご</enshu>
-        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -458,20 +940,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>むかつく、頭にくる</standard>
-        <enshu>おこれる</enshu>
-        <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>教わる</standard>
         <enshu>おしわる、おしょわる</enshu>
         <importance>2</importance>
@@ -489,20 +957,6 @@
         <standard>やり切れない、終わらない</standard>
         <enshu>～おせん</enshu>
         <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>馬鹿、冗談</standard>
-        <enshu>おた</enshu>
-        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -542,9 +996,591 @@
         </conjugational>
     </word>
     <word>
-        <standard>怖い、恐ろしい</standard>
-        <enshu>おっかない</enshu>
-        <importance>3</importance>
+        <standard>お父さん</standard>
+        <enshu>おとっさ</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>引っ掻く、爪で掻く</standard>
+        <enshu>かじる、かじくる　（標）</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>ものすごい、とても</standard>
+        <enshu>がんこ</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>すみ、端</standard>
+        <enshu>くろ</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>文法、用法ページ参照</standard>
+        <enshu>～け、～け？</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>帰る</standard>
+        <enshu>けぇる</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>自転車</standard>
+        <enshu>けった</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>作る</standard>
+        <enshu>こさえる</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>子供、小僧</standard>
+        <enshu>こんぞう</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>事（こと）</standard>
+        <enshu>こん</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>粉、ベビーパウダー等</standard>
+        <enshu>こんこ</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>今度（は）</standard>
+        <enshu>こんだ（あ）</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>ずるい、卑怯</standard>
+        <enshu>ずっこい</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>すみっこ</standard>
+        <enshu>すみっちょ</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>しない（否定）</standard>
+        <enshu>～せん（へん）</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>少しは、ちょっとは</standard>
+        <enshu>ちったー</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>ちょっと</standard>
+        <enshu>ちーっと</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>ふざける</standard>
+        <enshu>ちょーける</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>～よ　～だよ</standard>
+        <enshu>～でぇー</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>暖かい</standard>
+        <enshu>ぬくとい</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>祖母、お婆ちゃん</standard>
+        <enshu>ばあば</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>すねる、膨れっ面をする</standard>
+        <enshu>はすとんがらす</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>裸、裸ん坊</standard>
+        <enshu>はだかっぽ</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>オートバイ、自動二輪、原付、バイク</standard>
+        <enshu>ポンポン</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>やわらかい、弱々しい様</standard>
+        <enshu>やごい</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>やりやすい</standard>
+        <enshu>やりいい</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>ようやく</standard>
+        <enshu>よーやっと</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>それだけど、そんなこと</standard>
+        <enshu>んだけど</enshu>
+        <importance>2</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>間</standard>
+        <enshu>あいさ</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>あいつら</standard>
+        <enshu>あいら</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>暴れる</standard>
+        <enshu>あたける</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>開けっぴろげ</standard>
+        <standard>開放</standard>
+        <standard>何も無い</standard>
+        <enshu>あっぱかさー</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>いいかげん</standard>
+        <standard>適当</standard>
+        <enshu>いーからべー</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>行こう</standard>
+        <enshu>いじゃ</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>動く</standard>
+        <enshu>いのく</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>ひび</standard>
+        <standard>ひび割れ</standard>
+        <enshu>いみり</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>不可能</standard>
+        <standard>無理</standard>
+        <enshu>いん</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>曲がる</standard>
+        <standard>歪む</standard>
+        <enshu>えがむ</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>多い</standard>
+        <standard>たくさん</standard>
+        <enshu>えーかん</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>ジグザグ</standard>
+        <standard>ぐにゃぐにゃ</standard>
+        <enshu>えごえご</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>むかつく、頭にくる</standard>
+        <enshu>おこれる</enshu>
+        <importance>1</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>馬鹿、冗談</standard>
+        <enshu>おた</enshu>
+        <importance>1</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -587,20 +1623,6 @@
         <standard>驚く、びっくりする</standard>
         <enshu>おどける</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>お父さん</standard>
-        <enshu>おとっさ</enshu>
-        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -710,65 +1732,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>鍵（かぎ）をかける</standard>
-        <enshu>かう</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>着替え</standard>
         <enshu>かえち</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>ジュース、ビールの炭酸が抜ける、気が抜ける</standard>
-        <enshu>かが抜ける</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>引っ掻く、爪で掻く</standard>
-        <enshu>かじる、かじくる　（標）</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>片づける</standard>
-        <enshu>かたす</enshu>
-        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -808,34 +1774,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>乾燥してパリパリになる様</standard>
-        <enshu>かわばる、かーばる</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>ものすごい、とても</standard>
-        <enshu>がんこ</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>空豆</standard>
         <enshu>がん豆</enshu>
         <importance>1</importance>
@@ -853,20 +1791,6 @@
         <standard>黄色、黄色い</standard>
         <enshu>きいない</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>忙しくて急いでいる様、せわしない、気忙しない</standard>
-        <enshu>きぜわしない</enshu>
-        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -962,93 +1886,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>あげる</standard>
-        <enshu>くれる、くれてやる</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>すみ、端</standard>
-        <enshu>くろ</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>文法、用法ページ参照</standard>
-        <enshu>～け、～け？</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>～だけれども</standard>
         <enshu>～けぇが</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>嘔吐、げろ</standard>
-        <enshu>げ、げぇ、げぼ</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>帰る</standard>
-        <enshu>けぇる</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>蹴り倒す、蹴り飛ばす</standard>
-        <enshu>けたおす</enshu>
-        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1077,20 +1917,6 @@
         <standard>綺麗、よい</standard>
         <enshu>けっこい</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>自転車</standard>
-        <enshu>けった</enshu>
-        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1214,34 +2040,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>作る</standard>
-        <enshu>こさえる</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>子供、小僧</standard>
-        <enshu>こんぞう</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>沈殿する</standard>
         <enshu>こぞむ（こどむ）</enshu>
         <importance>1</importance>
@@ -1270,20 +2068,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>補助輪</standard>
-        <enshu>コロ</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>固い（食べ物）、強い</standard>
         <enshu>こわい　（標）</enshu>
         <importance>1</importance>
@@ -1298,51 +2082,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>事（こと）</standard>
-        <enshu>こん</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>苦しい、疲れた状態</standard>
         <enshu>こんきい</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>粉、ベビーパウダー等</standard>
-        <enshu>こんこ</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>今度（は）</standard>
-        <enshu>こんだ（あ）</enshu>
-        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1480,34 +2222,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>～ごと（まるごと）</standard>
-        <enshu>～さら（まるさら）</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>祖父、お爺ちゃん</standard>
-        <enshu>じーじ</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>軽く湿っている状態</standard>
         <enshu>しめぼったい</enshu>
         <importance>1</importance>
@@ -1525,48 +2239,6 @@
         <standard>弟</standard>
         <enshu>しゃってー、舎弟　（標）</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>粘度が低い、ゆるい</standard>
-        <enshu>しゃびしゃび</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>でしょう</standard>
-        <enshu>じゃん、じゃんか</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>おしゃべりな人</standard>
-        <enshu>しゃんべぇ</enshu>
-        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1634,20 +2306,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>仕方がない</standard>
-        <enshu>しょんない</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>しょっぱい、塩辛い</standard>
         <enshu>しょんばい</enshu>
         <importance>1</importance>
@@ -1704,34 +2362,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>ずるい、卑怯</standard>
-        <enshu>ずっこい</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>すみっこ</standard>
-        <enshu>すみっちょ</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>馬鹿、程度が低い</standard>
         <enshu>すやい</enshu>
         <importance>1</importance>
@@ -1777,34 +2407,6 @@
         <standard>狭い</standard>
         <enshu>せばい</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>しない（否定）</standard>
-        <enshu>～せん（へん）</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>定規</standard>
-        <enshu>せんひき（線引き）</enshu>
-        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -1900,149 +2502,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>だから（それだから）</standard>
-        <enshu>だで（ほんだで）</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>文法、用法ページ参照</standard>
-        <enshu>～だに</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>だから</standard>
-        <enshu>だもんで（え）</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>文法、用法ページ参照</standard>
-        <enshu>～だら（ら）</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>度（たび）、都度</standard>
         <enshu>たんび</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>内出血（青あざ）ができた</standard>
-        <enshu>血が死んだ　（標）</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>少しは、ちょっとは</standard>
-        <enshu>ちったー</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>ちょっと</standard>
-        <enshu>ちーっと</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>抓る</standard>
-        <enshu>ちみくる</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>すぐに、急いで</standard>
-        <enshu>ちゃっちゃと</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>ふざける</standard>
-        <enshu>ちょーける</enshu>
-        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2082,20 +2544,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>お湯が熱い</standard>
-        <enshu>ちんちん　（標）</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>ふてくされる、すねる、怒る</standard>
         <enshu>ちんぷりかく</enshu>
         <importance>1</importance>
@@ -2113,34 +2561,6 @@
         <standard>つかむ、捕まえる</standard>
         <enshu>つかます</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>友人、仲間</standard>
-        <enshu>つれ（連れ）　（標）</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>～よ　～だよ</standard>
-        <enshu>～でぇー</enshu>
-        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2222,20 +2642,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>非常に、とても</standard>
-        <enshu>ど</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>知らん顔</standard>
         <enshu>どしらん顔</enshu>
         <importance>1</importance>
@@ -2281,20 +2687,6 @@
         <standard>走る、急ぐ</standard>
         <enshu>とぶ　（標）</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>ビリ、最下位</standard>
-        <enshu>どべ</enshu>
-        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2376,20 +2768,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>しないで</standard>
-        <enshu>なし</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>怠け者、ぐうたら、半人前</standard>
         <enshu>なまかー</enshu>
         <importance>1</importance>
@@ -2432,48 +2810,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>文法、用法ページ参照</standard>
-        <enshu>～に</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>しなくては</standard>
-        <enshu>にゃ</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>暖かい</standard>
-        <enshu>ぬくとい</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>腐る</standard>
         <enshu>ねがる</enshu>
         <importance>1</importance>
@@ -2505,20 +2841,6 @@
         <standard>腐る、根、元から腐る</standard>
         <enshu>ねぐさる</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>歯茎</standard>
-        <enshu>ねち</enshu>
-        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2628,34 +2950,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>祖母、お婆ちゃん</standard>
-        <enshu>ばあば</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>とっても～、すごく</standard>
-        <enshu>ばか～　（標）</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>～ばかり、位</standard>
         <enshu>～ばか</enshu>
         <importance>1</importance>
@@ -2670,37 +2964,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>少しだけ</standard>
-        <enshu>～ぱか</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>馬鹿野郎、ばかもの、馬鹿面</standard>
         <enshu>馬鹿っつら</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>壊れる、使えなくなる</standard>
-        <enshu>ばかになる</enshu>
-        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2740,20 +3006,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>挟む</standard>
-        <enshu>はさげる</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>走りまわる</standard>
         <enshu>はしくりまわる</enshu>
         <importance>1</importance>
@@ -2771,34 +3023,6 @@
         <standard>はきはき</standard>
         <enshu>はしはし</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>すねる、膨れっ面をする</standard>
-        <enshu>はすとんがらす</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>裸、裸ん坊</standard>
-        <enshu>はだかっぽ</enshu>
-        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2841,34 +3065,6 @@
         <standard>きれい好き、しっかりもの</standard>
         <enshu>はつめい</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>離す</standard>
-        <enshu>はならかす</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>仲間はずれ</standard>
-        <enshu>はぶせ</enshu>
-        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -2936,20 +3132,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>すごく、極端な</standard>
-        <enshu>ひょんきん</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>ぶん殴る、殴り壊す、（拉致する）</standard>
         <enshu>ぶっさらう（ぴっさらう）</enshu>
         <importance>1</importance>
@@ -2964,37 +3146,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>だらしない、無精</standard>
-        <enshu>ぶしょったい</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>～分、～前</standard>
         <enshu>～ぶり</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>年取った、年輩の</standard>
-        <enshu>古い　（標）</enshu>
-        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3146,20 +3300,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>掘る、穴をあける</standard>
-        <enshu>ほじくる</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>追い回す、追いかけ回す</standard>
         <enshu>ぼっからかす</enshu>
         <importance>1</importance>
@@ -3216,20 +3356,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>スイッチ、ボタン（出っ張り）</standard>
-        <enshu>ぼっちょ</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard></standard>
         <enshu>ぼっつける</enshu>
         <importance>1</importance>
@@ -3244,37 +3370,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>放っておく、放置する</standard>
-        <enshu>ほっぽかす</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>そうだけど、それなら</standard>
         <enshu>ほんだん</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>オートバイ、自動二輪、原付、バイク</standard>
-        <enshu>ポンポン</enshu>
-        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3303,20 +3401,6 @@
         <standard>任せておけ</standard>
         <enshu>まかしょう</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>仲間にいれる</standard>
-        <enshu>まぜる　（標）</enshu>
-        <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3636,20 +3720,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>～だねぇ、ねぇ</standard>
-        <enshu>～やぁ</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>おい、おーい（怒っていなくても）</standard>
         <enshu>やい、やー</enshu>
         <importance>1</importance>
@@ -3681,20 +3751,6 @@
         <standard>くだらない</standard>
         <enshu>やくたいもない</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>やわらかい、弱々しい様</standard>
-        <enshu>やごい</enshu>
-        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3748,20 +3804,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>やりやすい</standard>
-        <enshu>やりいい</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>せわしない、忙しい、落ち着かない様</standard>
         <enshu>ゆるせかない</enshu>
         <importance>1</importance>
@@ -3793,20 +3835,6 @@
         <standard>～くらい、前後、以上</standard>
         <enshu>（～の）よー</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>ようやく</standard>
-        <enshu>よーやっと</enshu>
-        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
@@ -3902,20 +3930,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>文法、用法ページ参照</standard>
-        <enshu>～ら</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>猥雑、煩雑な様子、無茶苦茶な様</standard>
         <enshu>らんごかない</enshu>
         <importance>1</importance>
@@ -3989,20 +4003,6 @@
         <standard>～のところ、場所</standard>
         <enshu>～んさ</enshu>
         <importance>1</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>それだけど、そんなこと</standard>
-        <enshu>んだけど</enshu>
-        <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
             <kihon></kihon>
