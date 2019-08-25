@@ -4,16 +4,17 @@
         <standard>散髪する</standard>
         <standard>髪の毛を切る</standard>
         <standard>髪を切る</standard>
+        <standard>髪切る</standard>
         <enshu>頭切る</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>頭切る</kihon>
+            <mizen>頭切ら</mizen>
+            <mizen_u>頭切ろ</mizen_u>
+            <renyo>頭切り</renyo>
+            <katei>頭切れ</katei>
+            <meirei>頭切れ</meirei>
         </conjugational>
     </word>
     <word>
@@ -37,7 +38,7 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
+            <kihon>いた</kihon>
             <mizen></mizen>
             <mizen_u></mizen_u>
             <renyo></renyo>
@@ -110,12 +111,12 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>うっちゃる</kihon>
+            <mizen>うっちゃれ</mizen>
+            <mizen_u>うっちゃろ</mizen_u>
+            <renyo>うっちゃり</renyo>
+            <katei>うっちゃれ</katei>
+            <meirei>うっちゃれ</meirei>
         </conjugational>
     </word>
     <word>
@@ -139,12 +140,12 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>かう</kihon>
+            <mizen>かわ</mizen>
+            <mizen_u>かお</mizen_u>
+            <renyo>かい</renyo>
+            <katei>かえ</katei>
+            <meirei>かえ</meirei>
         </conjugational>
     </word>
     <word>
@@ -154,11 +155,11 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
+            <kihon>かが抜ける</kihon>
+            <mizen>かが抜け</mizen>
+            <mizen_u>かが抜け</mizen_u>
+            <renyo>かが抜け</renyo>
+            <katei>かが抜けれ</katei>
             <meirei></meirei>
         </conjugational>
     </word>
@@ -168,12 +169,12 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>かたす</kihon>
+            <mizen>かたさ</mizen>
+            <mizen_u>かたそ</mizen_u>
+            <renyo>かたし</renyo>
+            <katei>かたせ</katei>
+            <meirei>かたせ</meirei>
         </conjugational>
     </word>
     <word>
@@ -198,12 +199,12 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>くれる</kihon>
+            <mizen>くれ</mizen>
+            <mizen_u>くれ</mizen_u>
+            <renyo>くれ</renyo>
+            <katei>くれれ</katei>
+            <meirei>くれろ</meirei>
         </conjugational>
     </word>
     <word>
@@ -228,12 +229,12 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>けたおす</kihon>
+            <mizen>けたおさ</mizen>
+            <mizen_u>けたおそ</mizen_u>
+            <renyo>けたおし</renyo>
+            <katei>けたおせ</katei>
+            <meirei>けたおせ</meirei>
         </conjugational>
     </word>
     <word>
@@ -392,12 +393,12 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>血が死んだ</kihon>
+            <mizen>血が死な</mizen>
+            <mizen_u>血が死しの</mizen_u>
+            <renyo>血が死に</renyo>
+            <katei>血が死ね</katei>
+            <meirei>血が死ね</meirei>
         </conjugational>
     </word>
     <word>
@@ -406,12 +407,12 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>ちみくる</kihon>
+            <mizen>ちみくれ</mizen>
+            <mizen_u>ちみくろ</mizen_u>
+            <renyo>ちみくり</renyo>
+            <katei>ちみくれ</katei>
+            <meirei>ちみくれ</meirei>
         </conjugational>
     </word>
     <word>
@@ -558,12 +559,12 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>ばかになる</kihon>
+            <mizen>ばかになら</mizen>
+            <mizen_u>ばかになろ</mizen_u>
+            <renyo>ばかになり</renyo>
+            <katei>ばかになれ</katei>
+            <meirei>ばかになれ</meirei>
         </conjugational>
     </word>
     <word>
@@ -572,12 +573,12 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>はさげる</kihon>
+            <mizen>はさげ</mizen>
+            <mizen_u>はさげ</mizen_u>
+            <renyo>はさげり</renyo>
+            <katei>はさげれ</katei>
+            <meirei>はさげろ</meirei>
         </conjugational>
     </word>
     <word>
@@ -586,12 +587,12 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>はならかす</kihon>
+            <mizen>はならかさ</mizen>
+            <mizen_u>はならかそ</mizen_u>
+            <renyo>はならかし</renyo>
+            <katei>はならかせ</katei>
+            <meirei>はならかせ</meirei>
         </conjugational>
     </word>
     <word>
@@ -657,16 +658,17 @@
     <word>
         <standard>掘る</standard>
         <standard>穴をあける</standard>
+        <standard>ほじる</standard>
         <enshu>ほじくる</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>ほじくる</kihon>
+            <mizen>ほじくら</mizen>
+            <mizen_u>ほじくろ</mizen_u>
+            <renyo>ほじくり</renyo>
+            <katei>ほじくれ</katei>
+            <meirei>ほじくれ</meirei>
         </conjugational>
     </word>
     <word>
@@ -693,12 +695,12 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>ほっぽかす</kihon>
+            <mizen>ほっぽかさ</mizen>
+            <mizen_u>ほっぽかそ</mizen_u>
+            <renyo>ほっぽかし</renyo>
+            <katei>ほっぽかせ</katei>
+            <meirei>ほっぽかせ</meirei>
         </conjugational>
     </word>
     <word>
@@ -707,18 +709,17 @@
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
+            <kihon>まぜる</kihon>
+            <mizen>まぜ</mizen>
+            <mizen_u>まぜ</mizen_u>
+            <renyo>まぜ</renyo>
+            <katei>まぜれ</katei>
+            <meirei>まぜろ</meirei>
         </conjugational>
     </word>
     <word>
         <standard>だね</standard>
-        <standard>ね</standard>
-        <enshu>やぁ</enshu>
+        <enshu>だやぁ</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
