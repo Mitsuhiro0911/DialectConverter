@@ -118,7 +118,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>怖い、恐ろしい</standard>
+        <standard>怖い</standard>
+        <standard>恐ろしい</standard>
         <enshu>おっかない</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -132,7 +133,7 @@
         </conjugational>
     </word>
     <word>
-        <standard>鍵（かぎ）をかける</standard>
+        <standard>鍵をかける</standard>
         <enshu>かう</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -146,7 +147,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>ジュース、ビールの炭酸が抜ける、気が抜ける</standard>
+        <standard>炭酸が抜ける</standard>
+        <standard>気が抜ける</standard>
         <enshu>かが抜ける</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -175,7 +177,7 @@
     </word>
     <word>
         <standard>乾燥してパリパリになる様</standard>
-        <enshu>かわばる、かーばる</enshu>
+        <enshu>かーばる</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -188,7 +190,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>忙しくて急いでいる様、せわしない、気忙しない</standard>
+        <standard>忙しくて急いでいる様</standard>
+        <standard>せわしない</standard>
+        <standard>気忙しない</standard>
         <enshu>きぜわしない</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -203,7 +207,7 @@
     </word>
     <word>
         <standard>あげる</standard>
-        <enshu>くれる、くれてやる</enshu>
+        <enshu>くれる</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -217,7 +221,8 @@
     </word>
     <word>
         <standard>嘔吐、げろ</standard>
-        <enshu>げ、げぇ、げぼ</enshu>
+        <standard>げろ</standard>
+        <enshu>げぇ</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -230,7 +235,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>蹴り倒す、蹴り飛ばす</standard>
+        <standard>蹴り倒す</standard>
+        <standard>蹴り飛ばす</standard>
         <enshu>けたおす</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -258,8 +264,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>～ごと（まるごと）</standard>
-        <enshu>～さら（まるさら）</enshu>
+        <standard>ごと</standard>
+        <standard>まるごと</standard>
+        <enshu>さら</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -272,7 +279,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>祖父、お爺ちゃん</standard>
+        <standard>祖父</standard>
+        <standard>お爺ちゃん</standard>
         <enshu>じーじ</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -286,7 +294,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>粘度が低い、ゆるい</standard>
+        <standard>粘度が低い</standard>
+        <standard>ゆるい</standard>
         <enshu>しゃびしゃび</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -301,7 +310,7 @@
     </word>
     <word>
         <standard>でしょう</standard>
-        <enshu>じゃん、じゃんか</enshu>
+        <enshu>じゃん</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -343,35 +352,7 @@
     </word>
     <word>
         <standard>定規</standard>
-        <enshu>せんひき（線引き）</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>だから（それだから）</standard>
-        <enshu>だで（ほんだで）</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>文法、用法ページ参照</standard>
-        <enshu>～だに</enshu>
+        <enshu>線引き</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -385,7 +366,8 @@
     </word>
     <word>
         <standard>だから</standard>
-        <enshu>だもんで（え）</enshu>
+        <standard>それだから</standard>
+        <enshu>だで</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -398,8 +380,10 @@
         </conjugational>
     </word>
     <word>
-        <standard>文法、用法ページ参照</standard>
-        <enshu>～だら（ら）</enshu>
+        <standard>だよ</standard>
+        <standard>ですよ</standard>
+        <standard>だぞ</standard>
+        <enshu>だに</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -412,8 +396,41 @@
         </conjugational>
     </word>
     <word>
-        <standard>内出血（青あざ）ができた</standard>
-        <enshu>血が死んだ　（標）</enshu>
+        <standard>だから</standard>
+        <standard>から</standard>
+        <standard>なので</standard>
+        <enshu>だもんで</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>だろ</standard>
+        <standard>でしょ</standard>
+        <standard>よね</standard>
+        <enshu>だら</enshu>
+        <importance>3</importance>
+        <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>内出血した</standard>
+        <standard>青あざができた</standard>
+        <enshu>血が死んだ</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -440,7 +457,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>すぐに、急いで</standard>
+        <standard>すぐに</standard>
+        <standard>急いで</standard>
         <enshu>ちゃっちゃと</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -454,8 +472,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>お湯が熱い</standard>
-        <enshu>ちんちん　（標）</enshu>
+        <standard>熱い</standard>
+        <enshu>ちんちん</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -468,21 +486,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>友人、仲間</standard>
-        <enshu>つれ（連れ）　（標）</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>非常に、とても</standard>
+        <standard>非常に</standard>
+        <standard>とても</standard>
         <enshu>ど</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -496,7 +501,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>ビリ、最下位</standard>
+        <standard>ビリ</standard>
+        <standard>最下位</standard>
         <enshu>どべ</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -523,9 +529,10 @@
             <meirei></meirei>
         </conjugational>
     </word>
+    <!-- 
     <word>
         <standard>文法、用法ページ参照</standard>
-        <enshu>～に</enshu>
+        <enshu>に</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -537,6 +544,7 @@
             <meirei></meirei>
         </conjugational>
     </word>
+ -->
     <word>
         <standard>しなくては</standard>
         <enshu>にゃ</enshu>
@@ -566,8 +574,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>とっても～、すごく</standard>
-        <enshu>ばか～　（標）</enshu>
+        <standard>とっても～</standard>
+        <standard>すごく</standard>
+        <enshu>ばか</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -581,7 +590,8 @@
     </word>
     <word>
         <standard>少しだけ</standard>
-        <enshu>～ぱか</enshu>
+        <standard>少し</standard>
+        <enshu>ぱか</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -594,7 +604,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>壊れる、使えなくなる</standard>
+        <standard>壊れる</standard>
+        <standard>使えなくなる</standard>
         <enshu>ばかになる</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -650,7 +661,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>すごく、極端な</standard>
+        <standard>すごく</standard>
+        <standard>極端な</standard>
         <enshu>ひょんきん</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -664,7 +676,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>だらしない、無精</standard>
+        <standard>だらしない</standard>
+        <standard>無精</standard>
         <enshu>ぶしょったい</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -678,8 +691,10 @@
         </conjugational>
     </word>
     <word>
-        <standard>年取った、年輩の</standard>
-        <enshu>古い　（標）</enshu>
+        <standard>年取った</standard>
+        <standard>年輩の</standard>
+        <standard>年寄り</standard>
+        <enshu>古い</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -692,7 +707,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>掘る、穴をあける</standard>
+        <standard>掘る</standard>
+        <standard>穴をあける</standard>
         <enshu>ほじくる</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -706,7 +722,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>スイッチ、ボタン（出っ張り）</standard>
+        <standard>スイッチ</standard>
+        <standard>ボタン</standard>
+        <standard>出っ張り</standard>
         <enshu>ぼっちょ</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -720,7 +738,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>放っておく、放置する</standard>
+        <standard>放っておく</standard>
+        <standard>放置する</standard>
         <enshu>ほっぽかす</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -735,7 +754,7 @@
     </word>
     <word>
         <standard>仲間にいれる</standard>
-        <enshu>まぜる　（標）</enshu>
+        <enshu>まぜる</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -748,8 +767,9 @@
         </conjugational>
     </word>
     <word>
-        <standard>～だねぇ、ねぇ</standard>
-        <enshu>～やぁ</enshu>
+        <standard>だね</standard>
+        <standard>ね</standard>
+        <enshu>やぁ</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -761,7 +781,7 @@
             <meirei></meirei>
         </conjugational>
     </word>
-    <word>
+<!--     <word>
         <standard>文法、用法ページ参照</standard>
         <enshu>～ら</enshu>
         <importance>3</importance>
@@ -774,7 +794,7 @@
             <katei></katei>
             <meirei></meirei>
         </conjugational>
-    </word>
+    </word> -->
     <word>
         <standard>赤ちゃん</standard>
         <standard>赤ん坊</standard>
