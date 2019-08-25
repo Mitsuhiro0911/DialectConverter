@@ -3,6 +3,7 @@
     <word>
         <standard>散髪する</standard>
         <standard>髪の毛を切る</standard>
+        <standard>髪を切る</standard>
         <enshu>頭切る</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -176,21 +177,7 @@
         </conjugational>
     </word>
     <word>
-        <standard>乾燥してパリパリになる様</standard>
-        <enshu>かーばる</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>忙しくて急いでいる様</standard>
+        <standard>急いでいる</standard>
         <standard>せわしない</standard>
         <standard>気忙しない</standard>
         <enshu>きぜわしない</enshu>
@@ -220,7 +207,7 @@
         </conjugational>
     </word>
     <word>
-        <standard>嘔吐、げろ</standard>
+        <standard>嘔吐</standard>
         <standard>げろ</standard>
         <enshu>げぇ</enshu>
         <importance>3</importance>
@@ -294,8 +281,7 @@
         </conjugational>
     </word>
     <word>
-        <standard>粘度が低い</standard>
-        <standard>ゆるい</standard>
+        <standard>水っぽい</standard>
         <enshu>しゃびしゃび</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -309,21 +295,8 @@
         </conjugational>
     </word>
     <word>
-        <standard>でしょう</standard>
-        <enshu>じゃん</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>おしゃべりな人</standard>
+        <standard>よく喋る</standard>
         <enshu>しゃんべぇ</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -353,21 +326,6 @@
     <word>
         <standard>定規</standard>
         <enshu>線引き</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>だから</standard>
-        <standard>それだから</standard>
-        <enshu>だで</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
@@ -486,21 +444,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>非常に</standard>
-        <standard>とても</standard>
-        <enshu>ど</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>ビリ</standard>
         <standard>最下位</standard>
         <enshu>どべ</enshu>
@@ -546,7 +489,8 @@
     </word>
  -->
     <word>
-        <standard>しなくては</standard>
+        <standard>なくては</standard>
+        <standard>なくちゃ</standard>
         <enshu>にゃ</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -574,8 +518,11 @@
         </conjugational>
     </word>
     <word>
-        <standard>とっても～</standard>
+        <standard>とっても</standard>
+        <standard>とても</standard>
         <standard>すごく</standard>
+        <standard>かなり</standard>
+        <standard>非常に</standard>
         <enshu>ばか</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -591,6 +538,7 @@
     <word>
         <standard>少しだけ</standard>
         <standard>少し</standard>
+        <standard>ちょっと</standard>
         <enshu>ぱか</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -739,6 +687,7 @@
     </word>
     <word>
         <standard>放っておく</standard>
+        <standard>放っとく</standard>
         <standard>放置する</standard>
         <enshu>ほっぽかす</enshu>
         <importance>3</importance>
