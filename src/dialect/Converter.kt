@@ -14,6 +14,10 @@ class Converter {
         val standardWordList: List<Node> = document.selectNodes("//standard[../lexicaCategory[text()='名詞']][../importance[text()='3']]")
         for (parsedData in parsedDataList) {
             var convertedFlag = false
+            // 接尾辞の場合、直前の単語の処理で纏めて解析しているため、処理をスキップ
+            if (parsedData.lexicaCategoryClassification1 == "接尾") {
+                continue
+            }
             // 名詞の変換
             if (parsedData.lexicaCategory == "名詞") {
                 // inputTextの先頭が名詞の場合は接頭辞がつく可能性はないため接頭辞処理はしない
@@ -22,7 +26,7 @@ class Converter {
                     if (parsedDataList[parsedDataList.indexOf(parsedData) - 1].lexicaCategory == "接頭詞") {
                         // 名詞に接頭辞を結合
                         parsedData.surface = "${convertedText[convertedText.size - 1]}${parsedData.surface}"
-                        // convertedTextの末尾の要素(接頭辞)を除外
+                        // convertedTextの末尾の要素(接頭辞)を除外(重複排除)
                         convertedText.removeAt(convertedText.size - 1)
 
                     }
@@ -32,6 +36,8 @@ class Converter {
                 // inputTextの末尾が名詞の場合は接尾辞がつく可能性はないため接尾辞処理はしない
                 if (parsedDataList.indexOf(parsedData) + 1 != parsedDataList.size) {
                     if (parsedDataList[parsedDataList.indexOf(parsedData) + 1].lexicaCategoryClassification1 == "接尾") {
+                        // 名詞に接尾辞を結合
+                        parsedData.surface = "${parsedData.surface}${parsedDataList[parsedDataList.indexOf(parsedData) + 1].surface}"
                     }
                 }
 
@@ -51,7 +57,7 @@ class Converter {
             }
         }
         for (output in convertedText) {
-            println(output)
+            print(output)
         }
     }
 }
