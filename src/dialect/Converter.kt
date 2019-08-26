@@ -16,9 +16,11 @@ class Converter {
             if (parsedData.lexicaCategoryClassification1 == "接尾") {
                 continue
             }
-            // 名詞の変換
+            // 品詞別に変換処理
             if (parsedData.lexicaCategory == "名詞") {
                 convertedFlag = convertNoun(parsedDataList, parsedData)
+            } else if (parsedData.lexicaCategory == "形容詞") {
+                convertedFlag = convertAdjective(parsedData)
             }
 
             // 遠州弁に変換されなかった単語はそのまま出力
@@ -39,6 +41,21 @@ class Converter {
         // 接尾辞の結合処理
         cp.appnedSuffix(parsedDataList, parsedData)
 
+        for (standardWord in standardWordList) {
+            if (standardWord.text == parsedData.surface) {
+                // 標準語に対応した遠州弁を取得
+                val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='${standardWord.text}']]")
+                convertedText.add(ensyuWord[0].text)
+                convertedFlag = true
+            }
+        }
+        return convertedFlag
+    }
+    private fun convertAdjective (parsedData: ParseResultData): Boolean {
+        // TODO:流暢性に問題あり。「水っぽいカレー」→「しゃびしゃびカレー」になる
+        var convertedFlag = false
+        // lexicaCategoryが形容詞 且つ importanceが3のstandard(標準語)情報を抽出
+        val standardWordList: List<Node> = document.selectNodes("//standard[../lexicaCategory[text()='形容詞']][../importance[text()='3']]")
         for (standardWord in standardWordList) {
             if (standardWord.text == parsedData.surface) {
                 // 標準語に対応した遠州弁を取得
