@@ -30,7 +30,7 @@ class Converter {
             print(output)
         }
     }
-    fun convertNoun (parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean{
+    private fun convertNoun (parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean{
         var convertedFlag = false
         // lexicaCategoryが名詞 且つ importanceが3のstandard(標準語)情報を抽出
         val standardWordList: List<Node> = document.selectNodes("//standard[../lexicaCategory[text()='名詞']][../importance[text()='3']]")
