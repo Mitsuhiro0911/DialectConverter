@@ -41,20 +41,19 @@ class Converter {
         // 接尾辞の結合処理
         cp.appnedSuffix(parsedDataList, parsedData)
 
-        for (standardWord in standardWordList) {
-            if (standardWord.text == parsedData.surface) {
-                // 標準語に対応した遠州弁を取得
-                val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='${standardWord.text}']]")
-                convertedText.add(ensyuWord[0].text)
-                convertedFlag = true
-            }
-        }
+        convertedFlag = simplConvert(parsedData, standardWordList)
         return convertedFlag
     }
     private fun convertAdjective (parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         // lexicaCategoryが形容詞 且つ importanceが3のstandard(標準語)情報を抽出
         val standardWordList: List<Node> = document.selectNodes("//standard[../lexicaCategory[text()='形容詞']][../importance[text()='3']]")
+        convertedFlag = simplConvert(parsedData, standardWordList)
+        return convertedFlag
+    }
+
+    private fun simplConvert (parsedData: ParseResultData, standardWordList: List<Node>): Boolean {
+        var convertedFlag = false
         for (standardWord in standardWordList) {
             if (standardWord.text == parsedData.surface) {
                 // 標準語に対応した遠州弁を取得
