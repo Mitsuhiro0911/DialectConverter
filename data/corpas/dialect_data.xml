@@ -269,6 +269,11 @@
     <word>
         <standard>祖父</standard>
         <standard>お爺ちゃん</standard>
+        <standard>爺ちゃん</standard>
+        <standard>おじいちゃん</standard>
+        <standard>じいちゃん</standard>
+        <standard>おじいさん</standard>
+        <standard>じいさん</standard>
         <enshu>じーじ</enshu>
         <importance>3</importance>
         <lexicaCategory>名詞</lexicaCategory>
@@ -722,6 +727,26 @@
         <enshu>だやぁ</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
+        <conjugational>
+            <kihon></kihon>
+            <mizen></mizen>
+            <mizen_u></mizen_u>
+            <renyo></renyo>
+            <katei></katei>
+            <meirei></meirei>
+        </conjugational>
+    </word>
+    <word>
+        <standard>祖母</standard>
+        <standard>お婆ちゃん</standard>
+        <standard>おばあちゃん</standard>
+        <standard>婆ちゃん</standard>
+        <standard>ばあちゃん</standard>
+        <standard>おばあさん</standard>
+        <standard>ばあさん</standard>
+        <enshu>ばあば</enshu>
+        <importance>3</importance>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -1234,20 +1259,6 @@
     <word>
         <standard>暖かい</standard>
         <enshu>ぬくとい</enshu>
-        <importance>2</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>祖母、お婆ちゃん</standard>
-        <enshu>ばあば</enshu>
         <importance>2</importance>
         <lexicaCategory></lexicaCategory>
         <conjugational>
