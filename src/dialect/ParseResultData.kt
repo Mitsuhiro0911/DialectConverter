@@ -2,7 +2,7 @@ package dialect
 
 data class ParseResultData(
     // 表層系
-    val surface: String,
+    var surface: String,
     // 品詞
     val lexicaCategory: String,
     // 品詞細分類1
