@@ -178,7 +178,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>急いでいる</standard>
         <standard>せわしない</standard>
         <standard>気忙しない</standard>
         <enshu>きぜわしない</enshu>
@@ -288,9 +287,12 @@
     </word>
     <word>
         <standard>水っぽい</standard>
+        <standard>水分が多い</standard>
+        <standard>水気が多い</standard>
         <enshu>しゃびしゃび</enshu>
         <importance>3</importance>
-        <lexicaCategory>形容詞</lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
+        <special>特殊<special>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -440,7 +442,8 @@
         <standard>熱い</standard>
         <enshu>ちんちん</enshu>
         <importance>3</importance>
-        <lexicaCategory>形容詞</lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
+        <special>特殊<special>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>

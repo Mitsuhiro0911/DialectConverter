@@ -52,7 +52,6 @@ class Converter {
         return convertedFlag
     }
     private fun convertAdjective (parsedData: ParseResultData): Boolean {
-        // TODO:流暢性に問題あり。「水っぽいカレー」→「しゃびしゃびカレー」になる
         var convertedFlag = false
         // lexicaCategoryが形容詞 且つ importanceが3のstandard(標準語)情報を抽出
         val standardWordList: List<Node> = document.selectNodes("//standard[../lexicaCategory[text()='形容詞']][../importance[text()='3']]")
