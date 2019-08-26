@@ -124,7 +124,7 @@
         <standard>恐ろしい</standard>
         <enshu>おっかない</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>形容詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -183,7 +183,7 @@
         <standard>気忙しない</standard>
         <enshu>きぜわしない</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>形容詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -290,7 +290,7 @@
         <standard>水っぽい</standard>
         <enshu>しゃびしゃび</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>形容詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -317,6 +317,7 @@
     </word>
     <word>
         <standard>仕方がない</standard>
+        <standard>仕方ない</standard>
         <enshu>しょんない</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -439,7 +440,7 @@
         <standard>熱い</standard>
         <enshu>ちんちん</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>形容詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -615,11 +616,11 @@
         </conjugational>
     </word>
     <word>
-        <standard>すごく</standard>
-        <standard>極端な</standard>
+        <standard>極端</standard>
+        <standard>大げさ</standard>
         <enshu>ひょんきん</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -631,7 +632,7 @@
     </word>
     <word>
         <standard>だらしない</standard>
-        <standard>無精</standard>
+        <standard>無精な</standard>
         <enshu>ぶしょったい</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -647,7 +648,7 @@
     <word>
         <standard>年取った</standard>
         <standard>年輩の</standard>
-        <standard>年寄り</standard>
+        <standard>高齢の</standard>
         <enshu>古い</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
