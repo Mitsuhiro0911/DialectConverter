@@ -61,11 +61,11 @@
         </conjugational>
     </word>
     <word>
-        <standard>一緒に</standard>
-        <standard>一遍に</standard>
+        <standard>一緒</standard>
+        <standard>一遍</standard>
         <enshu>いっしょくた</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>名詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -256,7 +256,7 @@
         <standard>まるごと</standard>
         <enshu>さら</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>副詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -532,7 +532,7 @@
         <standard>非常に</standard>
         <enshu>ばか</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>副詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -548,7 +548,7 @@
         <standard>ちょっと</standard>
         <enshu>ぱか</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>副詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -632,10 +632,11 @@
     </word>
     <word>
         <standard>だらしない</standard>
+        <standard>みっともない</standard>
         <standard>無精な</standard>
         <enshu>ぶしょったい</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>形容詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -651,7 +652,7 @@
         <standard>高齢の</standard>
         <enshu>古い</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>形容詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
