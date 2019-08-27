@@ -24,12 +24,13 @@ class Converter {
             }
 
             // 品詞別に変換処理
-            if (parsedData.lexicaCategory == "名詞") {
+            if (parsedData.lexicaCategory == "副詞" || parsedData.lexicaCategoryClassification2 == "副詞可能") {
+                println(parsedData.surface)
+                convertedFlag = convertAdverb(parsedData)
+            } else if (parsedData.lexicaCategory == "名詞") {
                 convertedFlag = convertNoun(parsedDataList, parsedData)
             } else if (parsedData.lexicaCategory == "形容詞") {
                 convertedFlag = convertAdjective(parsedData)
-            } else if (parsedData.lexicaCategory == "副詞" || parsedData.lexicaCategoryClassification2 == "副詞可能") {
-                convertedFlag = convertAdverb(parsedData)
             }
 
             // 遠州弁に変換されなかった単語はそのまま出力
