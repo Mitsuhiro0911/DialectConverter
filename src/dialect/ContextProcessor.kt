@@ -32,4 +32,15 @@ class ContextProcessor {
             }
         }
     }
+
+    /**
+     * 品詞細分類1が副詞化の時呼ばれる。直前の単語と結合し、品詞が副詞に変わる。
+     */
+    fun doAdverbization(parsedData: ParseResultData, convertedText: ArrayList<String>) {
+        // 直前の単語と結合し、副詞を作成
+        parsedData.surface = "${convertedText[convertedText.size - 1]}${parsedData.surface}"
+        parsedData.lexicaCategory = "副詞"
+        // convertedTextの末尾の要素を除外(重複排除)
+        convertedText.removeAt(convertedText.size - 1)
+    }
 }

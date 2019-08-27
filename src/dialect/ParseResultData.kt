@@ -4,7 +4,7 @@ data class ParseResultData(
     // 表層系
     var surface: String,
     // 品詞
-    val lexicaCategory: String,
+    var lexicaCategory: String,
     // 品詞細分類1
     val lexicaCategoryClassification1: String,
     // 品詞細分類2

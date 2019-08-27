@@ -12,15 +12,21 @@ class Converter {
     fun convert (parsedDataList: ArrayList<ParseResultData>) {
         for (parsedData in parsedDataList) {
             var convertedFlag = false
+//            println(parsedData)
             // 接尾辞の場合、直前の単語の処理で纏めて解析しているため、処理をスキップ
             if (parsedData.lexicaCategoryClassification1 == "接尾") {
                 continue
+            } else if (parsedData.lexicaCategoryClassification1 == "副詞化") {
+                cp.doAdverbization(parsedData, convertedText)
             }
+
             // 品詞別に変換処理
             if (parsedData.lexicaCategory == "名詞") {
                 convertedFlag = convertNoun(parsedDataList, parsedData)
             } else if (parsedData.lexicaCategory == "形容詞") {
                 convertedFlag = convertAdjective(parsedData)
+            } else if (parsedData.lexicaCategory == "副詞" || parsedData.lexicaCategoryClassification2 == "副詞可能") {
+                convertedFlag = convertAdverb(parsedData)
             }
 
             // 遠州弁に変換されなかった単語はそのまま出力
@@ -32,6 +38,7 @@ class Converter {
             print(output)
         }
     }
+
     private fun convertNoun (parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean{
         var convertedFlag = false
         // lexicaCategoryが名詞 且つ importanceが3のstandard(標準語)情報を抽出
@@ -44,10 +51,20 @@ class Converter {
         convertedFlag = simplConvert(parsedData, standardWordList)
         return convertedFlag
     }
+
     private fun convertAdjective (parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         // lexicaCategoryが形容詞 且つ importanceが3のstandard(標準語)情報を抽出
         val standardWordList: List<Node> = document.selectNodes("//standard[../lexicaCategory[text()='形容詞']][../importance[text()='3']]")
+        convertedFlag = simplConvert(parsedData, standardWordList)
+        return convertedFlag
+    }
+
+    private fun convertAdverb (parsedData: ParseResultData): Boolean {
+        // TODO:「さら」が上手くいかない
+        var convertedFlag = false
+        // lexicaCategoryが副詞 且つ importanceが3のstandard(標準語)情報を抽出
+        val standardWordList: List<Node> = document.selectNodes("//standard[../lexicaCategory[text()='副詞']][../importance[text()='3']]")
         convertedFlag = simplConvert(parsedData, standardWordList)
         return convertedFlag
     }
