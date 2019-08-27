@@ -28,15 +28,8 @@ class ContextProcessor {
         parsedDataList: ArrayList<ParseResultData>,
         parsedData: ParseResultData
     ) {
-        // 直後が接尾辞の場合
-        // inputTextの末尾の場合は接尾辞がつく可能性はないため接尾辞処理はしない
-        if (parsedDataList.indexOf(parsedData) + 1 != parsedDataList.size) {
-            if (parsedDataList[parsedDataList.indexOf(parsedData) + 1].lexicaCategoryClassification1 == "接尾") {
-                // 名詞に接尾辞を結合
-                parsedData.surface =
-                    "${parsedData.surface}${parsedDataList[parsedDataList.indexOf(parsedData) + 1].surface}"
-            }
-        }
+        // 名詞に接尾辞を結合
+        parsedData.surface = "${parsedData.surface}${parsedDataList[parsedDataList.indexOf(parsedData) + 1].surface}"
     }
 
     /**

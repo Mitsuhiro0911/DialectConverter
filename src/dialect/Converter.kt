@@ -15,9 +15,9 @@ class Converter {
     fun convert (parsedDataList: ArrayList<ParseResultData>) {
         for (parsedData in parsedDataList) {
             var convertedFlag = false
-//            println(parsedData)
+            println(parsedData)
             // 接尾辞の場合、直前の単語の処理で纏めて解析しているため、処理をスキップ
-            if (parsedData.lexicaCategoryClassification1 == "接尾") {
+            if (parsedData.lexicaCategoryClassification1 == "接尾" && parsedData.lexicaCategoryClassification2 == "人名") {
                 continue
             } else if (parsedData.lexicaCategoryClassification1 == "副詞化") {
                 cp.doAdverbization(parsedData, convertedText)
@@ -51,9 +51,17 @@ class Converter {
         val standardWordList: List<Node> = document.selectNodes("//standard[../lexicaCategory[text()='名詞']][../importance[text()='3']]")
         // 接頭辞の結合処理
         cp.appendPrefix(parsedDataList, parsedData, convertedText)
-        // 接尾辞の結合処理
-        cp.appnedSuffix(parsedDataList, parsedData)
-
+        // inputTextの末尾の場合は接尾辞がつく可能性はないため接尾辞処理はしない
+        if (parsedDataList.indexOf(parsedData) + 1 != parsedDataList.size) {
+            // 直後が人名の接尾辞の場合
+            if (parsedDataList[parsedDataList.indexOf(parsedData) + 1].lexicaCategoryClassification1 == "接尾" && parsedDataList[parsedDataList.indexOf(
+                    parsedData
+                ) + 1].lexicaCategoryClassification2 == "人名"
+            ) {
+                // 接尾辞の結合処理
+                cp.appnedSuffix(parsedDataList, parsedData)
+            }
+        }
         convertedFlag = simplConvert(parsedData, standardWordList)
         return convertedFlag
     }
