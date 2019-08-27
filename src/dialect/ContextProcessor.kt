@@ -1,6 +1,9 @@
 package dialect
 
 class ContextProcessor {
+    /**
+     * 接頭辞の結合処理を行う。
+     */
     fun appendPrefix(
         parsedDataList: ArrayList<ParseResultData>,
         parsedData: ParseResultData,
@@ -18,6 +21,9 @@ class ContextProcessor {
         }
     }
 
+    /**
+     * 接尾辞の結合処理を行う。
+     */
     fun appnedSuffix(
         parsedDataList: ArrayList<ParseResultData>,
         parsedData: ParseResultData

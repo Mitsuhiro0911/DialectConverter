@@ -9,6 +9,9 @@ class Converter {
     private val cp = ContextProcessor()
     private val convertedText = ArrayList<String>()
 
+    /**
+     * 遠州弁変換メソッド群のハブ。形態素解析情報を元に、変換方式を決定する。
+     */
     fun convert (parsedDataList: ArrayList<ParseResultData>) {
         for (parsedData in parsedDataList) {
             var convertedFlag = false
@@ -39,6 +42,9 @@ class Converter {
         }
     }
 
+    /**
+     * 名詞を遠州弁に変換する。
+     */
     private fun convertNoun (parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean{
         var convertedFlag = false
         // lexicaCategoryが名詞 且つ importanceが3のstandard(標準語)情報を抽出
@@ -52,6 +58,9 @@ class Converter {
         return convertedFlag
     }
 
+    /**
+     * 形容詞を遠州弁に変換する。
+     */
     private fun convertAdjective (parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         // lexicaCategoryが形容詞 且つ importanceが3のstandard(標準語)情報を抽出
@@ -60,6 +69,9 @@ class Converter {
         return convertedFlag
     }
 
+    /**
+     * 副詞を遠州弁に変換する。
+     */
     private fun convertAdverb (parsedData: ParseResultData): Boolean {
         // TODO:「さら」が上手くいかない
         var convertedFlag = false
@@ -69,6 +81,9 @@ class Converter {
         return convertedFlag
     }
 
+    /**
+     * 各変換メソッドから呼ばれる共通変換処理。
+     */
     private fun simplConvert (parsedData: ParseResultData, standardWordList: List<Node>): Boolean {
         var convertedFlag = false
         for (standardWord in standardWordList) {
