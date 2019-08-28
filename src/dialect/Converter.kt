@@ -28,12 +28,13 @@ class Converter {
             // 上記までで遠州弁に変換されなかった単語は品詞別に変換処理
             if (!convertedFlag) {
                 if (parsedData.lexicaCategory == "副詞" || parsedData.lexicaCategoryClassification2 == "副詞可能") {
-                    println(parsedData.surface)
                     convertedFlag = convertAdverb(parsedData)
                 } else if (parsedData.lexicaCategory == "名詞") {
                     convertedFlag = convertNoun(parsedDataList, parsedData)
                 } else if (parsedData.lexicaCategory == "形容詞") {
                     convertedFlag = convertAdjective(parsedData)
+                } else if(parsedData.lexicaCategory == "助詞") {
+                    convertedFlag = convertParticle(parsedData)
                 }
             }
 
@@ -86,11 +87,30 @@ class Converter {
      * 副詞を遠州弁に変換する。
      */
     private fun convertAdverb (parsedData: ParseResultData): Boolean {
-        // TODO:「さら」が上手くいかない
         var convertedFlag = false
         // lexicaCategoryが副詞 且つ importanceが3のstandard(標準語)情報を抽出
         val standardWordList: List<Node> = document.selectNodes("//standard[../lexicaCategory[text()='副詞']][../importance[text()='3']]")
         convertedFlag = simplConvert(parsedData, standardWordList)
+        return convertedFlag
+    }
+
+    /**
+     * 助詞を遠州弁に変換する。
+     */
+    private fun convertParticle(parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        // lexicaCategoryが副詞 且つ importanceが3のstandard(標準語)情報を抽出
+        val standardWordList: List<Node> = document.selectNodes("//standard[../lexicaCategory[text()='助詞']][../importance[text()='3']]")
+        // 助詞がくっつく直前の単語を抽出
+        val preWordList: List<Node> = document.selectNodes("//pre_word[../lexicaCategory[text()='助詞']][../importance[text()='3']]")
+        // 助詞がくっつく直前の単語が正しい時のみ遠州弁に変換する
+        for (preword in preWordList) {
+            if (preword.text == convertedText[convertedText.size - 1]) {
+                convertedText.removeAt(convertedText.size - 1)
+                convertedFlag = simplConvert(parsedData, standardWordList)
+            }
+        }
+
         return convertedFlag
     }
 
