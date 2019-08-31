@@ -7,21 +7,26 @@ class Converter {
     private val reader = SAXReader()
     private val document = reader.read("./data/corpas/dialect_data.xml")
     private val cp = ContextProcessor()
+    // 遠州弁変換後のテキストデータ
     private val convertedText = ArrayList<String>()
+    // parsedDataListの参照中データの次のデータ
     private var parsedNextData: ParseResultData? = null
+    // parsedDataListの参照中データの次の次のデータ
     private var parsedNextNextData: ParseResultData? = null
+    // 変換処理の要・不要を判定するフラグ。parsedDataListの要素とインデックスが対応付いている。
     private var skipFlagList: ArrayList<Int>? = null
 
     /**
      * 遠州弁変換メソッド群のハブ。形態素解析情報を元に、変換方式を決定する。
      */
     fun convert(parsedDataList: ArrayList<ParseResultData>) {
+        // スキップフラグを0(変換必要)で初期化
         skipFlagList = arrayListOf()
         for (i in 0 until parsedDataList.size) {
             skipFlagList!!.add(0)
         }
         for (parsedData in parsedDataList) {
-            // 解析不要な場合スキップする
+            // スキップフラグが1(変換不要)の場合処理をスキップ
             if (skipFlagList!![parsedDataList.indexOf(parsedData)] == 1) {
                 continue
             }
@@ -155,13 +160,15 @@ class Converter {
         }
         // 「だろ、でしょ、だよね」→「だら」　使用中のneologd辞書だと「○○だろう」「○○でしょう」が謝解析されるが、その他辞書なら問題なし
         var daraFlag = false
+        // 「だろ、でしょ」の変換判定
         if ((parsedData.surface == "だろ" && parsedData.lexicaCategory == "助動詞") || (parsedData.surface == "でしょ" && parsedData.lexicaCategory == "助動詞")) {
             daraFlag = true
         }
+        // 「だろう」の変換判定
         if (parsedNextData != null && parsedNextNextData != null) {
             if ((parsedData.surface == "だ" && parsedData.lexicaCategory == "助動詞") && (parsedNextData!!.surface == "よ" && parsedNextData!!.lexicaCategory == "助詞") && (parsedNextNextData!!.surface == "ね" && parsedNextNextData!!.lexicaCategory == "助詞")) {
                 daraFlag = true
-                // 「よ」「ね」を結合して解析したため、それらの解析は不要となる。よってスキップフラグを立てる
+                // 「よ」「ね」を結合してから変換するため、それらの解析は不要となる。よってスキップフラグを立てる
                 skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
                 skipFlagList!![(parsedDataList.indexOf(parsedNextNextData!!))] = 1
             }
@@ -171,6 +178,7 @@ class Converter {
             convertedFlag = true
             return convertedFlag
         }
+
         return convertedFlag
     }
 
