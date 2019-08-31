@@ -9,22 +9,39 @@ class Converter {
     private val cp = ContextProcessor()
     private val convertedText = ArrayList<String>()
     private var parsedNextData: ParseResultData? = null
+    private var parsedNextNextData: ParseResultData? = null
+    private var skipFlagList: ArrayList<Int>? = null
 
     /**
      * 遠州弁変換メソッド群のハブ。形態素解析情報を元に、変換方式を決定する。
      */
     fun convert(parsedDataList: ArrayList<ParseResultData>) {
+        skipFlagList = arrayListOf()
+        for (i in 0 until parsedDataList.size) {
+            skipFlagList!!.add(0)
+        }
         for (parsedData in parsedDataList) {
+            // 解析不要な場合スキップする
+            if (skipFlagList!![parsedDataList.indexOf(parsedData)] == 1) {
+                continue
+            }
+
             // parsedDataが末尾のデータでなければ、次データの情報を取得し、parsedNextDataへ格納
             parsedNextData = null
             if (parsedDataList.indexOf(parsedData) + 1 != parsedDataList.size) {
                 parsedNextData = parsedDataList[parsedDataList.indexOf(parsedData) + 1]
             }
 
+            // parsedNextDataが末尾のデータでなければ、次データの情報を取得し、parsedNextNextDataへ格納
+            parsedNextNextData = null
+            if (parsedDataList.indexOf(parsedNextData) + 1 != parsedDataList.size) {
+                parsedNextNextData = parsedDataList[parsedDataList.indexOf(parsedNextData) + 1]
+            }
+
             var convertedFlag = false
             println(parsedData)
             // ルールでの変換が難しい単語を個別処理で変換
-            convertedFlag = uniqueConvert(parsedData)
+            convertedFlag = uniqueConvert(parsedDataList, parsedData)
             // 接尾辞の場合、直前の単語の処理で纏めて解析しているため、処理をスキップ
             if (parsedData.lexicaCategoryClassification1 == "接尾" && parsedData.lexicaCategoryClassification2 == "人名") {
                 continue
@@ -127,14 +144,32 @@ class Converter {
     /**
      * ルール化が難しい単語の個別変換処理
      */
-    fun uniqueConvert(parsedData: ParseResultData): Boolean {
-        // TODO:「だら」は個別変換処理
+    fun uniqueConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         // 「ごと」→「さら」
         if (parsedData.surface == "ごと" && parsedData.lexicaCategoryClassification1 == "接尾") {
             val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='ごと']]")
             convertedText.add(ensyuWord[0].text)
             convertedFlag = true
+            return convertedFlag
+        }
+        // 「だろ、でしょ、だよね」→「だら」　使用中のneologd辞書だと「○○だろう」「○○でしょう」が謝解析されるが、その他辞書なら問題なし
+        var daraFlag = false
+        if ((parsedData.surface == "だろ" && parsedData.lexicaCategory == "助動詞") || (parsedData.surface == "でしょ" && parsedData.lexicaCategory == "助動詞")) {
+            daraFlag = true
+        }
+        if (parsedNextData != null && parsedNextNextData != null) {
+            if ((parsedData.surface == "だ" && parsedData.lexicaCategory == "助動詞") && (parsedNextData!!.surface == "よ" && parsedNextData!!.lexicaCategory == "助詞") && (parsedNextNextData!!.surface == "ね" && parsedNextNextData!!.lexicaCategory == "助詞")) {
+                daraFlag = true
+                // 「よ」「ね」を結合して解析したため、それらの解析は不要となる。よってスキップフラグを立てる
+                skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
+                skipFlagList!![(parsedDataList.indexOf(parsedNextNextData!!))] = 1
+            }
+        }
+        if (daraFlag) {
+            convertedText.add("だら")
+            convertedFlag = true
+            return convertedFlag
         }
         return convertedFlag
     }
