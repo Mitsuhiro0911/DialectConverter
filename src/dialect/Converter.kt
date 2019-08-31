@@ -151,14 +151,36 @@ class Converter {
      */
     fun uniqueConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
         var convertedFlag = false
-        // 「ごと」→「さら」
+        if (!convertedFlag) {
+            // 「ごと」→「さら」
+            convertedFlag = saraConvert(parsedData)
+        }
+        if (!convertedFlag) {
+            // 「だろ、でしょ、だよね」→「だら」
+            convertedFlag = daraConvert(parsedDataList, parsedData)
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「ごと」→「さら」の変換処理
+     */
+    private  fun saraConvert(parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
         if (parsedData.surface == "ごと" && parsedData.lexicaCategoryClassification1 == "接尾") {
             val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='ごと']]")
             convertedText.add(ensyuWord[0].text)
             convertedFlag = true
-            return convertedFlag
         }
-        // 「だろ、でしょ、だよね」→「だら」　使用中のneologd辞書だと「○○だろう」「○○でしょう」が謝解析されるが、その他辞書なら問題なし
+        return convertedFlag
+    }
+
+    /**
+     * 「だろ、でしょ、だよね」→「だら」の変換処理
+     */
+    private  fun daraConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        // 使用中のneologd辞書だと「○○だろう」「○○でしょう」が謝解析されるが、その他辞書なら問題なし
+        var convertedFlag = false
         var daraFlag = false
         // 「だろ、でしょ」の変換判定
         if ((parsedData.surface == "だろ" && parsedData.lexicaCategory == "助動詞") || (parsedData.surface == "でしょ" && parsedData.lexicaCategory == "助動詞")) {
@@ -176,9 +198,7 @@ class Converter {
         if (daraFlag) {
             convertedText.add("だら")
             convertedFlag = true
-            return convertedFlag
         }
-
         return convertedFlag
     }
 
