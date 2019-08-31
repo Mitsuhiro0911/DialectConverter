@@ -13,6 +13,8 @@ class Converter {
     private var parsedNextData: ParseResultData? = null
     // parsedDataListの参照中データの次の次のデータ
     private var parsedNextNextData: ParseResultData? = null
+    // parsedDataListの参照中データの前のデータ
+    private var parsedBeforeData: ParseResultData? = null
     // 変換処理の要・不要を判定するフラグ。parsedDataListの要素とインデックスが対応付いている。
     private var skipFlagList: ArrayList<Int>? = null
 
@@ -41,6 +43,12 @@ class Converter {
             parsedNextNextData = null
             if (parsedDataList.indexOf(parsedNextData) + 1 != parsedDataList.size) {
                 parsedNextNextData = parsedDataList[parsedDataList.indexOf(parsedNextData) + 1]
+            }
+
+            // parsedDataが先頭のデータでなければ、前データの情報を取得し、parsedBeforeDataへ格納
+            parsedBeforeData = null
+            if (parsedDataList.indexOf(parsedData) - 1 != -1) {
+                parsedBeforeData = parsedDataList[parsedDataList.indexOf(parsedData) - 1]
             }
 
             var convertedFlag = false
@@ -159,6 +167,10 @@ class Converter {
             // 「だろ、でしょ、だよね」→「だら」
             convertedFlag = daraConvert(parsedDataList, parsedData)
         }
+        if (!convertedFlag) {
+            // 「ね」→「やぁ」
+            convertedFlag = yaConvert(parsedDataList, parsedData)
+        }
         return convertedFlag
     }
 
@@ -197,6 +209,19 @@ class Converter {
         }
         if (daraFlag) {
             convertedText.add("だら")
+            convertedFlag = true
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「ね」→「やぁ」の変換処理
+     */
+    private fun yaConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        // 直前の単語が形容詞であることが必要
+        if ((parsedData.surface == "ね" && parsedData.lexicaCategory == "助詞") && (parsedBeforeData!!.lexicaCategory == "形容詞")) {
+            convertedText.add("やぁ")
             convertedFlag = true
         }
         return convertedFlag
