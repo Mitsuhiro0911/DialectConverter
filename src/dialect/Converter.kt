@@ -153,9 +153,10 @@ class Converter {
                     "連用形" -> document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
                     "仮定形" -> document.selectNodes("//conjugational/katei[../../standard[text()='${standardWord.text}']]")
                     "命令ｅ" -> document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
+                    "命令ｒｏ" -> document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
+                    "命令ｙｏ" -> document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
                     else -> document.selectNodes("//enshu[../standard[text()='${standardWord.text}']]")
                 }
-                println(ensyuWord)
                 convertedText.add(ensyuWord[0].text)
                 convertedFlag = true
             }
