@@ -96,9 +96,10 @@
         <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>うっちゃる</kihon>
-            <mizen>うっちゃれ</mizen>
+            <mizen>うっちゃ</mizen>
             <mizen_u>うっちゃろ</mizen_u>
             <renyo>うっちゃり</renyo>
+            <renyo_ta>うっちゃっ</renyo_ta>
             <katei>うっちゃれ</katei>
             <meirei>うっちゃれ</meirei>
         </conjugational>
