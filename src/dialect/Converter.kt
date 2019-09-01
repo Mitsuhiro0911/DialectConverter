@@ -143,7 +143,7 @@ class Converter {
         }
         if (!convertedFlag) {
             // 「だよ、だぞ、ですよ、ですぞ」→「だに」
-            convertedFlag = daniConvert(parsedDataList, parsedData)
+            convertedFlag = daniConvert(parsedData)
         }
         if (!convertedFlag) {
             // 「だろ、でしょ、だよね」→「だら」
@@ -151,15 +151,15 @@ class Converter {
         }
         if (!convertedFlag) {
             // 「ね」→「やぁ」
-            convertedFlag = yaConvert(parsedDataList, parsedData)
+            convertedFlag = yaConvert(parsedData)
         }
         if (!convertedFlag) {
             // 「した」→「いた」、「しちゃう」→「いちゃう」
-            convertedFlag = itaConvert(parsedDataList, parsedData)
+            convertedFlag = itaConvert(parsedData)
         }
         if (!convertedFlag) {
             // 「から、ので、だから、なので」→「だもんで」
-            convertedFlag = damondeConvert(parsedDataList, parsedData)
+            convertedFlag = damondeConvert(parsedData)
         }
         return convertedFlag
     }
@@ -180,7 +180,7 @@ class Converter {
     /**
      * 「だよ、だぞ、ですよ、ですぞ」→「だに」の変換処理
      */
-    private fun daniConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun daniConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         if ((parsedData.surface == "よ" && parsedData.lexicaCategory == "助詞") || (parsedData.surface == "ぞ" && parsedData.lexicaCategory == "助詞")) {
             // 助詞がくっつく直前の単語を抽出
@@ -227,7 +227,7 @@ class Converter {
     /**
      * 「ね」→「やぁ」の変換処理
      */
-    private fun yaConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun yaConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         // 直前の単語が形容詞であることが必要
         if (parsedBeforeData != null) {
@@ -242,7 +242,7 @@ class Converter {
     /**
      * 「した」→「いた」、「しちゃう」→「いちゃう」の変換処理
      */
-    private fun itaConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun itaConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         // 直前の単語が動詞で末尾の文字が「し」の場合変換する
         if (parsedBeforeData != null) {
@@ -263,7 +263,7 @@ class Converter {
     /**
      * 「から、ので、だから、なので」→「だもんで」の変換処理
      */
-    private fun damondeConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun damondeConvert(parsedData: ParseResultData): Boolean {
         // 「ため」は接続助詞ではなく名詞と形態素解析されてしまうため、変換対象から除外
         var convertedFlag = false
         if ((parsedData.surface == "から" || parsedData.surface == "ので") && parsedData.lexicaCategoryClassification1 == "接続助詞") {
