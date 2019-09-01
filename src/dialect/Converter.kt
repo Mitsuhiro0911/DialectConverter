@@ -36,19 +36,19 @@ class Converter {
 
             // parsedDataが末尾のデータでなければ、次データの情報を取得し、parsedNextDataへ格納
             parsedNextData = null
-            if (parsedDataList.indexOf(parsedData) + 1 != parsedDataList.size) {
-                parsedNextData = parsedDataList[parsedDataList.indexOf(parsedData) + 1]
+            if (i + 1 < parsedDataList.size) {
+                parsedNextData = parsedDataList[i + 1]
             }
 
             // parsedNextDataが末尾のデータでなければ、次データの情報を取得し、parsedNextNextDataへ格納
             parsedNextNextData = null
-            if (parsedDataList.indexOf(parsedNextData) + 1 != parsedDataList.size) {
-                parsedNextNextData = parsedDataList[parsedDataList.indexOf(parsedNextData) + 1]
+            if (i + 2 < parsedDataList.size) {
+                parsedNextNextData = parsedDataList[i + 2]
             }
 
             // parsedDataが先頭のデータでなければ、前データの情報を取得し、parsedBeforeDataへ格納
             parsedBeforeData = null
-            if (parsedDataList.indexOf(parsedData) - 1 != -1) {
+            if (i - 1 > -1) {
                 parsedBeforeData = parsedDataList[i - 1]
             }
 
@@ -204,7 +204,7 @@ class Converter {
         if ((parsedData.surface == "だろ" && parsedData.lexicaCategory == "助動詞") || (parsedData.surface == "でしょ" && parsedData.lexicaCategory == "助動詞")) {
             daraFlag = true
         }
-        // 「だろう」の変換判定
+        // 「だよね」の変換判定
         if (parsedNextData != null && parsedNextNextData != null) {
             if ((parsedData.surface == "だ" && parsedData.lexicaCategory == "助動詞") && (parsedNextData!!.surface == "よ" && parsedNextData!!.lexicaCategory == "助詞") && (parsedNextNextData!!.surface == "ね" && parsedNextNextData!!.lexicaCategory == "助詞")) {
                 daraFlag = true
