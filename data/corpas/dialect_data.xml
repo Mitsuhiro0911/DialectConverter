@@ -7,7 +7,7 @@
         <standard>髪切る</standard>
         <enshu>頭切る</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>頭切る</kihon>
             <mizen>頭切ら</mizen>
@@ -93,7 +93,7 @@
         <standard>捨てる</standard>
         <enshu>うっちゃる</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>うっちゃる</kihon>
             <mizen>うっちゃれ</mizen>
@@ -122,7 +122,7 @@
         <standard>鍵をかける</standard>
         <enshu>かう</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>かう</kihon>
             <mizen>かわ</mizen>
@@ -137,7 +137,7 @@
         <standard>気が抜ける</standard>
         <enshu>かが抜ける</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>かが抜ける</kihon>
             <mizen>かが抜け</mizen>
@@ -151,7 +151,7 @@
         <standard>片づける</standard>
         <enshu>かたす</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>かたす</kihon>
             <mizen>かたさ</mizen>
@@ -180,7 +180,7 @@
         <standard>あげる</standard>
         <enshu>くれる</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>くれる</kihon>
             <mizen>くれ</mizen>
@@ -203,21 +203,6 @@
             <renyo></renyo>
             <katei></katei>
             <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>蹴り倒す</standard>
-        <standard>蹴り飛ばす</standard>
-        <enshu>けたおす</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon>けたおす</kihon>
-            <mizen>けたおさ</mizen>
-            <mizen_u>けたおそ</mizen_u>
-            <renyo>けたおし</renyo>
-            <katei>けたおせ</katei>
-            <meirei>けたおせ</meirei>
         </conjugational>
     </word>
     <word>
@@ -349,11 +334,13 @@
     </word>
     <word>
         <standard>だから</standard>
+        <standard>ため</standard>
         <standard>から</standard>
         <standard>なので</standard>
+        <standard>ので</standard>
         <enshu>だもんで</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>接続詞</lexicaCategory>
         <conjugational>
             <kihon></kihon>
             <mizen></mizen>
@@ -384,7 +371,7 @@
         <standard>青あざができた</standard>
         <enshu>血が死んだ</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>血が死んだ</kihon>
             <mizen>血が死な</mizen>
@@ -398,7 +385,7 @@
         <standard>抓る</standard>
         <enshu>ちみくる</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>ちみくる</kihon>
             <mizen>ちみくれ</mizen>
@@ -554,7 +541,7 @@
         <standard>使えなくなる</standard>
         <enshu>ばかになる</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>ばかになる</kihon>
             <mizen>ばかになら</mizen>
@@ -568,7 +555,7 @@
         <standard>挟む</standard>
         <enshu>はさげる</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>はさげる</kihon>
             <mizen>はさげ</mizen>
@@ -582,7 +569,7 @@
         <standard>離す</standard>
         <enshu>はならかす</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>はならかす</kihon>
             <mizen>はならかさ</mizen>
@@ -659,7 +646,7 @@
         <standard>ほじる</standard>
         <enshu>ほじくる</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>ほじくる</kihon>
             <mizen>ほじくら</mizen>
@@ -686,26 +673,10 @@
         </conjugational>
     </word>
     <word>
-        <standard>放っておく</standard>
-        <standard>放っとく</standard>
-        <standard>放置する</standard>
-        <enshu>ほっぽかす</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon>ほっぽかす</kihon>
-            <mizen>ほっぽかさ</mizen>
-            <mizen_u>ほっぽかそ</mizen_u>
-            <renyo>ほっぽかし</renyo>
-            <katei>ほっぽかせ</katei>
-            <meirei>ほっぽかせ</meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>仲間にいれる</standard>
         <enshu>まぜる</enshu>
         <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
+        <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>まぜる</kihon>
             <mizen>まぜ</mizen>
