@@ -236,20 +236,20 @@ class Converter {
     }
 
     /**
-     * 「した」→「いた」の変換処理
+     * 「した」→「いた」、「しちゃう」→「いちゃう」の変換処理
      */
     private fun itaConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         // 直前の単語が動詞で末尾の文字が「し」の場合変換する
         if (parsedBeforeData != null) {
-            if ((parsedData.surface == "た" && parsedData.lexicaCategory == "助動詞") && (parsedBeforeData!!.lexicaCategory == "動詞" && parsedBeforeData!!.surface.get(
+            if ((parsedData.surface == "た" && parsedData.lexicaCategory == "助動詞" || (parsedData.originalPattern == "ちゃう" && parsedData.lexicaCategory == "動詞")) && (parsedBeforeData!!.lexicaCategory == "動詞" && parsedBeforeData!!.surface.get(
                     parsedBeforeData!!.surface.length - 1
                 ) == 'し')
             ) {
                 // 直前の動詞の末尾の「し」を削除
                 convertedText[convertedText.size - 1] =
-                    "${parsedBeforeData!!.surface.substring(0, parsedBeforeData!!.surface.length - 1)}"
-                convertedText.add("いた")
+                    "${parsedBeforeData!!.surface.substring(0, parsedBeforeData!!.surface.length - 1)}い"
+                convertedText.add("${parsedData.surface}")
                 convertedFlag = true
             }
         }
