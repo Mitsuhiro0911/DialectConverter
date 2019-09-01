@@ -27,6 +27,7 @@ class Converter {
         for (i in 0 until parsedDataList.size) {
             skipFlagList!!.add(0)
         }
+        var i = 0
         for (parsedData in parsedDataList) {
             // スキップフラグが1(変換不要)の場合処理をスキップ
             if (skipFlagList!![parsedDataList.indexOf(parsedData)] == 1) {
@@ -48,7 +49,7 @@ class Converter {
             // parsedDataが先頭のデータでなければ、前データの情報を取得し、parsedBeforeDataへ格納
             parsedBeforeData = null
             if (parsedDataList.indexOf(parsedData) - 1 != -1) {
-                parsedBeforeData = parsedDataList[parsedDataList.indexOf(parsedData) - 1]
+                parsedBeforeData = parsedDataList[i - 1]
             }
 
             var convertedFlag = false
@@ -77,6 +78,7 @@ class Converter {
             if (!convertedFlag) {
                 convertedText.add(parsedData.surface)
             }
+            i = i.plus(1)
         }
         for (output in convertedText) {
             print(output)
@@ -129,7 +131,7 @@ class Converter {
         convertedFlag = simplConvert(parsedData, standardWordList)
         return convertedFlag
     }
-    
+
     /**
      * ルール化が難しい単語の個別変換処理
      */
@@ -150,6 +152,10 @@ class Converter {
         if (!convertedFlag) {
             // 「ね」→「やぁ」
             convertedFlag = yaConvert(parsedDataList, parsedData)
+        }
+        if (!convertedFlag) {
+            // 「した」→「いた」
+            convertedFlag = itaConvert(parsedDataList, parsedData)
         }
         return convertedFlag
     }
@@ -220,9 +226,32 @@ class Converter {
     private fun yaConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         // 直前の単語が形容詞であることが必要
-        if ((parsedData.surface == "ね" && parsedData.lexicaCategory == "助詞") && (parsedBeforeData!!.lexicaCategory == "形容詞")) {
-            convertedText.add("やぁ")
-            convertedFlag = true
+        if (parsedBeforeData != null) {
+            if ((parsedData.surface == "ね" && parsedData.lexicaCategory == "助詞") && (parsedBeforeData!!.lexicaCategory == "形容詞")) {
+                convertedText.add("やぁ")
+                convertedFlag = true
+            }
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「した」→「いた」の変換処理
+     */
+    private fun itaConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        // 直前の単語が動詞で末尾の文字が「し」の場合変換する
+        if (parsedBeforeData != null) {
+            if ((parsedData.surface == "た" && parsedData.lexicaCategory == "助動詞") && (parsedBeforeData!!.lexicaCategory == "動詞" && parsedBeforeData!!.surface.get(
+                    parsedBeforeData!!.surface.length - 1
+                ) == 'し')
+            ) {
+                // 直前の動詞の末尾の「し」を削除
+                convertedText[convertedText.size - 1] =
+                    "${parsedBeforeData!!.surface.substring(0, parsedBeforeData!!.surface.length - 1)}"
+                convertedText.add("いた")
+                convertedFlag = true
+            }
         }
         return convertedFlag
     }
