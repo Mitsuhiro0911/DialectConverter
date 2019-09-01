@@ -154,8 +154,12 @@ class Converter {
             convertedFlag = yaConvert(parsedDataList, parsedData)
         }
         if (!convertedFlag) {
-            // 「した」→「いた」
+            // 「した」→「いた」、「しちゃう」→「いちゃう」
             convertedFlag = itaConvert(parsedDataList, parsedData)
+        }
+        if (!convertedFlag) {
+            // 「から、ので、だから、なので」→「だもんで」
+            convertedFlag = damondeConvert(parsedDataList, parsedData)
         }
         return convertedFlag
     }
@@ -252,6 +256,25 @@ class Converter {
                 convertedText.add("${parsedData.surface}")
                 convertedFlag = true
             }
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「から、ので、だから、なので」→「だもんで」の変換処理
+     */
+    private fun damondeConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        // 「ため」は接続助詞ではなく名詞と形態素解析されてしまうため、変換対象から除外
+        var convertedFlag = false
+        if ((parsedData.surface == "から" || parsedData.surface == "ので") && parsedData.lexicaCategoryClassification1 == "接続助詞") {
+            // 「なので」→「なもんで」と変換されるのを防ぐ
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "な" && parsedBeforeData!!.lexicaCategory == "助動詞") {
+                    convertedText[convertedText.size - 1] = "だ"
+                }
+            }
+            convertedText.add("もんで")
+            convertedFlag = true
         }
         return convertedFlag
     }
