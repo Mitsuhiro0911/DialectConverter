@@ -164,6 +164,10 @@ class Converter {
             convertedFlag = saraConvert(parsedData)
         }
         if (!convertedFlag) {
+            // 「だよ、だぞ、ですよ、ですぞ」→「だに」
+            convertedFlag = daniConvert(parsedDataList, parsedData)
+        }
+        if (!convertedFlag) {
             // 「だろ、でしょ、だよね」→「だら」
             convertedFlag = daraConvert(parsedDataList, parsedData)
         }
@@ -177,7 +181,7 @@ class Converter {
     /**
      * 「ごと」→「さら」の変換処理
      */
-    private  fun saraConvert(parsedData: ParseResultData): Boolean {
+    private fun saraConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         if (parsedData.surface == "ごと" && parsedData.lexicaCategoryClassification1 == "接尾") {
             val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='ごと']]")
@@ -188,9 +192,29 @@ class Converter {
     }
 
     /**
+     * 「だよ、だぞ、ですよ、ですぞ」→「だに」の変換処理
+     */
+    private fun daniConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if ((parsedData.surface == "よ" && parsedData.lexicaCategory == "助詞") || (parsedData.surface == "ぞ" && parsedData.lexicaCategory == "助詞")) {
+            // 助詞がくっつく直前の単語を抽出
+            val preWordList: List<Node> = document.selectNodes("//pre_word[../enshu[text()='だに']]")
+            if (parsedBeforeData != null) {
+                for (preWord in preWordList) {
+                    if (preWord.text == parsedBeforeData!!.surface) {
+                        convertedText.add("だに")
+                        convertedFlag = true
+                    }
+                }
+            }
+        }
+        return convertedFlag
+    }
+
+    /**
      * 「だろ、でしょ、だよね」→「だら」の変換処理
      */
-    private  fun daraConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun daraConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
         // 使用中のneologd辞書だと「○○だろう」「○○でしょう」が謝解析されるが、その他辞書なら問題なし
         var convertedFlag = false
         var daraFlag = false
