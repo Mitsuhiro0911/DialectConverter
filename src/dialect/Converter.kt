@@ -71,6 +71,8 @@ class Converter {
                     convertedFlag = convertNoun(parsedDataList, parsedData)
                 } else if (parsedData.lexicaCategory == "形容詞") {
                     convertedFlag = convertAdjective(parsedData)
+                } else if (parsedData.lexicaCategory == "動詞") {
+                    convertedFlag = convertVerb(parsedData)
                 }
             }
 
@@ -129,6 +131,35 @@ class Converter {
         val standardWordList: List<Node> =
             document.selectNodes("//standard[../lexicaCategory[text()='副詞']][../importance[text()='3']]")
         convertedFlag = simplConvert(parsedData, standardWordList)
+        return convertedFlag
+    }
+
+    /**
+     * 動詞を遠州弁に変換する。
+     */
+    private fun convertVerb(parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        // lexicaCategoryが動詞 且つ importanceが3のstandard(標準語)情報を抽出
+        val standardWordList: List<Node> =
+            document.selectNodes("//standard[../lexicaCategory[text()='動詞']][../importance[text()='3']]")
+        for (standardWord in standardWordList) {
+            // 動詞は原型の情報で比較する
+            if (standardWord.text == parsedData.originalPattern) {
+                // 標準語に対応した遠州弁を取得
+                val ensyuWord: List<Node> = when (parsedData.conjugationalType) {
+                    "基本形" -> document.selectNodes("//conjugational/kihon[../../standard[text()='${standardWord.text}']]")
+                    "未然形" -> document.selectNodes("//conjugational/mizen[../../standard[text()='${standardWord.text}']]")
+                    "未然ウ接続" -> document.selectNodes("//conjugational/mizen_u[../../standard[text()='${standardWord.text}']]")
+                    "連用形" -> document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
+                    "仮定形" -> document.selectNodes("//conjugational/katei[../../standard[text()='${standardWord.text}']]")
+                    "命令ｅ" -> document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
+                    else -> document.selectNodes("//enshu[../standard[text()='${standardWord.text}']]")
+                }
+                println(ensyuWord)
+                convertedText.add(ensyuWord[0].text)
+                convertedFlag = true
+            }
+        }
         return convertedFlag
     }
 
