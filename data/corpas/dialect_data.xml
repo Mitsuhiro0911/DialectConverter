@@ -90,21 +90,6 @@
         </conjugational>
     </word>
     <word>
-        <standard>余計な</standard>
-        <standard>いらない</standard>
-        <enshu>いらん</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
         <standard>捨てる</standard>
         <enshu>うっちゃる</enshu>
         <importance>3</importance>
