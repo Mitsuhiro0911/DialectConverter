@@ -149,29 +149,29 @@ class Converter {
             // 動詞は原型の情報で比較する
             if (standardWord.text == parsedData.originalPattern) {
                 // 標準語に対応した遠州弁を取得
-                val ensyuWord: List<Node> = when (parsedData.conjugationalType) {
-                    "基本形" -> document.selectNodes("//conjugational/kihon[../../standard[text()='${standardWord.text}']]")
-                    //"文語基本形" -> document.selectNodes("//conjugational/kihon[../../standard[text()='${standardWord.text}']]")
-                    "未然形" -> document.selectNodes("//conjugational/mizen[../../standard[text()='${standardWord.text}']]")
-                    "未然ウ接続" -> document.selectNodes("//conjugational/mizen_u[../../standard[text()='${standardWord.text}']]")
-                    "未然ヌ接続" -> document.selectNodes("//conjugational/mizen_nu[../../standard[text()='${standardWord.text}']]")
-                    "未然レル接続" -> document.selectNodes("//conjugational/mizen_reru[../../standard[text()='${standardWord.text}']]")
-                    //"未然特殊" -> document.selectNodes("//conjugational/mizen_u[../../standard[text()='${standardWord.text}']]")
-                    "連用形" -> document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
-                    "連用タ接続" -> document.selectNodes("//conjugational/renyo_ta[../../standard[text()='${standardWord.text}']]")
-                    //"体言接続" -> document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
-                    //"体言接続特殊" -> document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
-                    //"体言接続特殊２" -> document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
-                    "仮定形" -> document.selectNodes("//conjugational/katei[../../standard[text()='${standardWord.text}']]")
-                    //"仮定縮約１" -> document.selectNodes("//conjugational/katei[../../standard[text()='${standardWord.text}']]")
-                    "命令ｅ" -> document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
-                    "命令ｒｏ" -> document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
-                    "命令ｙｏ" -> document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
-                    "命令ｉ" -> document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
-                    else -> document.selectNodes("//enshu[../standard[text()='${standardWord.text}']]")
+                var ensyuWord: List<Node>? = null
+                if (parsedData.conjugationalType == "基本形") {
+                    ensyuWord = document.selectNodes("//conjugational/kihon[../../standard[text()='${standardWord.text}']]")
+                } else if (parsedData.conjugationalType == "未然形" || parsedData.conjugationalType == "未然ウ接続" || parsedData.conjugationalType == "未然ヌ接続" || parsedData.conjugationalType == "未然レル接続") {
+                    ensyuWord = document.selectNodes("//conjugational/mizen[../../standard[text()='${standardWord.text}']]")
+                } else if (parsedData.conjugationalType == "連用形" || parsedData.conjugationalType == "連用タ接続") {
+                    ensyuWord = document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
+                } else if (parsedData.conjugationalType == "仮定形") {
+                    ensyuWord = document.selectNodes("//conjugational/katei[../../standard[text()='${standardWord.text}']]")
+                } else if (parsedData.conjugationalType == "命令ｅ" || parsedData.conjugationalType == "命令ｒｏ" || parsedData.conjugationalType == "命令ｙｏ" || parsedData.conjugationalType == "命令ｉ") {
+                    ensyuWord = document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
                 }
-                convertedText.add(ensyuWord[0].text)
-                convertedFlag = true
+                // TODO:今後必要に応じて実装
+//                else if (parsedData.conjugationalType == "文語基本形") {}
+//                else if (parsedData.conjugationalType == "未然特殊") {}
+//                else if (parsedData.conjugationalType == "体言接続") {}
+//                else if (parsedData.conjugationalType == "体言接続特殊") {}
+//                else if (parsedData.conjugationalType == "体言接続特殊２") {}
+//                else if (parsedData.conjugationalType == "仮定縮約１") {}
+                if (ensyuWord != null) {
+                    convertedText.add(ensyuWord[0].text)
+                    convertedFlag = true
+                }
             }
         }
         return convertedFlag
