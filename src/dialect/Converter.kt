@@ -156,6 +156,17 @@ class Converter {
                     ensyuWord = document.selectNodes("//conjugational/mizen[../../standard[text()='${standardWord.text}']]")
                 } else if (parsedData.conjugationalType == "連用形" || parsedData.conjugationalType == "連用タ接続") {
                     ensyuWord = document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
+                    // 直後が助動詞の「た」で、変換先の遠州弁が連用タ接続を取りうる場合、連用タ接続の遠州弁に変換する
+                    if (parsedNextData != null) {
+                        if (parsedNextData!!.surface == "た" && parsedNextData!!.lexicaCategory == "助動詞") {
+                            val renyo_ta: List<Node> = document.selectNodes("//conjugational/renyo_ta[../../standard[text()='${standardWord.text}']]")
+                            // 遠州弁コーパスの連用タ接続の情報が空文字でなければ、連用タ接続を取りうる遠州弁と判定できる
+                            if (renyo_ta[0].text != "") {
+                                ensyuWord = renyo_ta
+                            }
+                        }
+                    }
+
                 } else if (parsedData.conjugationalType == "仮定形") {
                     ensyuWord = document.selectNodes("//conjugational/katei[../../standard[text()='${standardWord.text}']]")
                 } else if (parsedData.conjugationalType == "命令ｅ" || parsedData.conjugationalType == "命令ｒｏ" || parsedData.conjugationalType == "命令ｙｏ" || parsedData.conjugationalType == "命令ｉ") {
