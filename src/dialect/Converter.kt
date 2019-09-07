@@ -153,7 +153,29 @@ class Converter {
                 if (parsedData.conjugationalType == "基本形") {
                     ensyuWord = document.selectNodes("//conjugational/kihon[../../standard[text()='${standardWord.text}']]")
                 } else if (parsedData.conjugationalType == "未然形" || parsedData.conjugationalType == "未然ウ接続" || parsedData.conjugationalType == "未然ヌ接続" || parsedData.conjugationalType == "未然レル接続") {
+                    // 未然形への変換
                     ensyuWord = document.selectNodes("//conjugational/mizen[../../standard[text()='${standardWord.text}']]")
+                    if (parsedNextData != null) {
+                        if (parsedNextData!!.surface == "う" && parsedNextData!!.lexicaCategory == "助動詞") {
+                            // 未然ウ接続への変換
+                            val mizen_u: List<Node> = document.selectNodes("//conjugational/mizen_u[../../standard[text()='${standardWord.text}']]")
+                            if (mizen_u[0].text != "") {
+                                ensyuWord = mizen_u
+                            }
+                        } else if (parsedNextData!!.surface == "ぬ" && parsedNextData!!.lexicaCategory == "助動詞") {
+                            // 未然ヌ接続への変換
+                            val mizen_nu: List<Node> = document.selectNodes("//conjugational/mizen_nu[../../standard[text()='${standardWord.text}']]")
+                            if (mizen_nu[0].text != "") {
+                                ensyuWord = mizen_nu
+                            }
+                        } else if (parsedNextData!!.surface == "れる" && parsedNextData!!.lexicaCategory == "動詞" && parsedNextData!!.lexicaCategoryClassification1 == "接尾") {
+                            // 未然レル接続への変換
+                            val mizen_reru: List<Node> = document.selectNodes("//conjugational/mizen_reru[../../standard[text()='${standardWord.text}']]")
+                            if (mizen_reru[0].text != "") {
+                                ensyuWord = mizen_reru
+                            }
+                        }
+                    }
                 } else if (parsedData.conjugationalType == "連用形" || parsedData.conjugationalType == "連用タ接続") {
                     ensyuWord = document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
                     // 直後が助動詞の「た」で、変換先の遠州弁が連用タ接続を取りうる場合、連用タ接続の遠州弁に変換する
