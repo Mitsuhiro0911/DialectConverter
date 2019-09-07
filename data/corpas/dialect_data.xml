@@ -12,7 +12,10 @@
             <kihon>頭切る</kihon>
             <mizen>頭切ら</mizen>
             <mizen_u>頭切ろ</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>頭切り</renyo>
+            <renyo_ta></renyo_ta>
             <katei>頭切れ</katei>
             <meirei>頭切れ</meirei>
         </conjugational>
@@ -26,7 +29,10 @@
             <kihon></kihon>
             <mizen></mizen>
             <mizen_u></mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo></renyo>
+            <renyo_ta></renyo_ta>
             <katei></katei>
             <meirei></meirei>
         </conjugational>
@@ -54,7 +60,10 @@
             <kihon></kihon>
             <mizen></mizen>
             <mizen_u></mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo></renyo>
+            <renyo_ta></renyo_ta>
             <katei></katei>
             <meirei></meirei>
         </conjugational>
@@ -98,6 +107,8 @@
             <kihon>うっちゃる</kihon>
             <mizen>うっちゃ</mizen>
             <mizen_u>うっちゃろ</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>うっちゃり</renyo>
             <renyo_ta>うっちゃっ</renyo_ta>
             <katei>うっちゃれ</katei>
@@ -128,7 +139,10 @@
             <kihon>かう</kihon>
             <mizen>かわ</mizen>
             <mizen_u>かお</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>かい</renyo>
+            <renyo_ta></renyo_ta>
             <katei>かえ</katei>
             <meirei>かえ</meirei>
         </conjugational>
@@ -143,7 +157,10 @@
             <kihon>かが抜ける</kihon>
             <mizen>かが抜け</mizen>
             <mizen_u>かが抜け</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>かが抜け</renyo>
+            <renyo_ta></renyo_ta>
             <katei>かが抜けれ</katei>
             <meirei></meirei>
         </conjugational>
@@ -157,7 +174,10 @@
             <kihon>かたす</kihon>
             <mizen>かたさ</mizen>
             <mizen_u>かたそ</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>かたし</renyo>
+            <renyo_ta></renyo_ta>
             <katei>かたせ</katei>
             <meirei>かたせ</meirei>
         </conjugational>
@@ -186,7 +206,10 @@
             <kihon>くれる</kihon>
             <mizen>くれ</mizen>
             <mizen_u>くれ</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>くれ</renyo>
+            <renyo_ta></renyo_ta>
             <katei>くれれ</katei>
             <meirei>くれろ</meirei>
         </conjugational>
@@ -377,7 +400,10 @@
             <kihon>血が死んだ</kihon>
             <mizen>血が死な</mizen>
             <mizen_u>血が死しの</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>血が死に</renyo>
+            <renyo_ta></renyo_ta>
             <katei>血が死ね</katei>
             <meirei>血が死ね</meirei>
         </conjugational>
@@ -391,7 +417,10 @@
             <kihon>ちみくる</kihon>
             <mizen>ちみくれ</mizen>
             <mizen_u>ちみくろ</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>ちみくり</renyo>
+            <renyo_ta></renyo_ta>
             <katei>ちみくれ</katei>
             <meirei>ちみくれ</meirei>
         </conjugational>
@@ -547,7 +576,10 @@
             <kihon>ばかになる</kihon>
             <mizen>ばかになら</mizen>
             <mizen_u>ばかになろ</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>ばかになり</renyo>
+            <renyo_ta></renyo_ta>
             <katei>ばかになれ</katei>
             <meirei>ばかになれ</meirei>
         </conjugational>
@@ -561,7 +593,10 @@
             <kihon>はさげる</kihon>
             <mizen>はさげ</mizen>
             <mizen_u>はさげ</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>はさげり</renyo>
+            <renyo_ta></renyo_ta>
             <katei>はさげれ</katei>
             <meirei>はさげろ</meirei>
         </conjugational>
@@ -575,7 +610,10 @@
             <kihon>はならかす</kihon>
             <mizen>はならかさ</mizen>
             <mizen_u>はならかそ</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>はならかし</renyo>
+            <renyo_ta></renyo_ta>
             <katei>はならかせ</katei>
             <meirei>はならかせ</meirei>
         </conjugational>
@@ -652,7 +690,10 @@
             <kihon>ほじくる</kihon>
             <mizen>ほじくら</mizen>
             <mizen_u>ほじくろ</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>ほじくり</renyo>
+            <renyo_ta></renyo_ta>
             <katei>ほじくれ</katei>
             <meirei>ほじくれ</meirei>
         </conjugational>
@@ -682,7 +723,10 @@
             <kihon>まぜる</kihon>
             <mizen>まぜ</mizen>
             <mizen_u>まぜ</mizen_u>
+            <mizen_nu></mizen_nu>
+            <mizen_reru></mizen_reru>
             <renyo>まぜ</renyo>
+            <renyo_ta></renyo_ta>
             <katei>まぜれ</katei>
             <meirei>まぜろ</meirei>
         </conjugational>

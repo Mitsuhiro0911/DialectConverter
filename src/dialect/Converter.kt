@@ -138,6 +138,9 @@ class Converter {
      * 動詞を遠州弁に変換する。
      */
     private fun convertVerb(parsedData: ParseResultData): Boolean {
+        // TODO:標準語が「連用形」のみ　＆　遠州弁が「連用形」「連用形タ接続」のような場合、正しい変換先がわからない。よって、後ろの単語情報も調べる。
+        // TODO:遠州弁コーパスの動詞のconjugationalにMecabが取りうる全ての品詞情報のタグを記述する。未然ウ接続とかが空文字かどうかによって、その単語が未然ウ接続を取りうるかを判定し、処理を分岐する。
+        // TODO:↑Verb.csvを読み込んで、重複を排除すれば、全活用形のリストを作成できる。
         var convertedFlag = false
         // lexicaCategoryが動詞 且つ importanceが3のstandard(標準語)情報を抽出
         val standardWordList: List<Node> =
@@ -148,13 +151,23 @@ class Converter {
                 // 標準語に対応した遠州弁を取得
                 val ensyuWord: List<Node> = when (parsedData.conjugationalType) {
                     "基本形" -> document.selectNodes("//conjugational/kihon[../../standard[text()='${standardWord.text}']]")
+                    //"文語基本形" -> document.selectNodes("//conjugational/kihon[../../standard[text()='${standardWord.text}']]")
                     "未然形" -> document.selectNodes("//conjugational/mizen[../../standard[text()='${standardWord.text}']]")
                     "未然ウ接続" -> document.selectNodes("//conjugational/mizen_u[../../standard[text()='${standardWord.text}']]")
+                    "未然ヌ接続" -> document.selectNodes("//conjugational/mizen_nu[../../standard[text()='${standardWord.text}']]")
+                    "未然レル接続" -> document.selectNodes("//conjugational/mizen_reru[../../standard[text()='${standardWord.text}']]")
+                    //"未然特殊" -> document.selectNodes("//conjugational/mizen_u[../../standard[text()='${standardWord.text}']]")
                     "連用形" -> document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
+                    "連用タ接続" -> document.selectNodes("//conjugational/renyo_ta[../../standard[text()='${standardWord.text}']]")
+                    //"体言接続" -> document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
+                    //"体言接続特殊" -> document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
+                    //"体言接続特殊２" -> document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
                     "仮定形" -> document.selectNodes("//conjugational/katei[../../standard[text()='${standardWord.text}']]")
+                    //"仮定縮約１" -> document.selectNodes("//conjugational/katei[../../standard[text()='${standardWord.text}']]")
                     "命令ｅ" -> document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
                     "命令ｒｏ" -> document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
                     "命令ｙｏ" -> document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
+                    "命令ｉ" -> document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
                     else -> document.selectNodes("//enshu[../standard[text()='${standardWord.text}']]")
                 }
                 convertedText.add(ensyuWord[0].text)
