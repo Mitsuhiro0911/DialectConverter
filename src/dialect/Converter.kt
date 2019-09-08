@@ -31,6 +31,7 @@ class Converter {
         for (parsedData in parsedDataList) {
             // スキップフラグが1(変換不要)の場合処理をスキップ
             if (skipFlagList!![parsedDataList.indexOf(parsedData)] == 1) {
+                i = i.plus(1)
                 continue
             }
 
