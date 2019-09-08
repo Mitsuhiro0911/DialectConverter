@@ -207,7 +207,7 @@ class Converter {
             // 直後が助動詞の「た」で、変換先の遠州弁が連用タ接続を取りうる場合、連用タ接続の遠州弁に変換する
             if (parsedNextData != null) {
                 // TODO:「挟んだ」のように濁音が続く場合の連用タ接続をどのように処理するか考慮する
-                if (parsedNextData!!.surface == "た" && parsedNextData!!.lexicaCategory == "助動詞") {
+                if ((parsedNextData!!.surface == "た" || parsedNextData!!.surface == "だ") && parsedNextData!!.lexicaCategory == "助動詞") {
                     val renyo_ta: List<Node> = document.selectNodes("//conjugational/renyo_ta[../../standard[text()='${standardWord}']]")
                     // 遠州弁コーパスの連用タ接続の情報が空文字でなければ、連用タ接続を取りうる遠州弁と判定できる
                     if (renyo_ta[0].text != "") {
@@ -530,7 +530,7 @@ class Converter {
                 }
             }
         }
-        // 連用タ接続に変換する際、「血が死んた」になるのを防ぐ処理
+        // 連用タ接続に変換する際、血が死ん「た」になるのを防ぐ処理
         if (convertedFlag) {
             if (convertedText[convertedText.size - 1] == "血が死ん") {
                 skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
