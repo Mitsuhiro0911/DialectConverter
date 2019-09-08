@@ -17,6 +17,8 @@ class Converter {
     private var parsedBeforeData: ParseResultData? = null
     // parsedDataListの参照中データの前の前のデータ
     private var parsedBeforeBeforeData: ParseResultData? = null
+    // parsedDataListの参照中データの3つ前のデータ
+    private var parsed3BeforeData: ParseResultData? = null
     // 変換処理の要・不要を判定するフラグ。parsedDataListの要素とインデックスが対応付いている。
     private var skipFlagList: ArrayList<Int>? = null
 
@@ -59,6 +61,12 @@ class Converter {
             parsedBeforeBeforeData = null
             if (i - 2 > -1) {
                 parsedBeforeBeforeData = parsedDataList[i - 2]
+            }
+
+            // parsedBeforeBeforeDataが先頭のデータでなければ、前データの情報を取得し、parsed3BeforeDataへ格納
+            parsed3BeforeData = null
+            if (i - 3 > -1) {
+                parsed3BeforeData = parsedDataList[i - 3]
             }
 
             var convertedFlag = false
@@ -250,7 +258,7 @@ class Converter {
         }
         if (!convertedFlag) {
             // 「した」→「いた」、「しちゃう」→「いちゃう」
-            convertedFlag = itaConvert(parsedData)
+//            convertedFlag = itaConvert(parsedData)
         }
         if (!convertedFlag) {
             // 「から、ので、だから、なので」→「だもんで」
@@ -267,6 +275,10 @@ class Converter {
         if (!convertedFlag) {
             // 「炭酸が抜ける、気が抜ける」→「かが抜ける」の変換処理
             convertedFlag = kagaNukeruConvert(parsedData)
+        }
+        if (!convertedFlag) {
+            // 「内出血する、青あざができる、青あざを作る」→「血が死ぬ」の変換処理
+            convertedFlag = chigaShinuConvert(parsedDataList, parsedData)
         }
         return convertedFlag
     }
@@ -458,6 +470,71 @@ class Converter {
                         }
                     }
                 }
+            }
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「内出血する、青あざができる、青あざを作る」→「血が死ぬ」の変換処理
+     */
+    private fun chigaShinuConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if (parsedData.originalPattern == "する" && parsedData.lexicaCategory == "動詞") {
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "内出血") {
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedFlag = getVerbConjugational(parsedData, "内出血する")
+                } else if (parsedBeforeData!!.surface == "を" && parsedBeforeData!!.lexicaCategory == "助詞") {
+                    if (parsedBeforeBeforeData != null) {
+                        if (parsedBeforeBeforeData!!.surface == "内出血") {
+                            convertedText.removeAt(convertedText.size - 1)
+                            convertedText.removeAt(convertedText.size - 1)
+                            convertedFlag = getVerbConjugational(parsedData, "内出血する")
+                        }
+                    }
+                }
+            }
+        } else if (parsedData.originalPattern == "できる" && parsedData.lexicaCategory == "動詞") {
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "が" && parsedBeforeData!!.lexicaCategory == "助詞") {
+                    if (parsedBeforeBeforeData != null) {
+                        if (parsedBeforeBeforeData!!.surface == "あざ") {
+                            if (parsed3BeforeData != null) {
+                                if (parsed3BeforeData!!.surface == "青") {
+                                    convertedText.removeAt(convertedText.size - 1)
+                                    convertedText.removeAt(convertedText.size - 1)
+                                    convertedText.removeAt(convertedText.size - 1)
+                                    convertedFlag = getVerbConjugational(parsedData, "青あざができる")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } else if (parsedData.originalPattern == "作る" && parsedData.lexicaCategory == "動詞") {
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "を" && parsedBeforeData!!.lexicaCategory == "助詞") {
+                    if (parsedBeforeBeforeData != null) {
+                        if (parsedBeforeBeforeData!!.surface == "あざ") {
+                            if (parsed3BeforeData != null) {
+                                if (parsed3BeforeData!!.surface == "青") {
+                                    convertedText.removeAt(convertedText.size - 1)
+                                    convertedText.removeAt(convertedText.size - 1)
+                                    convertedText.removeAt(convertedText.size - 1)
+                                    convertedFlag = getVerbConjugational(parsedData, "青あざを作る")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 連用タ接続に変換する際、「血が死んた」になるのを防ぐ処理
+        if (convertedFlag) {
+            if (convertedText[convertedText.size - 1] == "血が死ん") {
+                skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
+                convertedText.add("だ")
             }
         }
         return convertedFlag
