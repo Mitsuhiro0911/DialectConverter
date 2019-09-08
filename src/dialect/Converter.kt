@@ -280,6 +280,10 @@ class Converter {
             // 「内出血する、青あざができる、青あざを作る」→「血が死ぬ」の変換処理
             convertedFlag = chigaShinuConvert(parsedDataList, parsedData)
         }
+        if (!convertedFlag) {
+            // 「挟む」→「はさげる」の変換処理
+            convertedFlag = hasageruConvert(parsedDataList, parsedData)
+        }
         return convertedFlag
     }
 
@@ -535,6 +539,24 @@ class Converter {
             if (convertedText[convertedText.size - 1] == "血が死ん") {
                 skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
                 convertedText.add("だ")
+            }
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「挟む」→「はさげる」の変換処理
+     */
+    private fun hasageruConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if (parsedData.originalPattern == "挟む" && parsedData.lexicaCategory == "動詞") {
+            convertedFlag = getVerbConjugational(parsedData, "挟む")
+        }
+        // 連用タ接続に変換する際、はさげ「だ」になるのを防ぐ処理
+        if (convertedFlag) {
+            if (parsedData.conjugationalType == "連用タ接続") {
+                skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
+                convertedText.add("た")
             }
         }
         return convertedFlag
