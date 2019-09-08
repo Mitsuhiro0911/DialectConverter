@@ -205,7 +205,7 @@
         <conjugational>
             <kihon>くれる</kihon>
             <mizen>くれ</mizen>
-            <mizen_u>くれ</mizen_u>
+            <mizen_u>くれよ</mizen_u>
             <mizen_nu></mizen_nu>
             <mizen_reru></mizen_reru>
             <renyo>くれ</renyo>
@@ -415,12 +415,12 @@
         <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
             <kihon>ちみくる</kihon>
-            <mizen>ちみくれ</mizen>
+            <mizen>ちみくら</mizen>
             <mizen_u>ちみくろ</mizen_u>
             <mizen_nu></mizen_nu>
             <mizen_reru></mizen_reru>
             <renyo>ちみくり</renyo>
-            <renyo_ta></renyo_ta>
+            <renyo_ta>ちみくっ</renyo_ta>
             <katei>ちみくれ</katei>
             <meirei>ちみくれ</meirei>
         </conjugational>
@@ -596,7 +596,7 @@
             <mizen_nu></mizen_nu>
             <mizen_reru></mizen_reru>
             <renyo>はさげり</renyo>
-            <renyo_ta></renyo_ta>
+            <renyo_ta>はさげ</renyo_ta>
             <katei>はさげれ</katei>
             <meirei>はさげろ</meirei>
         </conjugational>
@@ -681,7 +681,6 @@
     </word>
     <word>
         <standard>掘る</standard>
-        <standard>穴をあける</standard>
         <standard>ほじる</standard>
         <enshu>ほじくる</enshu>
         <importance>3</importance>
@@ -693,7 +692,7 @@
             <mizen_nu></mizen_nu>
             <mizen_reru></mizen_reru>
             <renyo>ほじくり</renyo>
-            <renyo_ta></renyo_ta>
+            <renyo_ta>ほじくっ</renyo_ta>
             <katei>ほじくれ</katei>
             <meirei>ほじくれ</meirei>
         </conjugational>
