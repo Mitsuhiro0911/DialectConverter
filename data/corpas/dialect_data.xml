@@ -392,9 +392,10 @@
         </conjugational>
     </word>
     <word>
-        <standard>内出血した</standard>
-        <standard>青あざができた</standard>
-        <enshu>血が死んだ</enshu>
+        <standard>内出血する</standard>
+        <standard>青あざができる</standard>
+        <standard>青あざを作る</standard>
+        <enshu>血が死ぬ</enshu>
         <importance>3</importance>
         <lexicaCategory>動詞</lexicaCategory>
         <conjugational>
@@ -404,7 +405,7 @@
             <mizen_nu></mizen_nu>
             <mizen_reru></mizen_reru>
             <renyo>血が死に</renyo>
-            <renyo_ta></renyo_ta>
+            <renyo_ta>血が死ん</renyo_ta>
             <katei>血が死ね</katei>
             <meirei>血が死ね</meirei>
         </conjugational>
