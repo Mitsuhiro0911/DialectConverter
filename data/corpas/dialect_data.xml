@@ -84,8 +84,10 @@
         </conjugational>
     </word>
     <word>
-        <standard>不愉快</standard>
+        <standard>不愉快な</standard>
+        <standard>不愉快だ</standard>
         <standard>いやだ</standard>
+        <standard>いやな</standard>
         <enshu>いやったい</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -713,23 +715,6 @@
             <renyo></renyo>
             <katei></katei>
             <meirei></meirei>
-        </conjugational>
-    </word>
-    <word>
-        <standard>仲間にいれる</standard>
-        <enshu>まぜる</enshu>
-        <importance>3</importance>
-        <lexicaCategory>動詞</lexicaCategory>
-        <conjugational>
-            <kihon>まぜる</kihon>
-            <mizen>まぜ</mizen>
-            <mizen_u>まぜ</mizen_u>
-            <mizen_nu></mizen_nu>
-            <mizen_reru></mizen_reru>
-            <renyo>まぜ</renyo>
-            <renyo_ta></renyo_ta>
-            <katei>まぜれ</katei>
-            <meirei>まぜろ</meirei>
         </conjugational>
     </word>
     <word>
