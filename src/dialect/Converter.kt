@@ -15,6 +15,8 @@ class Converter {
     private var parsedNextNextData: ParseResultData? = null
     // parsedDataListの参照中データの前のデータ
     private var parsedBeforeData: ParseResultData? = null
+    // parsedDataListの参照中データの前の前のデータ
+    private var parsedBeforeBeforeData: ParseResultData? = null
     // 変換処理の要・不要を判定するフラグ。parsedDataListの要素とインデックスが対応付いている。
     private var skipFlagList: ArrayList<Int>? = null
 
@@ -51,6 +53,12 @@ class Converter {
             parsedBeforeData = null
             if (i - 1 > -1) {
                 parsedBeforeData = parsedDataList[i - 1]
+            }
+
+            // parsedBeforeDataが先頭のデータでなければ、前データの情報を取得し、parsedBeforeBeforeDataへ格納
+            parsedBeforeBeforeData = null
+            if (i - 2 > -1) {
+                parsedBeforeBeforeData = parsedDataList[i - 2]
             }
 
             var convertedFlag = false
@@ -375,28 +383,30 @@ class Converter {
      */
     private fun atamaKiruConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
         var convertedFlag = false
-        if (parsedData.surface == "散髪") {
-            if (parsedNextData != null) {
-                if (parsedNextData!!.originalPattern == "する" && parsedNextData!!.lexicaCategory == "動詞") {
+//        if (parsedData.surface == "散髪") {
+        // TODO:「散髪した」が「散髪いた」になってしまうバグが発生。(「した」→「いた」が適用されてしまう)
+        if (parsedData.originalPattern == "する" && parsedData.lexicaCategory == "動詞") {
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "散髪") {
                     // 「散髪する」→「頭切る」
-                    // 動詞「する」はparsedNextData(第一引数)
-                    convertedFlag = getVerbConjugational(parsedNextData!!, "散髪する")
-                    skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedFlag = getVerbConjugational(parsedData, "散髪する")
                 }
             }
-        } else if (parsedData.surface == "髪" || parsedData.surface == "髪の毛") {
-            if (parsedNextData != null) {
-                if (parsedNextData!!.originalPattern == "切る" && parsedNextData!!.lexicaCategory == "動詞") {
+//        } else if (parsedData.surface == "髪" || parsedData.surface == "髪の毛") {
+        } else if (parsedData.originalPattern == "切る" && parsedData.lexicaCategory == "動詞") {
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "髪" || parsedBeforeData!!.surface == "髪の毛") {
                     // 「髪切る、髪の毛切る」→「頭切る」
-                    convertedFlag = getVerbConjugational(parsedNextData!!, "髪を切る")
-                    skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
-                } else if (parsedNextData!!.surface == "を" && parsedNextData!!.lexicaCategory == "助詞") {
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedFlag = getVerbConjugational(parsedData, "髪を切る")
+                } else if (parsedBeforeData!!.surface == "を" && parsedBeforeData!!.lexicaCategory == "助詞") {
                     // 「髪を切る、髪の毛を切る」→「頭切る」
-                    if (parsedNextNextData != null) {
-                        if (parsedNextNextData!!.originalPattern == "切る" && parsedNextNextData!!.lexicaCategory == "動詞") {
-                            convertedFlag = getVerbConjugational(parsedNextNextData!!, "髪を切る")
-                            skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
-                            skipFlagList!![(parsedDataList.indexOf(parsedNextNextData!!))] = 1
+                    if (parsedBeforeBeforeData != null) {
+                        if (parsedBeforeBeforeData!!.surface == "髪" || parsedBeforeBeforeData!!.surface == "髪の毛") {
+                            convertedText.removeAt(convertedText.size - 1)
+                            convertedText.removeAt(convertedText.size - 1)
+                            convertedFlag = getVerbConjugational(parsedData, "髪を切る")
                         }
                     }
                 }
