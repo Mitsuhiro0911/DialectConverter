@@ -284,6 +284,10 @@ class Converter {
             // 「挟む」→「はさげる」の変換処理
             convertedFlag = hasageruConvert(parsedDataList, parsedData)
         }
+        if (!convertedFlag) {
+            // 「(壊れる、)使えなくなる、使えんくなる」→「ばかになる」の変換処理
+            convertedFlag = bakaniNaruConvert(parsedDataList, parsedData)
+        }
         return convertedFlag
     }
 
@@ -557,6 +561,28 @@ class Converter {
             if (parsedData.conjugationalType == "連用タ接続") {
                 skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
                 convertedText.add("た")
+            }
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「(壊れる、)使えなくなる、使えんくなる」→「ばかになる」の変換処理(「壊れる」は通常の動詞変換メソッドでOK)
+     */
+    private fun bakaniNaruConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if (parsedData.originalPattern == "なる" && parsedData.lexicaCategory == "動詞") {
+            if (parsedBeforeData != null) {
+                if ((parsedBeforeData!!.surface == "なく" && parsedBeforeData!!.lexicaCategory == "助動詞") ||
+                    (parsedBeforeData!!.surface == "く" && parsedBeforeData!!.lexicaCategory == "動詞")) {
+                    if (parsedBeforeBeforeData != null) {
+                        if (parsedBeforeBeforeData!!.originalPattern == "使える") {
+                            convertedText.removeAt(convertedText.size - 1)
+                            convertedText.removeAt(convertedText.size - 1)
+                            convertedFlag = getVerbConjugational(parsedData, "使えなくなる")
+                        }
+                    }
+                }
             }
         }
         return convertedFlag
