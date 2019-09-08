@@ -260,6 +260,10 @@ class Converter {
             // 「散髪する、髪の毛を切る、髪を切る、髪切る」→「頭切る」
             convertedFlag = atamaKiruConvert(parsedDataList, parsedData)
         }
+        if (!convertedFlag) {
+            // 「鍵をかける、鍵かける」→「かう」の変換処理
+            convertedFlag = kagiwoKauConvert(parsedDataList, parsedData)
+        }
         return convertedFlag
     }
 
@@ -407,6 +411,27 @@ class Converter {
                             convertedText.removeAt(convertedText.size - 1)
                             convertedText.removeAt(convertedText.size - 1)
                             convertedFlag = getVerbConjugational(parsedData, "髪を切る")
+                        }
+                    }
+                }
+            }
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「鍵をかける、鍵かける」→「かう」の変換処理
+     */
+    private fun kagiwoKauConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if (parsedData.originalPattern == "かける" && parsedData.lexicaCategory == "動詞") {
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "鍵") {
+                    convertedFlag = getVerbConjugational(parsedData, "鍵かける")
+                } else if (parsedBeforeData!!.surface == "を" && parsedBeforeData!!.lexicaCategory == "助詞") {
+                    if (parsedBeforeBeforeData != null) {
+                        if (parsedBeforeBeforeData!!.surface == "鍵") {
+                            convertedFlag = getVerbConjugational(parsedData, "鍵をかける")
                         }
                     }
                 }
