@@ -258,11 +258,15 @@ class Converter {
         }
         if (!convertedFlag) {
             // 「散髪する、髪の毛を切る、髪を切る、髪切る」→「頭切る」
-            convertedFlag = atamaKiruConvert(parsedDataList, parsedData)
+            convertedFlag = atamaKiruConvert(parsedData)
         }
         if (!convertedFlag) {
             // 「鍵をかける、鍵かける」→「かう」の変換処理
-            convertedFlag = kagiwoKauConvert(parsedDataList, parsedData)
+            convertedFlag = kagiwoKauConvert(parsedData)
+        }
+        if (!convertedFlag) {
+            // 「炭酸が抜ける、気が抜ける」→「かが抜ける」の変換処理
+            convertedFlag = kagaNukeruConvert(parsedData)
         }
         return convertedFlag
     }
@@ -385,9 +389,8 @@ class Converter {
     /**
      * 「散髪する、髪の毛を切る、髪を切る、髪切る」→「頭切る」の変換処理
      */
-    private fun atamaKiruConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun atamaKiruConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
-//        if (parsedData.surface == "散髪") {
         // TODO:「散髪した」が「散髪いた」になってしまうバグが発生。(「した」→「いた」が適用されてしまう)
         if (parsedData.originalPattern == "する" && parsedData.lexicaCategory == "動詞") {
             if (parsedBeforeData != null) {
@@ -397,7 +400,6 @@ class Converter {
                     convertedFlag = getVerbConjugational(parsedData, "散髪する")
                 }
             }
-//        } else if (parsedData.surface == "髪" || parsedData.surface == "髪の毛") {
         } else if (parsedData.originalPattern == "切る" && parsedData.lexicaCategory == "動詞") {
             if (parsedBeforeData != null) {
                 if (parsedBeforeData!!.surface == "髪" || parsedBeforeData!!.surface == "髪の毛") {
@@ -422,7 +424,7 @@ class Converter {
     /**
      * 「鍵をかける、鍵かける」→「かう」の変換処理
      */
-    private fun kagiwoKauConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun kagiwoKauConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         if (parsedData.originalPattern == "かける" && parsedData.lexicaCategory == "動詞") {
             if (parsedBeforeData != null) {
@@ -432,6 +434,27 @@ class Converter {
                     if (parsedBeforeBeforeData != null) {
                         if (parsedBeforeBeforeData!!.surface == "鍵") {
                             convertedFlag = getVerbConjugational(parsedData, "鍵をかける")
+                        }
+                    }
+                }
+            }
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「炭酸が抜ける、気が抜ける」→「かが抜ける」の変換処理
+     */
+    private fun kagaNukeruConvert(parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if (parsedData.originalPattern == "抜ける" && parsedData.lexicaCategory == "動詞") {
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "が" && parsedBeforeData!!.lexicaCategory == "助詞") {
+                    if (parsedBeforeBeforeData != null) {
+                        if (parsedBeforeBeforeData!!.surface == "炭酸" || parsedBeforeBeforeData!!.surface == "気") {
+                            convertedText.removeAt(convertedText.size - 1)
+                            convertedText.removeAt(convertedText.size - 1)
+                            convertedFlag = getVerbConjugational(parsedData, "炭酸が抜ける")
                         }
                     }
                 }
