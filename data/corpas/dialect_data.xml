@@ -15,7 +15,7 @@
             <mizen_nu></mizen_nu>
             <mizen_reru></mizen_reru>
             <renyo>頭切り</renyo>
-            <renyo_ta></renyo_ta>
+            <renyo_ta>頭切っ</renyo_ta>
             <katei>頭切れ</katei>
             <meirei>頭切れ</meirei>
         </conjugational>
@@ -132,6 +132,7 @@
     </word>
     <word>
         <standard>鍵をかける</standard>
+        <standard>鍵かける</standard>
         <enshu>かう</enshu>
         <importance>3</importance>
         <lexicaCategory>動詞</lexicaCategory>
@@ -142,7 +143,7 @@
             <mizen_nu></mizen_nu>
             <mizen_reru></mizen_reru>
             <renyo>かい</renyo>
-            <renyo_ta></renyo_ta>
+            <renyo_ta>かっ</renyo_ta>
             <katei>かえ</katei>
             <meirei>かえ</meirei>
         </conjugational>
