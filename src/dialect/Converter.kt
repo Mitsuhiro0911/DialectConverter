@@ -288,6 +288,10 @@ class Converter {
             // 「(壊れる、)使えなくなる、使えんくなる」→「ばかになる」の変換処理
             convertedFlag = bakaniNaruConvert(parsedDataList, parsedData)
         }
+        if (!convertedFlag) {
+            // 「不愉快な、不愉快だ、いやだ、いやな」→「いやったい」の変換処理
+            convertedFlag = iyattaiConvert(parsedDataList, parsedData)
+        }
         return convertedFlag
     }
 
@@ -582,6 +586,24 @@ class Converter {
                             convertedFlag = getVerbConjugational(parsedData, "使えなくなる")
                         }
                     }
+                }
+            }
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「不愉快な、不愉快だ、いやだ、いやな」→「いやったい」の変換処理
+     */
+    private fun iyattaiConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if ((parsedData.surface == "な" || parsedData.surface == "だ") && parsedData.lexicaCategory == "助動詞") {
+            if (parsedBeforeData != null) {
+                if ((parsedBeforeData!!.surface == "いや" || parsedBeforeData!!.surface == "不愉快") && parsedBeforeData!!.lexicaCategory == "名詞") {
+                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='不愉快な']]")
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedText.add(ensyuWord[0].text)
+                    convertedFlag = true
                 }
             }
         }
