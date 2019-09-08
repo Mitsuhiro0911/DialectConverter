@@ -138,9 +138,7 @@ class Converter {
      * 動詞を遠州弁に変換する。
      */
     private fun convertVerb(parsedData: ParseResultData): Boolean {
-        // TODO:標準語が「連用形」のみ　＆　遠州弁が「連用形」「連用形タ接続」のような場合、正しい変換先がわからない。よって、後ろの単語情報も調べる。
-        // TODO:遠州弁コーパスの動詞のconjugationalにMecabが取りうる全ての品詞情報のタグを記述する。未然ウ接続とかが空文字かどうかによって、その単語が未然ウ接続を取りうるかを判定し、処理を分岐する。
-        // TODO:↑Verb.csvを読み込んで、重複を排除すれば、全活用形のリストを作成できる。
+        // TODO:遠州弁コーパスの未然ウ接続、未然ヌ接続、未然レル接続、連用タ接続の情報がまだ作成中のため、記載すること
         var convertedFlag = false
         // lexicaCategoryが動詞 且つ importanceが3のstandard(標準語)情報を抽出
         val standardWordList: List<Node> =
@@ -148,64 +146,74 @@ class Converter {
         for (standardWord in standardWordList) {
             // 動詞は原型の情報で比較する
             if (standardWord.text == parsedData.originalPattern) {
-                // 標準語に対応した遠州弁を取得
-                var ensyuWord: List<Node>? = null
-                if (parsedData.conjugationalType == "基本形") {
-                    ensyuWord = document.selectNodes("//conjugational/kihon[../../standard[text()='${standardWord.text}']]")
-                } else if (parsedData.conjugationalType == "未然形" || parsedData.conjugationalType == "未然ウ接続" || parsedData.conjugationalType == "未然ヌ接続" || parsedData.conjugationalType == "未然レル接続") {
-                    // 未然形への変換
-                    ensyuWord = document.selectNodes("//conjugational/mizen[../../standard[text()='${standardWord.text}']]")
-                    if (parsedNextData != null) {
-                        if (parsedNextData!!.surface == "う" && parsedNextData!!.lexicaCategory == "助動詞") {
-                            // 未然ウ接続への変換
-                            val mizen_u: List<Node> = document.selectNodes("//conjugational/mizen_u[../../standard[text()='${standardWord.text}']]")
-                            if (mizen_u[0].text != "") {
-                                ensyuWord = mizen_u
-                            }
-                        } else if (parsedNextData!!.surface == "ぬ" && parsedNextData!!.lexicaCategory == "助動詞") {
-                            // 未然ヌ接続への変換
-                            val mizen_nu: List<Node> = document.selectNodes("//conjugational/mizen_nu[../../standard[text()='${standardWord.text}']]")
-                            if (mizen_nu[0].text != "") {
-                                ensyuWord = mizen_nu
-                            }
-                        } else if (parsedNextData!!.surface == "れる" && parsedNextData!!.lexicaCategory == "動詞" && parsedNextData!!.lexicaCategoryClassification1 == "接尾") {
-                            // 未然レル接続への変換
-                            val mizen_reru: List<Node> = document.selectNodes("//conjugational/mizen_reru[../../standard[text()='${standardWord.text}']]")
-                            if (mizen_reru[0].text != "") {
-                                ensyuWord = mizen_reru
-                            }
-                        }
-                    }
-                } else if (parsedData.conjugationalType == "連用形" || parsedData.conjugationalType == "連用タ接続") {
-                    ensyuWord = document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord.text}']]")
-                    // 直後が助動詞の「た」で、変換先の遠州弁が連用タ接続を取りうる場合、連用タ接続の遠州弁に変換する
-                    if (parsedNextData != null) {
-                        if (parsedNextData!!.surface == "た" && parsedNextData!!.lexicaCategory == "助動詞") {
-                            val renyo_ta: List<Node> = document.selectNodes("//conjugational/renyo_ta[../../standard[text()='${standardWord.text}']]")
-                            // 遠州弁コーパスの連用タ接続の情報が空文字でなければ、連用タ接続を取りうる遠州弁と判定できる
-                            if (renyo_ta[0].text != "") {
-                                ensyuWord = renyo_ta
-                            }
-                        }
-                    }
+                convertedFlag = getVerbConjugational(parsedData, standardWord.text)
+            }
+        }
+        return convertedFlag
+    }
 
-                } else if (parsedData.conjugationalType == "仮定形") {
-                    ensyuWord = document.selectNodes("//conjugational/katei[../../standard[text()='${standardWord.text}']]")
-                } else if (parsedData.conjugationalType == "命令ｅ" || parsedData.conjugationalType == "命令ｒｏ" || parsedData.conjugationalType == "命令ｙｏ" || parsedData.conjugationalType == "命令ｉ") {
-                    ensyuWord = document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord.text}']]")
+    /**
+     * 活用形を考慮して遠州弁の動詞を取得する。
+     */
+    private fun getVerbConjugational(parsedData: ParseResultData, standardWord: String): Boolean {
+        var convertedFlag = false
+        // 標準語に対応した遠州弁を取得
+        var ensyuWord: List<Node>? = null
+        if (parsedData.conjugationalType == "基本形") {
+            ensyuWord = document.selectNodes("//conjugational/kihon[../../standard[text()='${standardWord}']]")
+        } else if (parsedData.conjugationalType == "未然形" || parsedData.conjugationalType == "未然ウ接続" || parsedData.conjugationalType == "未然ヌ接続" || parsedData.conjugationalType == "未然レル接続") {
+            // 未然形への変換
+            ensyuWord = document.selectNodes("//conjugational/mizen[../../standard[text()='${standardWord}']]")
+            if (parsedNextData != null) {
+                if (parsedNextData!!.surface == "う" && parsedNextData!!.lexicaCategory == "助動詞") {
+                    // 未然ウ接続への変換
+                    val mizen_u: List<Node> = document.selectNodes("//conjugational/mizen_u[../../standard[text()='${standardWord}']]")
+                    if (mizen_u[0].text != "") {
+                        ensyuWord = mizen_u
+                    }
+                } else if (parsedNextData!!.surface == "ぬ" && parsedNextData!!.lexicaCategory == "助動詞") {
+                    // 未然ヌ接続への変換
+                    val mizen_nu: List<Node> = document.selectNodes("//conjugational/mizen_nu[../../standard[text()='${standardWord}']]")
+                    if (mizen_nu[0].text != "") {
+                        ensyuWord = mizen_nu
+                    }
+                } else if (parsedNextData!!.surface == "れる" && parsedNextData!!.lexicaCategory == "動詞" && parsedNextData!!.lexicaCategoryClassification1 == "接尾") {
+                    // 未然レル接続への変換
+                    val mizen_reru: List<Node> = document.selectNodes("//conjugational/mizen_reru[../../standard[text()='${standardWord}']]")
+                    if (mizen_reru[0].text != "") {
+                        ensyuWord = mizen_reru
+                    }
                 }
-                // TODO:今後必要に応じて実装
+            }
+        } else if (parsedData.conjugationalType == "連用形" || parsedData.conjugationalType == "連用タ接続") {
+            ensyuWord = document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord}']]")
+            // 直後が助動詞の「た」で、変換先の遠州弁が連用タ接続を取りうる場合、連用タ接続の遠州弁に変換する
+            if (parsedNextData != null) {
+                // TODO:「挟んだ」のように濁音が続く場合の連用タ接続をどのように処理するか考慮する
+                if (parsedNextData!!.surface == "た" && parsedNextData!!.lexicaCategory == "助動詞") {
+                    val renyo_ta: List<Node> = document.selectNodes("//conjugational/renyo_ta[../../standard[text()='${standardWord}']]")
+                    // 遠州弁コーパスの連用タ接続の情報が空文字でなければ、連用タ接続を取りうる遠州弁と判定できる
+                    if (renyo_ta[0].text != "") {
+                        ensyuWord = renyo_ta
+                    }
+                }
+            }
+
+        } else if (parsedData.conjugationalType == "仮定形") {
+            ensyuWord = document.selectNodes("//conjugational/katei[../../standard[text()='${standardWord}']]")
+        } else if (parsedData.conjugationalType == "命令ｅ" || parsedData.conjugationalType == "命令ｒｏ" || parsedData.conjugationalType == "命令ｙｏ" || parsedData.conjugationalType == "命令ｉ") {
+            ensyuWord = document.selectNodes("//conjugational/meirei[../../standard[text()='${standardWord}']]")
+        }
+        // TODO:今後必要に応じて実装
 //                else if (parsedData.conjugationalType == "文語基本形") {}
 //                else if (parsedData.conjugationalType == "未然特殊") {}
 //                else if (parsedData.conjugationalType == "体言接続") {}
 //                else if (parsedData.conjugationalType == "体言接続特殊") {}
 //                else if (parsedData.conjugationalType == "体言接続特殊２") {}
 //                else if (parsedData.conjugationalType == "仮定縮約１") {}
-                if (ensyuWord != null) {
-                    convertedText.add(ensyuWord[0].text)
-                    convertedFlag = true
-                }
-            }
+        if (ensyuWord != null) {
+            convertedText.add(ensyuWord[0].text)
+            convertedFlag = true
         }
         return convertedFlag
     }
@@ -238,6 +246,10 @@ class Converter {
         if (!convertedFlag) {
             // 「から、ので、だから、なので」→「だもんで」
             convertedFlag = damondeConvert(parsedData)
+        }
+        if (!convertedFlag) {
+            // 「散髪する、髪の毛を切る、髪を切る、髪切る」→「頭切る」
+            convertedFlag = atamaKiruConvert(parsedDataList, parsedData)
         }
         return convertedFlag
     }
@@ -353,6 +365,41 @@ class Converter {
             }
             convertedText.add("もんで")
             convertedFlag = true
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「散髪する、髪の毛を切る、髪を切る、髪切る」→「頭切る」の変換処理
+     */
+    private fun atamaKiruConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if (parsedData.surface == "散髪") {
+            if (parsedNextData != null) {
+                if (parsedNextData!!.originalPattern == "する" && parsedNextData!!.lexicaCategory == "動詞") {
+                    // 「散髪する」→「頭切る」
+                    // 動詞「する」はparsedNextData(第一引数)
+                    convertedFlag = getVerbConjugational(parsedNextData!!, "散髪する")
+                    skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
+                }
+            }
+        } else if (parsedData.surface == "髪" || parsedData.surface == "髪の毛") {
+            if (parsedNextData != null) {
+                if (parsedNextData!!.originalPattern == "切る" && parsedNextData!!.lexicaCategory == "動詞") {
+                    // 「髪切る、髪の毛切る」→「頭切る」
+                    convertedFlag = getVerbConjugational(parsedNextData!!, "髪を切る")
+                    skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
+                } else if (parsedNextData!!.surface == "を" && parsedNextData!!.lexicaCategory == "助詞") {
+                    // 「髪を切る、髪の毛を切る」→「頭切る」
+                    if (parsedNextNextData != null) {
+                        if (parsedNextNextData!!.originalPattern == "切る" && parsedNextNextData!!.lexicaCategory == "動詞") {
+                            convertedFlag = getVerbConjugational(parsedNextNextData!!, "髪を切る")
+                            skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
+                            skipFlagList!![(parsedDataList.indexOf(parsedNextNextData!!))] = 1
+                        }
+                    }
+                }
+            }
         }
         return convertedFlag
     }
