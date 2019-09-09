@@ -298,7 +298,7 @@ class Converter {
         }
         if (!convertedFlag) {
             // 「仕方がない、仕方ない、しょうがない」→「しょんない」の変換処理
-            convertedFlag = syonnai(parsedData)
+            convertedFlag = syonnaiConvert(parsedData)
         }
         return convertedFlag
     }
@@ -635,7 +635,7 @@ class Converter {
     /**
      * 「仕方がない、仕方ない、しょうがない」→「しょんない」の変換処理
      */
-    private fun syonnai(parsedData: ParseResultData): Boolean {
+    private fun syonnaiConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         if (parsedData.surface == "仕方がない" && parsedData.lexicaCategory == "名詞") {
             val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='仕方がない']]")
