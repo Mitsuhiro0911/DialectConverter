@@ -296,6 +296,10 @@ class Converter {
             // 「水っぽい」→「しゃびしゃび」の変換処理
             convertedFlag = shabishabiConvert(parsedData)
         }
+        if (!convertedFlag) {
+            // 「仕方がない、仕方ない、しょうがない」→「しょんない」の変換処理
+            convertedFlag = syonnai(parsedData)
+        }
         return convertedFlag
     }
 
@@ -624,6 +628,37 @@ class Converter {
             // 「水っぽい」は形容詞、「しゃびしゃび」は名詞なので"な"を末尾に付加。「しゃびしゃび」をすばり表現する標準語が見当たらない
             convertedText.add("${ensyuWord[0].text}な")
             convertedFlag = true
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「仕方がない、仕方ない、しょうがない」→「しょんない」の変換処理
+     */
+    private fun syonnai(parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if (parsedData.surface == "仕方がない" && parsedData.lexicaCategory == "名詞") {
+            val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='仕方がない']]")
+            convertedText.add("${ensyuWord[0].text}")
+            convertedFlag = true
+        } else if (parsedData.surface == "ない" && parsedData.lexicaCategory == "助動詞") {
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "仕方" && parsedBeforeData!!.lexicaCategory == "名詞") {
+                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='仕方ない']]")
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedText.add("${ensyuWord[0].text}")
+                    convertedFlag = true
+                }
+            }
+        } else if (parsedData.surface == "ない" && parsedData.lexicaCategory == "形容詞") {
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "しょうが" && parsedBeforeData!!.lexicaCategory == "名詞") {
+                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='しょうがない']]")
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedText.add("${ensyuWord[0].text}")
+                    convertedFlag = true
+                }
+            }
         }
         return convertedFlag
     }
