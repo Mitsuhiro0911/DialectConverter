@@ -286,11 +286,15 @@ class Converter {
         }
         if (!convertedFlag) {
             // 「(壊れる、)使えなくなる、使えんくなる」→「ばかになる」の変換処理
-            convertedFlag = bakaniNaruConvert(parsedDataList, parsedData)
+            convertedFlag = bakaniNaruConvert(parsedData)
         }
         if (!convertedFlag) {
             // 「不愉快な、不愉快だ、いやだ、いやな」→「いやったい」の変換処理
-            convertedFlag = iyattaiConvert(parsedDataList, parsedData)
+            convertedFlag = iyattaiConvert(parsedData)
+        }
+        if (!convertedFlag) {
+            // 「水っぽい」→「しゃびしゃび」の変換処理
+            convertedFlag = shabishabiConvert(parsedData)
         }
         return convertedFlag
     }
@@ -573,7 +577,7 @@ class Converter {
     /**
      * 「(壊れる、)使えなくなる、使えんくなる」→「ばかになる」の変換処理(「壊れる」は通常の動詞変換メソッドでOK)
      */
-    private fun bakaniNaruConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun bakaniNaruConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         if (parsedData.originalPattern == "なる" && parsedData.lexicaCategory == "動詞") {
             if (parsedBeforeData != null) {
@@ -595,7 +599,7 @@ class Converter {
     /**
      * 「不愉快な、不愉快だ、いやだ、いやな」→「いやったい」の変換処理
      */
-    private fun iyattaiConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun iyattaiConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         if ((parsedData.surface == "な" || parsedData.surface == "だ") && parsedData.lexicaCategory == "助動詞") {
             if (parsedBeforeData != null) {
@@ -606,6 +610,20 @@ class Converter {
                     convertedFlag = true
                 }
             }
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「水っぽい」→「しゃびしゃび」の変換処理
+     */
+    private fun shabishabiConvert(parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if (parsedData.surface == "水っぽい") {
+            val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='水っぽい']]")
+            // 「水っぽい」は形容詞、「しゃびしゃび」は名詞なので"な"を末尾に付加。「しゃびしゃび」をすばり表現する標準語が見当たらない
+            convertedText.add("${ensyuWord[0].text}な")
+            convertedFlag = true
         }
         return convertedFlag
     }
