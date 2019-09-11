@@ -304,6 +304,10 @@ class Converter {
 //            // 「熱い」→「ちんちん」の変換処理
 //            convertedFlag = tintinConvert(parsedData)
 //        }
+        if (!convertedFlag) {
+            // 「すぐに、急いで」→「ちゃっちゃと」の変換処理
+            convertedFlag = tyattyatoConvert(parsedDataList, parsedData)
+        }
         return convertedFlag
     }
 
@@ -690,6 +694,35 @@ class Converter {
 //        }
 //        return convertedFlag
 //    }
+
+    /**
+     * 「すぐに、急いで」→「ちゃっちゃと」の変換処理
+     */
+    private fun tyattyatoConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if (parsedData.surface == "すぐ" && parsedData.lexicaCategory == "副詞") {
+            if (parsedNextData != null) {
+                if (parsedNextData!!.surface == "に" && parsedNextData!!.lexicaCategory == "助詞") {
+                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='すぐに']]")
+                    convertedText.add("${ensyuWord[0].text}")
+                    convertedFlag = true
+                    skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
+                    return convertedFlag
+                }
+            }
+        } else if (parsedData.surface == "で" && parsedData.lexicaCategory == "助詞") {
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "急い" && parsedBeforeData!!.lexicaCategory == "動詞" && parsedBeforeData!!.conjugationalType == "連用タ接続") {
+                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='すぐに']]")
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedText.add("${ensyuWord[0].text}")
+                    convertedFlag = true
+                    return convertedFlag
+                }
+            }
+        }
+        return convertedFlag
+    }
 
     /**
      * 各変換メソッドから呼ばれる共通変換処理。
