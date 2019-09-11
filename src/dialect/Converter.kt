@@ -308,6 +308,10 @@ class Converter {
             // 「すぐに、急いで」→「ちゃっちゃと」の変換処理
             convertedFlag = tyattyatoConvert(parsedDataList, parsedData)
         }
+        if (!convertedFlag) {
+            // 「なくては、なくちゃ」→「にゃ」の変換処理
+            convertedFlag = nyaConvert(parsedData)
+        }
         return convertedFlag
     }
 
@@ -718,6 +722,48 @@ class Converter {
                     convertedText.add("${ensyuWord[0].text}")
                     convertedFlag = true
                     return convertedFlag
+                }
+            }
+        }
+        return convertedFlag
+    }
+
+    /**
+     * 「なくては、なくちゃ」→「にゃ」の変換処理
+     */
+    private fun nyaConvert(parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if (parsedData.surface == "は" && parsedData.lexicaCategory == "助詞") {
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "て"  && parsedBeforeData!!.lexicaCategory == "助詞") {
+                    if (parsedBeforeBeforeData != null) {
+                        if (parsedBeforeBeforeData!!.surface == "なく" && parsedBeforeBeforeData!!.lexicaCategory == "助動詞") {
+                            if (parsed3BeforeData != null) {
+                                if (parsed3BeforeData!!.surface == "し" && parsed3BeforeData!!.lexicaCategory == "動詞" && parsed3BeforeData!!.conjugationalType == "未然形") {
+                                    val ensyuWord: List<Node> =
+                                        document.selectNodes("//enshu[../standard[text()='なくては']]")
+                                    convertedText.removeAt(convertedText.size - 1)
+                                    convertedText.removeAt(convertedText.size - 1)
+                                    convertedText.add("${ensyuWord[0].text}")
+                                    convertedFlag = true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } else if (parsedData.surface == "ちゃ" && parsedData.lexicaCategory == "助詞") {
+            if (parsedBeforeData != null) {
+                if (parsedBeforeData!!.surface == "なく" && parsedBeforeData!!.lexicaCategory == "助動詞") {
+                    if (parsedBeforeBeforeData != null) {
+                        if (parsedBeforeBeforeData!!.surface == "し" && parsedBeforeBeforeData!!.lexicaCategory == "動詞" && parsedBeforeBeforeData!!.conjugationalType == "未然形") {
+                            val ensyuWord: List<Node> =
+                                document.selectNodes("//enshu[../standard[text()='なくては']]")
+                            convertedText.removeAt(convertedText.size - 1)
+                            convertedText.add("${ensyuWord[0].text}")
+                            convertedFlag = true
+                        }
+                    }
                 }
             }
         }
