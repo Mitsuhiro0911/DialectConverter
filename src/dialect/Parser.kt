@@ -30,6 +30,17 @@ class Parser {
                 val targetType =
                     targetLine.split("[\t|,]".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[1]
                 val word = targetLine.split("\t".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[0]
+                val splitElementSize = targetLine.split("[\t|,]".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray().size
+                val reading: String
+                val pronunciation: String
+                // 読み、発音情報がない単語もある。その場合要素数が少ないため、[8][9]の要素を指定するとArrayIndexOutOfBoundsExceptionで落ちる。
+                if (splitElementSize > 8) {
+                    reading = targetLine.split("[\t|,]".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[8]
+                    pronunciation = targetLine.split("[\t|,]".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[9]
+                } else {
+                    reading = "*"
+                    pronunciation = "*"
+                }
                 val parsedData = ParseResultData(
                     // 表層系
                     targetLine.split("\t".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[0],
@@ -48,9 +59,9 @@ class Parser {
                     // 原形
                     targetLine.split("[\t|,]".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[7],
                     // 読み
-                    targetLine.split("[\t|,]".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[8],
+                    reading,
                     // 発音
-                    targetLine.split("[\t|,]".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[9]
+                    pronunciation
                     )
                 parsedDataList.add(parsedData)
             }
