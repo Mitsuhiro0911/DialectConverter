@@ -316,6 +316,7 @@
     <word>
         <standard>仕方がない</standard>
         <standard>仕方ない</standard>
+        <standard>しょうがない</standard>
         <enshu>しょんない</enshu>
         <importance>3</importance>
         <lexicaCategory></lexicaCategory>
@@ -475,20 +476,6 @@
             <meirei></meirei>
         </conjugational>
     </word>
-    <word>
-        <standard>しないで</standard>
-        <enshu>なし</enshu>
-        <importance>3</importance>
-        <lexicaCategory></lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
     <!-- 
     <word>
         <standard>文法、用法ページ参照</standard>
@@ -537,8 +524,6 @@
     <word>
         <standard>とっても</standard>
         <standard>とても</standard>
-        <!-- 用対応 -->
-        <standard>すごく</standard>
         <standard>かなり</standard>
         <standard>非常に</standard>
         <enshu>ばか</enshu>

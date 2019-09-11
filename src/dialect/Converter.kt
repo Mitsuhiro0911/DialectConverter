@@ -25,7 +25,7 @@ class Converter {
     /**
      * 遠州弁変換メソッド群のハブ。形態素解析情報を元に、変換方式を決定する。
      */
-    fun convert(parsedDataList: ArrayList<ParseResultData>) {
+    fun convert(parsedDataList: ArrayList<ParseResultData>): ArrayList<String> {
         // スキップフラグを0(変換必要)で初期化
         skipFlagList = arrayListOf()
         for (i in 0 until parsedDataList.size) {
@@ -102,6 +102,7 @@ class Converter {
         for (output in convertedText) {
             print(output)
         }
+        return convertedText
     }
 
     /**
