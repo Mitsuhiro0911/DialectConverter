@@ -300,6 +300,10 @@ class Converter {
             // 「仕方がない、仕方ない、しょうがない」→「しょんない」の変換処理
             convertedFlag = syonnaiConvert(parsedData)
         }
+//        if (!convertedFlag) {
+//            // 「熱い」→「ちんちん」の変換処理
+//            convertedFlag = tintinConvert(parsedData)
+//        }
         return convertedFlag
     }
 
@@ -327,6 +331,7 @@ class Converter {
             if (parsedBeforeData != null) {
                 for (preWord in preWordList) {
                     if (preWord.text == parsedBeforeData!!.surface) {
+                        convertedText.removeAt(convertedText.size - 1)
                         convertedText.add("だに")
                         convertedFlag = true
                     }
@@ -662,6 +667,29 @@ class Converter {
         }
         return convertedFlag
     }
+
+//    /**
+//     * 「熱い」→「ちんちん」の変換処理
+//     */
+//    private fun tintinConvert(parsedData: ParseResultData): Boolean {
+//        var convertedFlag = false
+//        if (parsedData.surface == "熱い" && parsedData.lexicaCategory == "形容詞") {
+//            if (parsedNextData != null) {
+//                if (parsedNextData!!.surface == "よ" && parsedNextData!!.lexicaCategory == "助詞") {
+//                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='熱い']]")
+//                    convertedText.add("${ensyuWord[0].text}だ")
+//                    convertedFlag = true
+//                    return convertedFlag
+//                } else if (true) {
+//
+//                }
+//            }
+//            val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='熱い']]")
+//            convertedText.add("${ensyuWord[0].text}")
+//            convertedFlag = true
+//        }
+//        return convertedFlag
+//    }
 
     /**
      * 各変換メソッドから呼ばれる共通変換処理。
