@@ -33,7 +33,7 @@ class Converter {
         for (i in 0 until parsedDataList.size) {
             skipFlagList!!.add(0)
         }
-        
+
         for (parsedData in parsedDataList) {
             // スキップフラグが1(変換不要)の場合処理をスキップ
             if (skipFlagList!![index] == 1) {
@@ -303,13 +303,13 @@ class Converter {
             // 「仕方がない、仕方ない、しょうがない」→「しょんない」の変換処理
             convertedFlag = syonnaiConvert(parsedData)
         }
-//        if (!convertedFlag) {
-//            // 「熱い」→「ちんちん」の変換処理
+        if (!convertedFlag) {
+            // 「熱い」→「ちんちん」の変換処理
 //            convertedFlag = tintinConvert(parsedData)
-//        }
+        }
         if (!convertedFlag) {
             // 「すぐに、急いで」→「ちゃっちゃと」の変換処理
-            convertedFlag = tyattyatoConvert(parsedDataList, parsedData)
+//            convertedFlag = tyattyatoConvert(parsedDataList, parsedData)
         }
         if (!convertedFlag) {
             // 「なくては、なくちゃ」→「にゃ」の変換処理
@@ -679,33 +679,34 @@ class Converter {
         return convertedFlag
     }
 
-//    /**
-//     * 「熱い」→「ちんちん」の変換処理
-//     */
-//    private fun tintinConvert(parsedData: ParseResultData): Boolean {
-//        var convertedFlag = false
-//        if (parsedData.surface == "熱い" && parsedData.lexicaCategory == "形容詞") {
-//            if (parsedNextData != null) {
-//                if (parsedNextData!!.surface == "よ" && parsedNextData!!.lexicaCategory == "助詞") {
-//                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='熱い']]")
-//                    convertedText.add("${ensyuWord[0].text}だ")
-//                    convertedFlag = true
-//                    return convertedFlag
-//                } else if (true) {
-//
-//                }
-//            }
-//            val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='熱い']]")
-//            convertedText.add("${ensyuWord[0].text}")
-//            convertedFlag = true
-//        }
-//        return convertedFlag
-//    }
+    /**
+     * 「熱い」→「ちんちん」の変換処理
+     */
+    private fun tintinConvert(parsedData: ParseResultData): Boolean {
+        var convertedFlag = false
+        if (parsedData.surface == "熱い" && parsedData.lexicaCategory == "形容詞") {
+            if (parsedNextData != null) {
+                if (parsedNextData!!.surface == "よ" && parsedNextData!!.lexicaCategory == "助詞") {
+                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='熱い']]")
+                    convertedText.add("${ensyuWord[0].text}だ")
+                    convertedFlag = true
+                    return convertedFlag
+                } else if (true) {
+
+                }
+            }
+            val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='熱い']]")
+            convertedText.add("${ensyuWord[0].text}")
+            convertedFlag = true
+        }
+        return convertedFlag
+    }
 
     /**
      * 「すぐに、急いで」→「ちゃっちゃと」の変換処理
      */
     private fun tyattyatoConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+        // 「すぐに」→「ちゃっちゃと」が適用されない文脈もある。(例.すぐに壁が立ちはだかった)
         var convertedFlag = false
         if (parsedData.surface == "すぐ" && parsedData.lexicaCategory == "副詞") {
             if (parsedNextData != null) {
