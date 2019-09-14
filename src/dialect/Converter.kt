@@ -73,10 +73,8 @@ class Converter {
             println(parsedData)
             // ルールでの変換が難しい単語を個別処理で変換
             convertedFlag = uniqueConvert(parsedDataList, parsedData)
-            // 接尾辞の場合、直前の単語の処理で纏めて解析しているため、処理をスキップ
-            if (parsedData.lexicaCategoryClassification1 == "接尾" && parsedData.lexicaCategoryClassification2 == "人名") {
-                continue
-            } else if (parsedData.lexicaCategoryClassification1 == "副詞化") {
+            // 副詞化
+            if (parsedData.lexicaCategoryClassification1 == "副詞化") {
                 cp.doAdverbization(parsedData, convertedText)
             }
 
@@ -122,6 +120,8 @@ class Converter {
             ) {
                 // 接尾辞の結合処理
                 cp.appnedSuffix(parsedDataList, parsedData)
+                // 接尾辞の場合、直後の単語の処理で纏めて解析しているため、次の処理をスキップ
+                skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
             }
         }
         convertedFlag = simplConvert(parsedData, standardWordList)
