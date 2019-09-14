@@ -21,6 +21,8 @@ class Converter {
     private var parsed3BeforeData: ParseResultData? = null
     // 変換処理の要・不要を判定するフラグ。parsedDataListの要素とインデックスが対応付いている。
     private var skipFlagList: ArrayList<Int>? = null
+    // parsedDataListのインデックス
+    var index = 0
 
     /**
      * 遠州弁変換メソッド群のハブ。形態素解析情報を元に、変換方式を決定する。
@@ -31,42 +33,42 @@ class Converter {
         for (i in 0 until parsedDataList.size) {
             skipFlagList!!.add(0)
         }
-        var i = 0
+        
         for (parsedData in parsedDataList) {
             // スキップフラグが1(変換不要)の場合処理をスキップ
-            if (skipFlagList!![parsedDataList.indexOf(parsedData)] == 1) {
-                i = i.plus(1)
+            if (skipFlagList!![index] == 1) {
+                index = index.plus(1)
                 continue
             }
 
             // parsedDataが末尾のデータでなければ、次データの情報を取得し、parsedNextDataへ格納
             parsedNextData = null
-            if (i + 1 < parsedDataList.size) {
-                parsedNextData = parsedDataList[i + 1]
+            if (index + 1 < parsedDataList.size) {
+                parsedNextData = parsedDataList[index + 1]
             }
 
             // parsedNextDataが末尾のデータでなければ、次データの情報を取得し、parsedNextNextDataへ格納
             parsedNextNextData = null
-            if (i + 2 < parsedDataList.size) {
-                parsedNextNextData = parsedDataList[i + 2]
+            if (index + 2 < parsedDataList.size) {
+                parsedNextNextData = parsedDataList[index + 2]
             }
 
             // parsedDataが先頭のデータでなければ、前データの情報を取得し、parsedBeforeDataへ格納
             parsedBeforeData = null
-            if (i - 1 > -1) {
-                parsedBeforeData = parsedDataList[i - 1]
+            if (index - 1 > -1) {
+                parsedBeforeData = parsedDataList[index - 1]
             }
 
             // parsedBeforeDataが先頭のデータでなければ、前データの情報を取得し、parsedBeforeBeforeDataへ格納
             parsedBeforeBeforeData = null
-            if (i - 2 > -1) {
-                parsedBeforeBeforeData = parsedDataList[i - 2]
+            if (index - 2 > -1) {
+                parsedBeforeBeforeData = parsedDataList[index - 2]
             }
 
             // parsedBeforeBeforeDataが先頭のデータでなければ、前データの情報を取得し、parsed3BeforeDataへ格納
             parsed3BeforeData = null
-            if (i - 3 > -1) {
-                parsed3BeforeData = parsedDataList[i - 3]
+            if (index - 3 > -1) {
+                parsed3BeforeData = parsedDataList[index - 3]
             }
 
             var convertedFlag = false
@@ -95,7 +97,7 @@ class Converter {
             if (!convertedFlag) {
                 convertedText.add(parsedData.surface)
             }
-            i = i.plus(1)
+            index = index.plus(1)
         }
         for (output in convertedText) {
             print(output)
@@ -121,7 +123,7 @@ class Converter {
                 // 接尾辞の結合処理
                 cp.appnedSuffix(parsedDataList, parsedData)
                 // 接尾辞の場合、直後の単語の処理で纏めて解析しているため、次の処理をスキップ
-                skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
+                skipFlagList!![index + 1] = 1
             }
         }
         convertedFlag = simplConvert(parsedData, standardWordList)
@@ -366,8 +368,8 @@ class Converter {
             if ((parsedData.surface == "だ" && parsedData.lexicaCategory == "助動詞") && (parsedNextData!!.surface == "よ" && parsedNextData!!.lexicaCategory == "助詞") && (parsedNextNextData!!.surface == "ね" && parsedNextNextData!!.lexicaCategory == "助詞")) {
                 daraFlag = true
                 // 「よ」「ね」を結合してから変換するため、それらの解析は不要となる。よってスキップフラグを立てる
-                skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
-                skipFlagList!![(parsedDataList.indexOf(parsedNextNextData!!))] = 1
+                skipFlagList!![index + 1] = 1
+                skipFlagList!![index + 2] = 1
             }
         }
         if (daraFlag) {
@@ -567,7 +569,7 @@ class Converter {
         // 連用タ接続に変換する際、血が死ん「た」になるのを防ぐ処理
         if (convertedFlag) {
             if (convertedText[convertedText.size - 1] == "血が死ん") {
-                skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
+                skipFlagList!![index + 1] = 1
                 convertedText.add("だ")
             }
         }
@@ -585,7 +587,7 @@ class Converter {
         // 連用タ接続に変換する際、はさげ「だ」になるのを防ぐ処理
         if (convertedFlag) {
             if (parsedData.conjugationalType == "連用タ接続") {
-                skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
+                skipFlagList!![index + 1] = 1
                 convertedText.add("た")
             }
         }
@@ -711,7 +713,7 @@ class Converter {
                     val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='すぐに']]")
                     convertedText.add("${ensyuWord[0].text}")
                     convertedFlag = true
-                    skipFlagList!![(parsedDataList.indexOf(parsedNextData!!))] = 1
+                    skipFlagList!![index + 1] = 1
                     return convertedFlag
                 }
             }
