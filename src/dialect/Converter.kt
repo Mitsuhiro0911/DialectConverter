@@ -252,7 +252,7 @@ class Converter {
             convertedFlag = daniConvert(parsedData)
         }
         if (!convertedFlag) {
-            // 「だろ、でしょ、だよね」→「だら」
+            // 「だろ、だろうね、だろうな、でしょ、でしょう、でしょうね、でしょうな、だよね」→「だら」の変換処理
             convertedFlag = daraConvert(parsedDataList, parsedData)
         }
         if (!convertedFlag) {
@@ -353,14 +353,24 @@ class Converter {
     }
 
     /**
-     * 「だろ、でしょ、だよね」→「だら」の変換処理
+     * 「だろ、だろうね、だろうな、でしょ、でしょう、でしょうね、でしょうな、だよね」→「だら」の変換処理
      */
     private fun daraConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
         // 使用中のneologd辞書だと「○○だろう」「○○でしょう」が謝解析されるが、その他辞書なら問題なし
         var convertedFlag = false
         var daraFlag = false
-        // 「だろ、でしょ」の変換判定
+        // 「だろ、だろうね、だろうな、でしょ、でしょう、でしょうね、でしょうな」の変換判定
         if ((parsedData.surface == "だろ" && parsedData.lexicaCategory == "助動詞") || (parsedData.surface == "でしょ" && parsedData.lexicaCategory == "助動詞")) {
+            if (parsedNextData != null) {
+                if (parsedNextData!!.surface == "う" && parsedNextData!!.lexicaCategory == "助動詞") {
+                    skipFlagList!![index + 1] = 1
+                    if (parsedNextNextData != null) {
+                        if ((parsedNextNextData!!.surface == "ね" || parsedNextNextData!!.surface == "な") && parsedNextNextData!!.lexicaCategory == "助詞") {
+                            skipFlagList!![index + 2] = 1
+                        }
+                    }
+                }
+            }
             daraFlag = true
         }
         // 「だよね」の変換判定
