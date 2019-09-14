@@ -6,7 +6,7 @@ import java.io.*
 
 fun main () {
     val br = BufferedReader(FileReader(File("./data/test_data/input/data001.txt")))
-    val bw = BufferedWriter(FileWriter(File("./data/test_data/output/outdata001.txt")))
+    val bw = BufferedWriter(OutputStreamWriter(FileOutputStream(File("./data/test_data/output/outdata001.csv")), "Shift-JIS"))
     var inputText = br.readLine()
     // ヘッダ部の読み飛ばし
     while (inputText.substring(0, 1) == "＠") {
@@ -29,7 +29,6 @@ fun main () {
             bw.write("${inputText.substring(5, inputText.length)}")
             bw.newLine()
             bw.write("${outputText}")
-            bw.newLine()
             bw.newLine()
         }
         inputText = br.readLine()
