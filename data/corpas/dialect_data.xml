@@ -538,23 +538,6 @@
             <meirei></meirei>
         </conjugational>
     </word>
-    <!-- 用対応 -->
-    <word>
-        <standard>少しだけ</standard>
-        <standard>少し</standard>
-        <standard>ちょっと</standard>
-        <enshu>ぱか</enshu>
-        <importance>3</importance>
-        <lexicaCategory>副詞</lexicaCategory>
-        <conjugational>
-            <kihon></kihon>
-            <mizen></mizen>
-            <mizen_u></mizen_u>
-            <renyo></renyo>
-            <katei></katei>
-            <meirei></meirei>
-        </conjugational>
-    </word>
     <word>
         <standard>壊れる</standard>
         <standard>使えなくなる</standard>
