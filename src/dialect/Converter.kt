@@ -121,7 +121,7 @@ class Converter {
             if (parsedNextData!!.lexicaCategoryClassification1 == "接尾" && parsedNextData!!.lexicaCategoryClassification2 == "人名"
             ) {
                 // 接尾辞の結合処理
-                cp.appnedSuffix(parsedDataList, parsedData)
+                cp.appnedSuffix(parsedDataList, parsedData, index)
                 // 接尾辞の場合、直後の単語の処理で纏めて解析しているため、次の処理をスキップ
                 skipFlagList!![index + 1] = 1
             }
@@ -253,7 +253,7 @@ class Converter {
         }
         if (!convertedFlag) {
             // 「だろ、だろうね、だろうな、でしょ、でしょう、でしょうね、でしょうな、だよね」→「だら」の変換処理
-            convertedFlag = daraConvert(parsedDataList, parsedData)
+            convertedFlag = daraConvert(parsedData)
         }
         if (!convertedFlag) {
             // 「ね」→「やぁ」

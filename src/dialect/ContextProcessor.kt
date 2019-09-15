@@ -26,10 +26,11 @@ class ContextProcessor {
      */
     fun appnedSuffix(
         parsedDataList: ArrayList<ParseResultData>,
-        parsedData: ParseResultData
+        parsedData: ParseResultData,
+        index: Int
     ) {
         // 名詞に接尾辞を結合
-        parsedData.surface = "${parsedData.surface}${parsedDataList[parsedDataList.indexOf(parsedData) + 1].surface}"
+        parsedData.surface = "${parsedData.surface}${parsedDataList[index + 1].surface}"
     }
 
     /**
