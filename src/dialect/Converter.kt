@@ -187,19 +187,22 @@ class Converter {
             if (parsedNextData != null) {
                 if (parsedNextData!!.surface == "う" && parsedNextData!!.lexicaCategory == "助動詞") {
                     // 未然ウ接続への変換
-                    val mizen_u: List<Node> = document.selectNodes("//conjugational/mizen_u[../../standard[text()='${standardWord}']]")
+                    val mizen_u: List<Node> =
+                        document.selectNodes("//conjugational/mizen_u[../../standard[text()='${standardWord}']]")
                     if (mizen_u[0].text != "") {
                         ensyuWord = mizen_u
                     }
                 } else if (parsedNextData!!.surface == "ぬ" && parsedNextData!!.lexicaCategory == "助動詞") {
                     // 未然ヌ接続への変換
-                    val mizen_nu: List<Node> = document.selectNodes("//conjugational/mizen_nu[../../standard[text()='${standardWord}']]")
+                    val mizen_nu: List<Node> =
+                        document.selectNodes("//conjugational/mizen_nu[../../standard[text()='${standardWord}']]")
                     if (mizen_nu[0].text != "") {
                         ensyuWord = mizen_nu
                     }
                 } else if (parsedNextData!!.surface == "れる" && parsedNextData!!.lexicaCategory == "動詞" && parsedNextData!!.lexicaCategoryClassification1 == "接尾") {
                     // 未然レル接続への変換
-                    val mizen_reru: List<Node> = document.selectNodes("//conjugational/mizen_reru[../../standard[text()='${standardWord}']]")
+                    val mizen_reru: List<Node> =
+                        document.selectNodes("//conjugational/mizen_reru[../../standard[text()='${standardWord}']]")
                     if (mizen_reru[0].text != "") {
                         ensyuWord = mizen_reru
                     }
@@ -211,7 +214,8 @@ class Converter {
             if (parsedNextData != null) {
                 // TODO:「挟んだ」のように濁音が続く場合の連用タ接続をどのように処理するか考慮する
                 if ((parsedNextData!!.surface == "た" || parsedNextData!!.surface == "だ") && parsedNextData!!.lexicaCategory == "助動詞") {
-                    val renyo_ta: List<Node> = document.selectNodes("//conjugational/renyo_ta[../../standard[text()='${standardWord}']]")
+                    val renyo_ta: List<Node> =
+                        document.selectNodes("//conjugational/renyo_ta[../../standard[text()='${standardWord}']]")
                     // 遠州弁コーパスの連用タ接続の情報が空文字でなければ、連用タ接続を取りうる遠州弁と判定できる
                     if (renyo_ta[0].text != "") {
                         ensyuWord = renyo_ta
@@ -617,7 +621,8 @@ class Converter {
         if (parsedData.originalPattern == "なる" && parsedData.lexicaCategory == "動詞") {
             if (parsedBeforeData != null) {
                 if ((parsedBeforeData!!.surface == "なく" && parsedBeforeData!!.lexicaCategory == "助動詞") ||
-                    (parsedBeforeData!!.surface == "く" && parsedBeforeData!!.lexicaCategory == "動詞")) {
+                    (parsedBeforeData!!.surface == "く" && parsedBeforeData!!.lexicaCategory == "動詞")
+                ) {
                     if (parsedBeforeBeforeData != null) {
                         if (parsedBeforeBeforeData!!.originalPattern == "使える") {
                             convertedText.removeAt(convertedText.size - 1)
@@ -754,7 +759,7 @@ class Converter {
         var convertedFlag = false
         if (parsedData.surface == "は" && parsedData.lexicaCategory == "助詞") {
             if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "て"  && parsedBeforeData!!.lexicaCategory == "助詞") {
+                if (parsedBeforeData!!.surface == "て" && parsedBeforeData!!.lexicaCategory == "助詞") {
                     if (parsedBeforeBeforeData != null) {
                         if (parsedBeforeBeforeData!!.surface == "なく" && parsedBeforeBeforeData!!.lexicaCategory == "助動詞") {
                             if (parsed3BeforeData != null) {
