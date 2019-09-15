@@ -355,23 +355,30 @@ class Converter {
     /**
      * 「だろ、だろうね、だろうな、でしょ、でしょう、でしょうね、でしょうな、だよね」→「だら」の変換処理
      */
-    private fun daraConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun daraConvert(parsedData: ParseResultData): Boolean {
         // 使用中のneologd辞書だと「○○だろう」「○○でしょう」が謝解析されるが、その他辞書なら問題なし
         var convertedFlag = false
         var daraFlag = false
         // 「だろ、だろうね、だろうな、でしょ、でしょう、でしょうね、でしょうな」の変換判定
         if ((parsedData.surface == "だろ" && parsedData.lexicaCategory == "助動詞") || (parsedData.surface == "でしょ" && parsedData.lexicaCategory == "助動詞")) {
+            daraFlag = true
             if (parsedNextData != null) {
                 if (parsedNextData!!.surface == "う" && parsedNextData!!.lexicaCategory == "助動詞") {
-                    skipFlagList!![index + 1] = 1
                     if (parsedNextNextData != null) {
                         if ((parsedNextNextData!!.surface == "ね" || parsedNextNextData!!.surface == "な") && parsedNextNextData!!.lexicaCategory == "助詞") {
+                            // 「だろうね、だろうな、でしょうね、でしょうな」の場合
+                            skipFlagList!![index + 1] = 1
                             skipFlagList!![index + 2] = 1
+                        } else if (parsedNextNextData!!.surface == "か" && parsedNextNextData!!.lexicaCategory == "助詞") {
+                            // 「だろうか、でしょうか」の場合は変換しない
+                            daraFlag = false
+                        } else {
+                            // 「だろう、でしょう」の場合
+                            skipFlagList!![index + 1] = 1
                         }
                     }
                 }
             }
-            daraFlag = true
         }
         // 「だよね」の変換判定
         if (parsedNextData != null && parsedNextNextData != null) {
