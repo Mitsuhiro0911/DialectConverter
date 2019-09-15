@@ -372,11 +372,9 @@ class Converter {
                         } else if (parsedNextNextData!!.surface == "か" && parsedNextNextData!!.lexicaCategory == "助詞") {
                             // 「だろうか、でしょうか」の場合は変換しない
                             daraFlag = false
-                        } else {
-                            // 「だろう、でしょう」の場合
-                            skipFlagList!![index + 1] = 1
                         }
                     }
+                    skipFlagList!![index + 1] = 1
                 }
             }
         }
