@@ -116,15 +116,13 @@ class Converter {
         // 接頭辞の結合処理
         cp.appendPrefix(parsedDataList, parsedData, convertedText)
         // inputTextの末尾の場合は接尾辞処理はしない
-        if (parsedNextData != null) {
-            // 直後が人名の接尾辞の場合
-            if (parsedNextData!!.lexicaCategoryClassification1 == "接尾" && parsedNextData!!.lexicaCategoryClassification2 == "人名"
-            ) {
-                // 接尾辞の結合処理
-                cp.appnedSuffix(parsedDataList, parsedData, index)
-                // 接尾辞の場合、直後の単語の処理で纏めて解析しているため、次の処理をスキップ
-                skipFlagList!![index + 1] = 1
-            }
+        // 直後が人名の接尾辞の場合
+        if (parsedNextData?.lexicaCategoryClassification1 == "接尾" && parsedNextData?.lexicaCategoryClassification2 == "人名"
+        ) {
+            // 接尾辞の結合処理
+            cp.appnedSuffix(parsedDataList, parsedData, index)
+            // 接尾辞の場合、直後の単語の処理で纏めて解析しているため、次の処理をスキップ
+            skipFlagList!![index + 1] = 1
         }
         convertedFlag = simplConvert(parsedData, standardWordList)
         return convertedFlag
@@ -184,42 +182,39 @@ class Converter {
         } else if (parsedData.conjugationalType == "未然形" || parsedData.conjugationalType == "未然ウ接続" || parsedData.conjugationalType == "未然ヌ接続" || parsedData.conjugationalType == "未然レル接続") {
             // 未然形への変換
             ensyuWord = document.selectNodes("//conjugational/mizen[../../standard[text()='${standardWord}']]")
-            if (parsedNextData != null) {
-                if (parsedNextData!!.surface == "う" && parsedNextData!!.lexicaCategory == "助動詞") {
-                    // 未然ウ接続への変換
-                    val mizen_u: List<Node> =
-                        document.selectNodes("//conjugational/mizen_u[../../standard[text()='${standardWord}']]")
-                    if (mizen_u[0].text != "") {
-                        ensyuWord = mizen_u
-                    }
-                } else if (parsedNextData!!.surface == "ぬ" && parsedNextData!!.lexicaCategory == "助動詞") {
-                    // 未然ヌ接続への変換
-                    val mizen_nu: List<Node> =
-                        document.selectNodes("//conjugational/mizen_nu[../../standard[text()='${standardWord}']]")
-                    if (mizen_nu[0].text != "") {
-                        ensyuWord = mizen_nu
-                    }
-                } else if (parsedNextData!!.surface == "れる" && parsedNextData!!.lexicaCategory == "動詞" && parsedNextData!!.lexicaCategoryClassification1 == "接尾") {
-                    // 未然レル接続への変換
-                    val mizen_reru: List<Node> =
-                        document.selectNodes("//conjugational/mizen_reru[../../standard[text()='${standardWord}']]")
-                    if (mizen_reru[0].text != "") {
-                        ensyuWord = mizen_reru
-                    }
+            if (parsedNextData?.surface == "う" && parsedNextData?.lexicaCategory == "助動詞") {
+                // 未然ウ接続への変換
+                val mizen_u: List<Node> =
+                    document.selectNodes("//conjugational/mizen_u[../../standard[text()='${standardWord}']]")
+                if (mizen_u[0].text != "") {
+                    ensyuWord = mizen_u
+                }
+            } else if (parsedNextData?.surface == "ぬ" && parsedNextData?.lexicaCategory == "助動詞") {
+                // 未然ヌ接続への変換
+                val mizen_nu: List<Node> =
+                    document.selectNodes("//conjugational/mizen_nu[../../standard[text()='${standardWord}']]")
+                if (mizen_nu[0].text != "") {
+                    ensyuWord = mizen_nu
+                }
+            } else if (parsedNextData?.surface == "れる" && parsedNextData?.lexicaCategory == "動詞" && parsedNextData?.lexicaCategoryClassification1 == "接尾") {
+                // 未然レル接続への変換
+                val mizen_reru: List<Node> =
+                    document.selectNodes("//conjugational/mizen_reru[../../standard[text()='${standardWord}']]")
+                if (mizen_reru[0].text != "") {
+                    ensyuWord = mizen_reru
                 }
             }
+
         } else if (parsedData.conjugationalType == "連用形" || parsedData.conjugationalType == "連用タ接続") {
             ensyuWord = document.selectNodes("//conjugational/renyo[../../standard[text()='${standardWord}']]")
             // 直後が助動詞の「た」で、変換先の遠州弁が連用タ接続を取りうる場合、連用タ接続の遠州弁に変換する
-            if (parsedNextData != null) {
-                // TODO:「挟んだ」のように濁音が続く場合の連用タ接続をどのように処理するか考慮する
-                if ((parsedNextData!!.surface == "た" || parsedNextData!!.surface == "だ") && parsedNextData!!.lexicaCategory == "助動詞") {
-                    val renyo_ta: List<Node> =
-                        document.selectNodes("//conjugational/renyo_ta[../../standard[text()='${standardWord}']]")
-                    // 遠州弁コーパスの連用タ接続の情報が空文字でなければ、連用タ接続を取りうる遠州弁と判定できる
-                    if (renyo_ta[0].text != "") {
-                        ensyuWord = renyo_ta
-                    }
+            // TODO:「挟んだ」のように濁音が続く場合の連用タ接続をどのように処理するか考慮する
+            if ((parsedNextData?.surface == "た" || parsedNextData?.surface == "だ") && parsedNextData?.lexicaCategory == "助動詞") {
+                val renyo_ta: List<Node> =
+                    document.selectNodes("//conjugational/renyo_ta[../../standard[text()='${standardWord}']]")
+                // 遠州弁コーパスの連用タ接続の情報が空文字でなければ、連用タ接続を取りうる遠州弁と判定できる
+                if (renyo_ta[0].text != "") {
+                    ensyuWord = renyo_ta
                 }
             }
 
@@ -343,13 +338,11 @@ class Converter {
         if ((parsedData.surface == "よ" && parsedData.lexicaCategory == "助詞") || (parsedData.surface == "ぞ" && parsedData.lexicaCategory == "助詞")) {
             // 助詞がくっつく直前の単語を抽出
             val preWordList: List<Node> = document.selectNodes("//pre_word[../enshu[text()='だに']]")
-            if (parsedBeforeData != null) {
-                for (preWord in preWordList) {
-                    if (preWord.text == parsedBeforeData!!.surface) {
-                        convertedText.removeAt(convertedText.size - 1)
-                        convertedText.add("だに")
-                        convertedFlag = true
-                    }
+            for (preWord in preWordList) {
+                if (preWord.text == parsedBeforeData?.surface) {
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedText.add("だに")
+                    convertedFlag = true
                 }
             }
         }
@@ -366,30 +359,24 @@ class Converter {
         // 「だろ、だろうね、だろうな、でしょ、でしょう、でしょうね、でしょうな」の変換判定
         if ((parsedData.surface == "だろ" && parsedData.lexicaCategory == "助動詞") || (parsedData.surface == "でしょ" && parsedData.lexicaCategory == "助動詞")) {
             daraFlag = true
-            if (parsedNextData != null) {
-                if (parsedNextData!!.surface == "う" && parsedNextData!!.lexicaCategory == "助動詞") {
-                    if (parsedNextNextData != null) {
-                        if ((parsedNextNextData!!.surface == "ね" || parsedNextNextData!!.surface == "な") && parsedNextNextData!!.lexicaCategory == "助詞") {
-                            // 「だろうね、だろうな、でしょうね、でしょうな」の場合
-                            skipFlagList!![index + 1] = 1
-                            skipFlagList!![index + 2] = 1
-                        } else if (parsedNextNextData!!.surface == "か" && parsedNextNextData!!.lexicaCategory == "助詞") {
-                            // 「だろうか、でしょうか」の場合は変換しない
-                            daraFlag = false
-                        }
-                    }
+            if (parsedNextData?.surface == "う" && parsedNextData?.lexicaCategory == "助動詞") {
+                if ((parsedNextNextData?.surface == "ね" || parsedNextNextData?.surface == "な") && parsedNextNextData?.lexicaCategory == "助詞") {
+                    // 「だろうね、だろうな、でしょうね、でしょうな」の場合
                     skipFlagList!![index + 1] = 1
+                    skipFlagList!![index + 2] = 1
+                } else if (parsedNextNextData?.surface == "か" && parsedNextNextData?.lexicaCategory == "助詞") {
+                    // 「だろうか、でしょうか」の場合は変換しない
+                    daraFlag = false
                 }
+                skipFlagList!![index + 1] = 1
             }
         }
         // 「だよね、ですよね」の変換判定
-        if (parsedNextData != null && parsedNextNextData != null) {
-            if (((parsedData.surface == "だ" || parsedData.surface == "です") && parsedData.lexicaCategory == "助動詞") && (parsedNextData!!.surface == "よ" && parsedNextData!!.lexicaCategory == "助詞") && (parsedNextNextData!!.surface == "ね" && parsedNextNextData!!.lexicaCategory == "助詞")) {
-                daraFlag = true
-                // 「よ」「ね」を結合してから変換するため、それらの解析は不要となる。よってスキップフラグを立てる
-                skipFlagList!![index + 1] = 1
-                skipFlagList!![index + 2] = 1
-            }
+        if (((parsedData.surface == "だ" || parsedData.surface == "です") && parsedData.lexicaCategory == "助動詞") && (parsedNextData?.surface == "よ" && parsedNextData?.lexicaCategory == "助詞") && (parsedNextNextData?.surface == "ね" && parsedNextNextData?.lexicaCategory == "助詞")) {
+            daraFlag = true
+            // 「よ」「ね」を結合してから変換するため、それらの解析は不要となる。よってスキップフラグを立てる
+            skipFlagList!![index + 1] = 1
+            skipFlagList!![index + 2] = 1
         }
         if (daraFlag) {
             convertedText.add("だら")
@@ -404,11 +391,9 @@ class Converter {
     private fun yaConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         // 直前の単語が形容詞であることが必要
-        if (parsedBeforeData != null) {
-            if ((parsedData.surface == "ね" && parsedData.lexicaCategory == "助詞") && (parsedBeforeData!!.lexicaCategory == "形容詞")) {
-                convertedText.add("やぁ")
-                convertedFlag = true
-            }
+        if ((parsedData.surface == "ね" && parsedData.lexicaCategory == "助詞") && (parsedBeforeData?.lexicaCategory == "形容詞")) {
+            convertedText.add("やぁ")
+            convertedFlag = true
         }
         return convertedFlag
     }
@@ -442,10 +427,8 @@ class Converter {
         var convertedFlag = false
         if ((parsedData.surface == "から" || parsedData.surface == "ので") && parsedData.lexicaCategoryClassification1 == "接続助詞") {
             // 「なので」→「なもんで」と変換されるのを防ぐ
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "な" && parsedBeforeData!!.lexicaCategory == "助動詞") {
-                    convertedText[convertedText.size - 1] = "だ"
-                }
+            if (parsedBeforeData?.surface == "な" && parsedBeforeData?.lexicaCategory == "助動詞") {
+                convertedText[convertedText.size - 1] = "だ"
             }
             convertedText.add("もんで")
             convertedFlag = true
@@ -460,28 +443,22 @@ class Converter {
         var convertedFlag = false
         // TODO:「散髪した」が「散髪いた」になってしまうバグが発生。(「した」→「いた」が適用されてしまう)
         if (parsedData.originalPattern == "する" && parsedData.lexicaCategory == "動詞") {
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "散髪") {
-                    // 「散髪する」→「頭切る」
-                    convertedText.removeAt(convertedText.size - 1)
-                    convertedFlag = getVerbConjugational(parsedData, "散髪する")
-                }
+            if (parsedBeforeData?.surface == "散髪") {
+                // 「散髪する」→「頭切る」
+                convertedText.removeAt(convertedText.size - 1)
+                convertedFlag = getVerbConjugational(parsedData, "散髪する")
             }
         } else if (parsedData.originalPattern == "切る" && parsedData.lexicaCategory == "動詞") {
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "髪" || parsedBeforeData!!.surface == "髪の毛") {
-                    // 「髪切る、髪の毛切る」→「頭切る」
+            if (parsedBeforeData?.surface == "髪" || parsedBeforeData?.surface == "髪の毛") {
+                // 「髪切る、髪の毛切る」→「頭切る」
+                convertedText.removeAt(convertedText.size - 1)
+                convertedFlag = getVerbConjugational(parsedData, "髪を切る")
+            } else if (parsedBeforeData!!.surface == "を" && parsedBeforeData!!.lexicaCategory == "助詞") {
+                // 「髪を切る、髪の毛を切る」→「頭切る」
+                if (parsedBeforeBeforeData?.surface == "髪" || parsedBeforeBeforeData?.surface == "髪の毛") {
+                    convertedText.removeAt(convertedText.size - 1)
                     convertedText.removeAt(convertedText.size - 1)
                     convertedFlag = getVerbConjugational(parsedData, "髪を切る")
-                } else if (parsedBeforeData!!.surface == "を" && parsedBeforeData!!.lexicaCategory == "助詞") {
-                    // 「髪を切る、髪の毛を切る」→「頭切る」
-                    if (parsedBeforeBeforeData != null) {
-                        if (parsedBeforeBeforeData!!.surface == "髪" || parsedBeforeBeforeData!!.surface == "髪の毛") {
-                            convertedText.removeAt(convertedText.size - 1)
-                            convertedText.removeAt(convertedText.size - 1)
-                            convertedFlag = getVerbConjugational(parsedData, "髪を切る")
-                        }
-                    }
                 }
             }
         }
@@ -494,15 +471,11 @@ class Converter {
     private fun kagiwoKauConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         if (parsedData.originalPattern == "かける" && parsedData.lexicaCategory == "動詞") {
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "鍵") {
-                    convertedFlag = getVerbConjugational(parsedData, "鍵かける")
-                } else if (parsedBeforeData!!.surface == "を" && parsedBeforeData!!.lexicaCategory == "助詞") {
-                    if (parsedBeforeBeforeData != null) {
-                        if (parsedBeforeBeforeData!!.surface == "鍵") {
-                            convertedFlag = getVerbConjugational(parsedData, "鍵をかける")
-                        }
-                    }
+            if (parsedBeforeData?.surface == "鍵") {
+                convertedFlag = getVerbConjugational(parsedData, "鍵かける")
+            } else if (parsedBeforeData?.surface == "を" && parsedBeforeData?.lexicaCategory == "助詞") {
+                if (parsedBeforeBeforeData?.surface == "鍵") {
+                    convertedFlag = getVerbConjugational(parsedData, "鍵をかける")
                 }
             }
         }
@@ -515,15 +488,11 @@ class Converter {
     private fun kagaNukeruConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         if (parsedData.originalPattern == "抜ける" && parsedData.lexicaCategory == "動詞") {
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "が" && parsedBeforeData!!.lexicaCategory == "助詞") {
-                    if (parsedBeforeBeforeData != null) {
-                        if (parsedBeforeBeforeData!!.surface == "炭酸" || parsedBeforeBeforeData!!.surface == "気") {
-                            convertedText.removeAt(convertedText.size - 1)
-                            convertedText.removeAt(convertedText.size - 1)
-                            convertedFlag = getVerbConjugational(parsedData, "炭酸が抜ける")
-                        }
-                    }
+            if (parsedBeforeData?.surface == "が" && parsedBeforeData?.lexicaCategory == "助詞") {
+                if (parsedBeforeBeforeData?.surface == "炭酸" || parsedBeforeBeforeData?.surface == "気") {
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedFlag = getVerbConjugational(parsedData, "炭酸が抜ける")
                 }
             }
         }
@@ -536,51 +505,35 @@ class Converter {
     private fun chigaShinuConvert(parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         if (parsedData.originalPattern == "する" && parsedData.lexicaCategory == "動詞") {
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "内出血") {
+            if (parsedBeforeData?.surface == "内出血") {
+                convertedText.removeAt(convertedText.size - 1)
+                convertedFlag = getVerbConjugational(parsedData, "内出血する")
+            } else if (parsedBeforeData?.surface == "を" && parsedBeforeData?.lexicaCategory == "助詞") {
+                if (parsedBeforeBeforeData?.surface == "内出血") {
+                    convertedText.removeAt(convertedText.size - 1)
                     convertedText.removeAt(convertedText.size - 1)
                     convertedFlag = getVerbConjugational(parsedData, "内出血する")
-                } else if (parsedBeforeData!!.surface == "を" && parsedBeforeData!!.lexicaCategory == "助詞") {
-                    if (parsedBeforeBeforeData != null) {
-                        if (parsedBeforeBeforeData!!.surface == "内出血") {
-                            convertedText.removeAt(convertedText.size - 1)
-                            convertedText.removeAt(convertedText.size - 1)
-                            convertedFlag = getVerbConjugational(parsedData, "内出血する")
-                        }
-                    }
                 }
             }
         } else if (parsedData.originalPattern == "できる" && parsedData.lexicaCategory == "動詞") {
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "が" && parsedBeforeData!!.lexicaCategory == "助詞") {
-                    if (parsedBeforeBeforeData != null) {
-                        if (parsedBeforeBeforeData!!.surface == "あざ") {
-                            if (parsed3BeforeData != null) {
-                                if (parsed3BeforeData!!.surface == "青") {
-                                    convertedText.removeAt(convertedText.size - 1)
-                                    convertedText.removeAt(convertedText.size - 1)
-                                    convertedText.removeAt(convertedText.size - 1)
-                                    convertedFlag = getVerbConjugational(parsedData, "青あざができる")
-                                }
-                            }
-                        }
+            if (parsedBeforeData?.surface == "が" && parsedBeforeData?.lexicaCategory == "助詞") {
+                if (parsedBeforeBeforeData?.surface == "あざ") {
+                    if (parsed3BeforeData?.surface == "青") {
+                        convertedText.removeAt(convertedText.size - 1)
+                        convertedText.removeAt(convertedText.size - 1)
+                        convertedText.removeAt(convertedText.size - 1)
+                        convertedFlag = getVerbConjugational(parsedData, "青あざができる")
                     }
                 }
             }
         } else if (parsedData.originalPattern == "作る" && parsedData.lexicaCategory == "動詞") {
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "を" && parsedBeforeData!!.lexicaCategory == "助詞") {
-                    if (parsedBeforeBeforeData != null) {
-                        if (parsedBeforeBeforeData!!.surface == "あざ") {
-                            if (parsed3BeforeData != null) {
-                                if (parsed3BeforeData!!.surface == "青") {
-                                    convertedText.removeAt(convertedText.size - 1)
-                                    convertedText.removeAt(convertedText.size - 1)
-                                    convertedText.removeAt(convertedText.size - 1)
-                                    convertedFlag = getVerbConjugational(parsedData, "青あざを作る")
-                                }
-                            }
-                        }
+            if (parsedBeforeData?.surface == "を" && parsedBeforeData?.lexicaCategory == "助詞") {
+                if (parsedBeforeBeforeData?.surface == "あざ") {
+                    if (parsed3BeforeData?.surface == "青") {
+                        convertedText.removeAt(convertedText.size - 1)
+                        convertedText.removeAt(convertedText.size - 1)
+                        convertedText.removeAt(convertedText.size - 1)
+                        convertedFlag = getVerbConjugational(parsedData, "青あざを作る")
                     }
                 }
             }
@@ -619,17 +572,13 @@ class Converter {
     private fun bakaniNaruConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         if (parsedData.originalPattern == "なる" && parsedData.lexicaCategory == "動詞") {
-            if (parsedBeforeData != null) {
-                if ((parsedBeforeData!!.surface == "なく" && parsedBeforeData!!.lexicaCategory == "助動詞") ||
-                    (parsedBeforeData!!.surface == "く" && parsedBeforeData!!.lexicaCategory == "動詞")
-                ) {
-                    if (parsedBeforeBeforeData != null) {
-                        if (parsedBeforeBeforeData!!.originalPattern == "使える") {
-                            convertedText.removeAt(convertedText.size - 1)
-                            convertedText.removeAt(convertedText.size - 1)
-                            convertedFlag = getVerbConjugational(parsedData, "使えなくなる")
-                        }
-                    }
+            if ((parsedBeforeData?.surface == "なく" && parsedBeforeData?.lexicaCategory == "助動詞") ||
+                (parsedBeforeData?.surface == "く" && parsedBeforeData?.lexicaCategory == "動詞")
+            ) {
+                if (parsedBeforeBeforeData?.originalPattern == "使える") {
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedFlag = getVerbConjugational(parsedData, "使えなくなる")
                 }
             }
         }
@@ -642,13 +591,11 @@ class Converter {
     private fun iyattaiConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         if ((parsedData.surface == "な" || parsedData.surface == "だ") && parsedData.lexicaCategory == "助動詞") {
-            if (parsedBeforeData != null) {
-                if ((parsedBeforeData!!.surface == "いや" || parsedBeforeData!!.surface == "不愉快") && parsedBeforeData!!.lexicaCategory == "名詞") {
-                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='不愉快な']]")
-                    convertedText.removeAt(convertedText.size - 1)
-                    convertedText.add(ensyuWord[0].text)
-                    convertedFlag = true
-                }
+            if ((parsedBeforeData?.surface == "いや" || parsedBeforeData?.surface == "不愉快") && parsedBeforeData?.lexicaCategory == "名詞") {
+                val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='不愉快な']]")
+                convertedText.removeAt(convertedText.size - 1)
+                convertedText.add(ensyuWord[0].text)
+                convertedFlag = true
             }
         }
         return convertedFlag
@@ -678,22 +625,18 @@ class Converter {
             convertedText.add("${ensyuWord[0].text}")
             convertedFlag = true
         } else if (parsedData.surface == "ない" && parsedData.lexicaCategory == "助動詞") {
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "仕方" && parsedBeforeData!!.lexicaCategory == "名詞") {
-                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='仕方ない']]")
-                    convertedText.removeAt(convertedText.size - 1)
-                    convertedText.add("${ensyuWord[0].text}")
-                    convertedFlag = true
-                }
+            if (parsedBeforeData?.surface == "仕方" && parsedBeforeData?.lexicaCategory == "名詞") {
+                val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='仕方ない']]")
+                convertedText.removeAt(convertedText.size - 1)
+                convertedText.add("${ensyuWord[0].text}")
+                convertedFlag = true
             }
         } else if (parsedData.surface == "ない" && parsedData.lexicaCategory == "形容詞") {
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "しょうが" && parsedBeforeData!!.lexicaCategory == "名詞") {
-                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='しょうがない']]")
-                    convertedText.removeAt(convertedText.size - 1)
-                    convertedText.add("${ensyuWord[0].text}")
-                    convertedFlag = true
-                }
+            if (parsedBeforeData?.surface == "しょうが" && parsedBeforeData?.lexicaCategory == "名詞") {
+                val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='しょうがない']]")
+                convertedText.removeAt(convertedText.size - 1)
+                convertedText.add("${ensyuWord[0].text}")
+                convertedFlag = true
             }
         }
         return convertedFlag
@@ -729,24 +672,20 @@ class Converter {
         // 「すぐに」→「ちゃっちゃと」が適用されない文脈もある。(例.すぐに壁が立ちはだかった)
         var convertedFlag = false
         if (parsedData.surface == "すぐ" && parsedData.lexicaCategory == "副詞") {
-            if (parsedNextData != null) {
-                if (parsedNextData!!.surface == "に" && parsedNextData!!.lexicaCategory == "助詞") {
-                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='すぐに']]")
-                    convertedText.add("${ensyuWord[0].text}")
-                    convertedFlag = true
-                    skipFlagList!![index + 1] = 1
-                    return convertedFlag
-                }
+            if (parsedNextData?.surface == "に" && parsedNextData?.lexicaCategory == "助詞") {
+                val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='すぐに']]")
+                convertedText.add("${ensyuWord[0].text}")
+                convertedFlag = true
+                skipFlagList!![index + 1] = 1
+                return convertedFlag
             }
         } else if (parsedData.surface == "で" && parsedData.lexicaCategory == "助詞") {
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "急い" && parsedBeforeData!!.lexicaCategory == "動詞" && parsedBeforeData!!.conjugationalType == "連用タ接続") {
-                    val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='すぐに']]")
-                    convertedText.removeAt(convertedText.size - 1)
-                    convertedText.add("${ensyuWord[0].text}")
-                    convertedFlag = true
-                    return convertedFlag
-                }
+            if (parsedBeforeData?.surface == "急い" && parsedBeforeData?.lexicaCategory == "動詞" && parsedBeforeData?.conjugationalType == "連用タ接続") {
+                val ensyuWord: List<Node> = document.selectNodes("//enshu[../standard[text()='すぐに']]")
+                convertedText.removeAt(convertedText.size - 1)
+                convertedText.add("${ensyuWord[0].text}")
+                convertedFlag = true
+                return convertedFlag
             }
         }
         return convertedFlag
@@ -758,36 +697,26 @@ class Converter {
     private fun nyaConvert(parsedData: ParseResultData): Boolean {
         var convertedFlag = false
         if (parsedData.surface == "は" && parsedData.lexicaCategory == "助詞") {
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "て" && parsedBeforeData!!.lexicaCategory == "助詞") {
-                    if (parsedBeforeBeforeData != null) {
-                        if (parsedBeforeBeforeData!!.surface == "なく" && parsedBeforeBeforeData!!.lexicaCategory == "助動詞") {
-                            if (parsed3BeforeData != null) {
-                                if (parsed3BeforeData!!.surface == "し" && parsed3BeforeData!!.lexicaCategory == "動詞" && parsed3BeforeData!!.conjugationalType == "未然形") {
-                                    val ensyuWord: List<Node> =
-                                        document.selectNodes("//enshu[../standard[text()='なくては']]")
-                                    convertedText.removeAt(convertedText.size - 1)
-                                    convertedText.removeAt(convertedText.size - 1)
-                                    convertedText.add("${ensyuWord[0].text}")
-                                    convertedFlag = true
-                                }
-                            }
-                        }
+            if (parsedBeforeData?.surface == "て" && parsedBeforeData?.lexicaCategory == "助詞") {
+                if (parsedBeforeBeforeData?.surface == "なく" && parsedBeforeBeforeData?.lexicaCategory == "助動詞") {
+                    if (parsed3BeforeData?.surface == "し" && parsed3BeforeData?.lexicaCategory == "動詞" && parsed3BeforeData?.conjugationalType == "未然形") {
+                        val ensyuWord: List<Node> =
+                            document.selectNodes("//enshu[../standard[text()='なくては']]")
+                        convertedText.removeAt(convertedText.size - 1)
+                        convertedText.removeAt(convertedText.size - 1)
+                        convertedText.add("${ensyuWord[0].text}")
+                        convertedFlag = true
                     }
                 }
             }
         } else if (parsedData.surface == "ちゃ" && parsedData.lexicaCategory == "助詞") {
-            if (parsedBeforeData != null) {
-                if (parsedBeforeData!!.surface == "なく" && parsedBeforeData!!.lexicaCategory == "助動詞") {
-                    if (parsedBeforeBeforeData != null) {
-                        if (parsedBeforeBeforeData!!.surface == "し" && parsedBeforeBeforeData!!.lexicaCategory == "動詞" && parsedBeforeBeforeData!!.conjugationalType == "未然形") {
-                            val ensyuWord: List<Node> =
-                                document.selectNodes("//enshu[../standard[text()='なくては']]")
-                            convertedText.removeAt(convertedText.size - 1)
-                            convertedText.add("${ensyuWord[0].text}")
-                            convertedFlag = true
-                        }
-                    }
+            if (parsedBeforeData?.surface == "なく" && parsedBeforeData?.lexicaCategory == "助動詞") {
+                if (parsedBeforeBeforeData?.surface == "し" && parsedBeforeBeforeData?.lexicaCategory == "動詞" && parsedBeforeBeforeData?.conjugationalType == "未然形") {
+                    val ensyuWord: List<Node> =
+                        document.selectNodes("//enshu[../standard[text()='なくては']]")
+                    convertedText.removeAt(convertedText.size - 1)
+                    convertedText.add("${ensyuWord[0].text}")
+                    convertedFlag = true
                 }
             }
         }
