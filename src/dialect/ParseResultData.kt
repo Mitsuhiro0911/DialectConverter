@@ -1,23 +1,22 @@
 package dialect
 
 data class ParseResultData(
-    // インナークラスからアウタークラスに代入する(builderメソッド)際にvarをvalに変更できるため、保守性が向上できる。
     // 表層系
     var surface: String,
     // 品詞
-    var lexicaCategory: String,
+    var lexicaCate: String,
     // 品詞細分類1
-    val lexicaCategoryClassification1: String,
+    val lexicaCateClass1: String,
     // 品詞細分類2
-    val lexicaCategoryClassification2: String,
+    val lexicaCateClass2: String,
     // 品詞細分類3
-    val lexicaCategoryClassification3: String,
+    val lexicaCateClass3: String,
     // 活用形
-    val conjugationalForm: String,
+    val conjForm: String,
     // 活用型
-    val conjugationalType: String,
+    val conjType: String,
     // 原形
-    val originalPattern: String,
+    val original: String,
     // 読み
     val reading: String,
     // 発音
@@ -25,13 +24,13 @@ data class ParseResultData(
 
     data class Builder(
         var surface: String,
-        var lexicaCategory: String,
-        val lexicaCategoryClassification1: String,
-        val lexicaCategoryClassification2: String,
-        val lexicaCategoryClassification3: String,
-        val conjugationalForm: String,
-        val conjugationalType: String,
-        val originalPattern: String,
+        var lexicaCate: String,
+        val lexicaCateClass1: String,
+        val lexicaCateClass2: String,
+        val lexicaCateClass3: String,
+        val conjForm: String,
+        val conjType: String,
+        val original: String,
         var reading: String = "*",
         var pronunciation: String = "*") {
 
@@ -59,13 +58,13 @@ data class ParseResultData(
         fun builder(): ParseResultData {
             return ParseResultData(
                 surface,
-                lexicaCategory,
-                lexicaCategoryClassification1,
-                lexicaCategoryClassification2,
-                lexicaCategoryClassification3,
-                conjugationalForm,
-                conjugationalType,
-                originalPattern,
+                lexicaCate,
+                lexicaCateClass1,
+                lexicaCateClass2,
+                lexicaCateClass3,
+                conjForm,
+                conjType,
+                original,
                 reading,
                 pronunciation
             )

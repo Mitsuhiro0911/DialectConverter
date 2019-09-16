@@ -31,13 +31,13 @@ class Parser {
                 // 読み、発音情報がない単語もある。その場合要素数が少ないため、[8][9]の要素を指定するとArrayIndexOutOfBoundsExceptionで落ちる。
                 val parsedData = ParseResultData.Builder(
                     surface = parseResult[0],
-                    lexicaCategory = parseResult[1],
-                    lexicaCategoryClassification1 = parseResult[2],
-                    lexicaCategoryClassification2 = parseResult[3],
-                    lexicaCategoryClassification3 = parseResult[4],
-                    conjugationalForm = parseResult[5],
-                    conjugationalType = parseResult[6],
-                    originalPattern = parseResult[7]
+                    lexicaCate = parseResult[1],
+                    lexicaCateClass1 = parseResult[2],
+                    lexicaCateClass2 = parseResult[3],
+                    lexicaCateClass3 = parseResult[4],
+                    conjForm = parseResult[5],
+                    conjType = parseResult[6],
+                    original = parseResult[7]
                     ).reading(parseResult).pronunciation(parseResult).builder()
                 parsedDataList.add(parsedData)
             }
