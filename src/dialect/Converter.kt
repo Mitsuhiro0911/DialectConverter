@@ -71,7 +71,11 @@ class Converter {
     /**
      * 名詞を遠州弁に変換する。
      */
-    private fun convertNoun(cd: ConverterData, parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun convertNoun(
+        cd: ConverterData,
+        parsedDataList: ArrayList<ParseResultData>,
+        parsedData: ParseResultData
+    ): Boolean {
         var convertedFlag = false
         // lexicaCategoryが名詞 且つ importanceが3のstandard(標準語)情報を抽出
         val standardWordList: List<Node> =
@@ -203,7 +207,11 @@ class Converter {
     /**
      * ルール化が難しい単語の個別変換処理
      */
-    fun uniqueConvert(cd: ConverterData, parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    fun uniqueConvert(
+        cd: ConverterData,
+        parsedDataList: ArrayList<ParseResultData>,
+        parsedData: ParseResultData
+    ): Boolean {
         var convertedFlag = false
         if (!convertedFlag) {
             // 「ごと」→「さら」
@@ -465,7 +473,11 @@ class Converter {
     /**
      * 「内出血する、青あざができる、青あざを作る」→「血が死ぬ」の変換処理
      */
-    private fun chigaShinuConvert(cd: ConverterData, parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun chigaShinuConvert(
+        cd: ConverterData,
+        parsedDataList: ArrayList<ParseResultData>,
+        parsedData: ParseResultData
+    ): Boolean {
         var convertedFlag = false
         if (parsedData.original == "する" && parsedData.lexicaCate == "動詞") {
             if (cd.parsedBeforeData?.surface == "内出血") {
@@ -514,7 +526,11 @@ class Converter {
     /**
      * 「挟む」→「はさげる」の変換処理
      */
-    private fun hasageruConvert(cd: ConverterData, parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun hasageruConvert(
+        cd: ConverterData,
+        parsedDataList: ArrayList<ParseResultData>,
+        parsedData: ParseResultData
+    ): Boolean {
         var convertedFlag = false
         if (parsedData.original == "挟む" && parsedData.lexicaCate == "動詞") {
             convertedFlag = getVerbConjugational(cd, parsedData, "挟む")
@@ -631,7 +647,11 @@ class Converter {
     /**
      * 「すぐに、急いで」→「ちゃっちゃと」の変換処理
      */
-    private fun tyattyatoConvert(cd: ConverterData, parsedDataList: ArrayList<ParseResultData>, parsedData: ParseResultData): Boolean {
+    private fun tyattyatoConvert(
+        cd: ConverterData,
+        parsedDataList: ArrayList<ParseResultData>,
+        parsedData: ParseResultData
+    ): Boolean {
         // 「すぐに」→「ちゃっちゃと」が適用されない文脈もある。(例.すぐに壁が立ちはだかった)
         var convertedFlag = false
         if (parsedData.surface == "すぐ" && parsedData.lexicaCate == "副詞") {

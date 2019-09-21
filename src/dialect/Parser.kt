@@ -38,7 +38,7 @@ class Parser {
                     conjForm = parseResult[5],
                     conjType = parseResult[6],
                     original = parseResult[7]
-                    ).reading(parseResult).pronunciation(parseResult).builder()
+                ).reading(parseResult).pronunciation(parseResult).builder()
                 parsedDataList.add(parsedData)
             }
         }
