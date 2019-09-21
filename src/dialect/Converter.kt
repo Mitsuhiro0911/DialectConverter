@@ -207,7 +207,7 @@ class Converter {
     /**
      * ルール化が難しい単語の個別変換処理
      */
-    fun uniqueConvert(
+    private fun uniqueConvert(
         cd: ConverterData,
         parsedDataList: ArrayList<ParseResultData>,
         parsedData: ParseResultData
