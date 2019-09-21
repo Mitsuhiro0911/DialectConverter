@@ -2,6 +2,41 @@ package dialect
 
 class ContextProcessor {
     /**
+     * parsedDataの前後のデータを取得する。
+     */
+    fun getContextData(cd: ConverterData, parsedDataList: ArrayList<ParseResultData>) {
+        // parsedDataが末尾のデータでなければ、次データの情報を取得し、cd.parsedNextDataへ格納
+        cd.parsedNextData = null
+        if (cd.index + 1 < parsedDataList.size) {
+            cd.parsedNextData = parsedDataList[cd.index + 1]
+        }
+
+        // cd.parsedNextDataが末尾のデータでなければ、次データの情報を取得し、cd.parsedNextNextDataへ格納
+        cd.parsedNextNextData = null
+        if (cd.index + 2 < parsedDataList.size) {
+            cd.parsedNextNextData = parsedDataList[cd.index + 2]
+        }
+
+        // parsedDataが先頭のデータでなければ、前データの情報を取得し、cd.parsedBeforeDataへ格納
+        cd.parsedBeforeData = null
+        if (cd.index - 1 > -1) {
+            cd.parsedBeforeData = parsedDataList[cd.index - 1]
+        }
+
+        // cd.parsedBeforeDataが先頭のデータでなければ、前データの情報を取得し、cd.parsedBeforeBeforeDataへ格納
+        cd.parsedBeforeBeforeData = null
+        if (cd.index - 2 > -1) {
+            cd.parsedBeforeBeforeData = parsedDataList[cd.index - 2]
+        }
+
+        // cd.parsedBeforeBeforeDataが先頭のデータでなければ、前データの情報を取得し、cd.parsed3BeforeDataへ格納
+        cd.parsed3BeforeData = null
+        if (cd.index - 3 > -1) {
+            cd.parsed3BeforeData = parsedDataList[cd.index - 3]
+        }
+    }
+
+    /**
      * 接頭辞の結合処理を行う。
      */
     fun appendPrefix(

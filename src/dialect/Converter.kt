@@ -13,49 +13,16 @@ class Converter {
      */
     fun convert(parsedDataList: ArrayList<ParseResultData>): ArrayList<String> {
         val cd = ConverterData(convertedText = ArrayList())
-        // スキップフラグを0(変換必要)で初期化
-        cd.skipFlagList = arrayListOf()
-        for (i in 0 until parsedDataList.size) {
-            cd.skipFlagList!!.add(0)
-        }
-
+        // スキップフラグを初期化
+        initSkipFlag(cd, parsedDataList)
         for (parsedData in parsedDataList) {
             // スキップフラグが1(変換不要)の場合処理をスキップ
             if (cd.skipFlagList!![cd.index] == 1) {
                 cd.index = cd.index.plus(1)
                 continue
             }
-
-            // parsedDataが末尾のデータでなければ、次データの情報を取得し、cd.parsedNextDataへ格納
-            cd.parsedNextData = null
-            if (cd.index + 1 < parsedDataList.size) {
-                cd.parsedNextData = parsedDataList[cd.index + 1]
-            }
-
-            // cd.parsedNextDataが末尾のデータでなければ、次データの情報を取得し、cd.parsedNextNextDataへ格納
-            cd.parsedNextNextData = null
-            if (cd.index + 2 < parsedDataList.size) {
-                cd.parsedNextNextData = parsedDataList[cd.index + 2]
-            }
-
-            // parsedDataが先頭のデータでなければ、前データの情報を取得し、cd.parsedBeforeDataへ格納
-            cd.parsedBeforeData = null
-            if (cd.index - 1 > -1) {
-                cd.parsedBeforeData = parsedDataList[cd.index - 1]
-            }
-
-            // cd.parsedBeforeDataが先頭のデータでなければ、前データの情報を取得し、cd.parsedBeforeBeforeDataへ格納
-            cd.parsedBeforeBeforeData = null
-            if (cd.index - 2 > -1) {
-                cd.parsedBeforeBeforeData = parsedDataList[cd.index - 2]
-            }
-
-            // cd.parsedBeforeBeforeDataが先頭のデータでなければ、前データの情報を取得し、cd.parsed3BeforeDataへ格納
-            cd.parsed3BeforeData = null
-            if (cd.index - 3 > -1) {
-                cd.parsed3BeforeData = parsedDataList[cd.index - 3]
-            }
-
+            // parsedDataの前後のデータを取得
+            cp.getContextData(cd, parsedDataList)
             var convertedFlag = false
             println(parsedData)
             // ルールでの変換が難しい単語を個別処理で変換
@@ -88,6 +55,17 @@ class Converter {
             print(output)
         }
         return cd.convertedText
+    }
+
+    /**
+     * スキップフラグを初期化。
+     */
+    private fun initSkipFlag(cd: ConverterData, parsedDataList: ArrayList<ParseResultData>) {
+        // スキップフラグを0(変換必要)で初期化
+        cd.skipFlagList = arrayListOf()
+        for (i in 0 until parsedDataList.size) {
+            cd.skipFlagList!!.add(0)
+        }
     }
 
     /**
