@@ -15,6 +15,7 @@
 
 ④形態素解析結果を元に単語を遠州弁に変換し、コンソール出力(Converter.kt、ConverterData.kt)
 　
+ 
 　④'前後の文脈情報を解析(ContextProcessor.kt)
 
 
