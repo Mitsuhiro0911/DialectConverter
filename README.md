@@ -5,14 +5,6 @@
 ## アプリケーション作成目的
 
 ## プログラム構成
-### クラスの役割
-◎Main.kt
-
-◎Parser.kt
-
-◎ParseResultData.kt
-
-◎Converter.kt
 
 ### 処理の流れ
 ①変換したい文をハードコーディング(Main.kt)
@@ -26,16 +18,18 @@
 　④'前後の文脈情報を解析(ContextProcessor.kt)
 
 
-## 使用技術一覧(補足)
+## 使用技術
+### 技術一覧
+・Kotlin
+
+・形態素解析器(mecab-ipadic-NEologd)
+
+### 補足
 ◎ライブラリ
 
 ・jaxen-1.1.6
 
 ・dom4j-2.1.1
-
-◎ツール
-
-・mecab-ipadic-NEologd
 
 ◎開発環境
 
