@@ -1,7 +1,32 @@
 # DialectConverter
 ## アプリケーション概要
 標準語を入力すると遠州弁に変換することができます。
-## 使用技術一覧
+
+## アプリケーション作成目的
+
+## プログラム構成
+### クラスの役割
+◎Main.kt
+
+◎Parser.kt
+
+◎ParseResultData.kt
+
+◎Converter.kt
+
+### 処理の流れ
+①変換したい文をハードコーディング(Main.kt)
+
+②変換したい文を形態素解析(Parser.kt)
+
+③形態素解析結果を保持(ParseResultData.kt)
+
+④形態素解析結果を元に単語を遠州弁に変換し、コンソール出力(Converter.kt、ConverterData.kt)
+　
+　④'前後の文脈情報を解析(ContextProcessor.kt)
+
+
+## 使用技術一覧(補足)
 ◎ライブラリ
 
 ・jaxen-1.1.6
